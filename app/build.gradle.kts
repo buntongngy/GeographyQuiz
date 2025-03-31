@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.geographyquiz"
-        minSdk = 26
+        minSdk = 28
         //noinspection EditedTargetSdkVersion
         targetSdk = 35
         versionCode = 1

@@ -28,6 +28,7 @@ class QuizActivity : AppCompatActivity() {
         // Initialize database helper
         databaseHelper = CountryDatabase(this)
 
+
         loadDynamicQuestion()
     }
 
