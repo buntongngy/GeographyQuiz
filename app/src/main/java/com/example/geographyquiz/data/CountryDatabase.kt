@@ -18,7 +18,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
     companion object {
         private const val TAG = "CountryDatabase"
         private const val DATABASE_NAME = "world_countries.db"
-        private const val DATABASE_VERSION = 1 // Increment this when adding new countries
+        private const val DATABASE_VERSION = 2 // Incremented version for multi-language support
 
         // Table and column names
         const val TABLE_COUNTRIES = "countries"
@@ -30,7 +30,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         const val COLUMN_THIRD_CITY = "city3"
         const val COLUMN_CONTINENT = "continent"
         const val COLUMN_REGION = "region"
-        const val COLUMN_LANG = "language"
+        const val COLUMN_LANG = "languages" // Changed to store multiple languages
         const val COLUMN_CURRENCY = "currency"
         const val COLUMN_POPULATION = "population"
         const val COLUMN_AREA = "area"
@@ -44,7 +44,21 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         Log.d(TAG, "Upgrading from v$oldVersion to v$newVersion")
-        refreshAllCountries(db) // Always refresh data on upgrade
+        if (oldVersion < 2) {
+            // Migration to version 2 - changing language column to support multiple languages
+            db.execSQL("ALTER TABLE $TABLE_COUNTRIES RENAME TO ${TABLE_COUNTRIES}_old")
+            createTables(db)
+            db.execSQL("""
+                INSERT INTO $TABLE_COUNTRIES SELECT 
+                    $COLUMN_ID, $COLUMN_NAME, $COLUMN_CAPITAL, $COLUMN_BIGGEST_CITY, 
+                    $COLUMN_SECOND_CITY, $COLUMN_THIRD_CITY, $COLUMN_CONTINENT, 
+                    $COLUMN_REGION, $COLUMN_LANG, $COLUMN_CURRENCY, 
+                    $COLUMN_POPULATION, $COLUMN_AREA 
+                FROM ${TABLE_COUNTRIES}_old
+            """.trimIndent())
+            db.execSQL("DROP TABLE ${TABLE_COUNTRIES}_old")
+        }
+        refreshAllCountries(db)
     }
 
     private fun createTables(db: SQLiteDatabase) {
@@ -58,7 +72,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
                 $COLUMN_THIRD_CITY TEXT,
                 $COLUMN_CONTINENT TEXT NOT NULL,
                 $COLUMN_REGION TEXT NOT NULL,
-                $COLUMN_LANG TEXT NOT NULL,
+                $COLUMN_LANG TEXT NOT NULL, 
                 $COLUMN_CURRENCY TEXT NOT NULL,
                 $COLUMN_POPULATION INTEGER NOT NULL,
                 $COLUMN_AREA INTEGER NOT NULL
@@ -87,7 +101,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
                     put(COLUMN_THIRD_CITY, country.thirdCity)
                     put(COLUMN_CONTINENT, country.continent)
                     put(COLUMN_REGION, country.region)
-                    put(COLUMN_LANG, country.language)
+                    put(COLUMN_LANG, country.languages.joinToString(",")) // Store as comma-separated
                     put(COLUMN_CURRENCY, country.currency)
                     put(COLUMN_POPULATION, country.population)
                     put(COLUMN_AREA, country.area)
@@ -104,21 +118,28 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
     private fun getAllCountryData(): List<Country> {
         return listOf(
             // Africa
-            Country("Algeria", "Algiers", "Algiers", "Oran", "Constantine", "Africa", "Northern Africa", "Arabic", "Algerian Dinar", 43851044, 2381741),
-            Country("Angola", "Luanda", "Luanda", "Huambo", "Lobito", "Africa", "Middle Africa", "Portuguese", "Kwanza", 32866272, 1246700),
+            Country("Algeria", "Algiers", "Algiers", "Oran", "Constantine", "Africa", "Northern Africa",
+                listOf("Arabic", "Berber", "French"), "Algerian Dinar", 43851044, 2381741),
+            Country("Angola", "Luanda", "Luanda", "Huambo", "Lobito", "Africa", "Middle Africa",
+                listOf("Portuguese"), "Kwanza", 32866272, 1246700),
 
             // Americas
-            Country("Canada", "Ottawa", "Toronto", "Montreal", "Vancouver", "Americas", "Northern America", "English, French", "Canadian Dollar", 37742154, 9984670),
-            Country("United States", "Washington D.C.", "New York", "Los Angeles", "Chicago", "Americas", "Northern America", "English", "US Dollar", 331002651, 9833517),
+            Country("Canada", "Ottawa", "Toronto", "Montreal", "Vancouver", "Americas", "Northern America",
+                listOf("English", "French"), "Canadian Dollar", 37742154, 9984670),
+            Country("United States", "Washington D.C.", "New York", "Los Angeles", "Chicago", "Americas", "Northern America",
+                listOf("English", "Spanish"), "US Dollar", 331002651, 9833517),
 
             // Asia
-            Country("China", "Beijing", "Shanghai", "Beijing", "Guangzhou", "Asia", "Eastern Asia", "Chinese", "Yuan", 1439323776, 9596961),
-            Country("India", "New Delhi", "Mumbai", "Delhi", "Bangalore", "Asia", "Southern Asia", "Hindi, English", "Indian Rupee", 1380004385, 3287263),
+            Country("China", "Beijing", "Shanghai", "Beijing", "Guangzhou", "Asia", "Eastern Asia",
+                listOf("Mandarin", "Cantonese", "Wu", "Min"), "Yuan", 1439323776, 9596961),
+            Country("India", "New Delhi", "Mumbai", "Delhi", "Bangalore", "Asia", "Southern Asia",
+                listOf("Hindi", "English", "Bengali", "Telugu", "Marathi"), "Indian Rupee", 1380004385, 3287263),
 
             // Europe
-            Country("France", "Paris", "Paris", "Marseille", "Lyon", "Europe", "Western Europe", "French", "Euro", 65273511, 551695),
-            Country("Germany", "Berlin", "Berlin", "Hamburg", "Munich", "Europe", "Western Europe", "German", "Euro", 83783942, 357022),
-
+            Country("France", "Paris", "Paris", "Marseille", "Lyon", "Europe", "Western Europe",
+                listOf("French"), "Euro", 65273511, 551695),
+            Country("Germany", "Berlin", "Berlin", "Hamburg", "Munich", "Europe", "Western Europe",
+                listOf("German", "Low German", "Sorbian", "Danish"), "Euro", 83783942, 357022),
         )
     }
 
@@ -181,13 +202,16 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         val thirdCity: String?,
         val continent: String,
         val region: String,
-        val language: String,
+        val languages: List<String>, // Changed from String to List<String>
         val currency: String,
         val population: Int,
         val area: Int
     ) {
         companion object {
             fun fromCursor(cursor: Cursor): Country {
+                val languagesString = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LANG))
+                val languagesList = languagesString.split(",").map { it.trim() }
+
                 return Country(
                     cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NAME)),
                     cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CAPITAL)),
@@ -196,12 +220,18 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
                     cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_THIRD_CITY)),
                     cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CONTINENT)),
                     cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_REGION)),
-                    cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LANG)),
+                    languagesList,
                     cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CURRENCY)),
                     cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_POPULATION)),
                     cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_AREA))
                 )
             }
         }
+
+        // Helper method to get primary language (first in the list)
+        fun getPrimaryLanguage(): String = languages.firstOrNull() ?: ""
+
+        // Helper method to get all languages as comma-separated string
+        fun getLanguagesString(): String = languages.joinToString(", ")
     }
 }

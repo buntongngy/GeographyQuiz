@@ -1,4 +1,4 @@
-package com.example.geographyquiz.ui.notifications
+package com.example.geographyquiz.ui.setting
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

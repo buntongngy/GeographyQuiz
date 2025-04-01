@@ -1,11 +1,12 @@
 // QuizActivity.kt
-package com.example.geographyquiz
+package com.example.geographyquiz.quiz
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.geographyquiz.R
 import com.example.geographyquiz.data.CountryDatabase
 
 class QuizActivity : AppCompatActivity() {
