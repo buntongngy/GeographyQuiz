@@ -17,6 +17,7 @@ data class Country(
     val currency: String,
     val population: Int,
     val area: Int,
+    // Translation fields
     val translatedName: String = name,
     val translatedCapital: String = capital,
     val translatedBigCity: String = bigCity,
@@ -75,8 +76,20 @@ data class Country(
         }
     }
 
-    fun getPrimaryLanguage(): String = languages.firstOrNull() ?: ""
-    fun getLanguagesString(): String = languages.joinToString(", ")
-    fun getTranslatedPrimaryLanguage(): String = translatedLanguages.firstOrNull() ?: ""
-    fun getTranslatedLanguagesString(): String = translatedLanguages.joinToString(", ")
+    // Helper methods
+    fun getDisplayName(languageCode: String): String {
+        return if (languageCode != "en" && translatedName.isNotEmpty()) translatedName else name
+    }
+
+    fun getDisplayCapital(languageCode: String): String {
+        return if (languageCode != "en" && translatedCapital.isNotEmpty()) translatedCapital else capital
+    }
+
+    fun getDisplayLanguages(languageCode: String): String {
+        return if (languageCode != "en" && translatedLanguages.isNotEmpty()) {
+            translatedLanguages.joinToString(", ")
+        } else {
+            languages.joinToString(", ")
+        }
+    }
 }
