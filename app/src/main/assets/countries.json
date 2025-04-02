@@ -102,5 +102,18 @@
     "currency": "Euro",
     "population": 83783942,
     "area": 357022
+  },
+  {
+    "name": "Singapore",
+    "capital": "Singapore",
+    "bigCity": "Singapore",
+    "secondCity": "",
+    "thirdCity": "",
+    "continent": "Asia",
+    "region": "South East Asia",
+    "languages": ["English", "Malay", "Mandarin", "Tamil"],
+    "currency": "Singapore Dollar",
+    "population": 5870750,
+    "area": 750
   }
 ]

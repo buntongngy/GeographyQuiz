@@ -110,5 +110,19 @@
     "translatedLanguages": "Allemand",
     "population": 83783942,
     "area": 357022
+  },
+  {
+    "originalName": "Singapore",
+    "translatedName": "Singapour",
+    "translatedCapital": "Singapour",
+    "translatedCity1": "Singapour",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Dollar de Singapour",
+    "translatedLanguages": "Anglais, Malais, Mandarin, Tamoul",
+    "population": 5870750,
+    "area": 750
   }
 ]
