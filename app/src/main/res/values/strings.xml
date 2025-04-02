@@ -1,6 +1,16 @@
 <resources>
-    <string name="app_name">GeographyQuiz</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+<string name="app_name">GeographyQuiz</string>
+    <string name="home">Home</string>
+    <string name="setting">Setting</string>
+<string name="notEnoughCountry">Not enough countries in database</string>
+<string name="capital_question">What is the capital of %1$s?</string>
+    <string name="languageQuestion">Which language is spoken in %1$s?</string>
+    <string name="languageCountQuestion">How many languages are spoken in %1$s?</string>
+<string name="continent_question">Which continent is %1$s in?</string>
+<string name="population_question">Does %1$s have a larger population than %2$s?</string>
+<string name="area_question">Which of these countries has the largest area?</string>
+<string name="yes">Yes</string>
+<string name="no">No</string>
+<string name="correct">Correct! 🎉</string>
+<string name="wrong">Wrong! 😢</string>
 </resources>

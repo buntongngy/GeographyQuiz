@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.geographyquiz.R
 import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
-import java.util.*
 
 class LanguageQuiz : AppCompatActivity() {
 
@@ -46,10 +45,7 @@ class LanguageQuiz : AppCompatActivity() {
         }
 
         if (countries.size < 4) {
-            questionText.text = if (currentLanguage == "fr")
-                "Pas assez de pays dans la base de données"
-            else
-                "Not enough countries in database"
+            questionText.text = getString(R.string.notEnoughCountry)
             option1Btn.visibility = View.GONE
             option2Btn.visibility = View.GONE
             option3Btn.visibility = View.GONE
@@ -108,10 +104,10 @@ class LanguageQuiz : AppCompatActivity() {
         val answers = (listOf(correctLanguage) + otherLanguages).shuffled()
 
         return QuestionData(
-            if (currentLanguage != "en")
-                "Quelle langue est parlée en ${targetCountry.translatedName} ?"
-            else
-                "Which language is spoken in ${targetCountry.name}?",
+            getString(
+                R.string.languageQuestion,
+                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name
+            ),
             correctLanguage,
             answers
         )
@@ -127,10 +123,10 @@ class LanguageQuiz : AppCompatActivity() {
         ).distinct().shuffled().take(4)
 
         return QuestionData(
-            if (currentLanguage != "en")
-                "Combien de langues sont parlées en ${targetCountry.translatedName} ?"
-            else
-                "How many languages are spoken in ${targetCountry.name}?",
+            getString(
+                R.string.languageCountQuestion,
+                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name
+            ),
             correctCount.toString(),
             possibleCounts.map { it.toString() }
         )
@@ -140,9 +136,9 @@ class LanguageQuiz : AppCompatActivity() {
         val isCorrect = selectedOption == correctAnswerIndex
         val feedbackText = findViewById<TextView>(R.id.feedbackText)
         feedbackText.text = if (isCorrect) {
-            if (currentLanguage != "en") "Correct! 🎉" else "Correct! 🎉"
+            getString(R.string.correct)
         } else {
-            if (currentLanguage != "en") "Faux! 😢" else "Wrong! 😢"
+            getString(R.string.wrong)
         }
     }
 

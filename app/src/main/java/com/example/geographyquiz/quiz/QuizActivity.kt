@@ -58,9 +58,9 @@ class QuizActivity : AppCompatActivity() {
 
         if (countries.size < 4) {
             questionText.text = if (currentLanguage != "en")
-                "Pas assez de pays dans la base de données"
+                getString(R.string.notEnoughCountry)
             else
-                "Not enough countries in database"
+                getString(R.string.notEnoughCountry)
             option1Btn.visibility = View.GONE
             option2Btn.visibility = View.GONE
             option3Btn.visibility = View.GONE
@@ -82,10 +82,8 @@ class QuizActivity : AppCompatActivity() {
                     .toList()
 
                 Quad(
-                    if (currentLanguage != "en")
-                        "Quelle est la capitale de ${correctCountry.translatedName} ?"
-                    else
-                        "What is the capital of ${correctCountry.name}?",
+                    getString(R.string.capital_question,
+                        if (currentLanguage != "en") correctCountry.translatedName else correctCountry.name),
                     if (currentLanguage != "en") correctCountry.translatedCapital else correctCountry.capital,
                     listOf(
                         if (currentLanguage != "en") correctCountry.translatedCapital else correctCountry.capital
@@ -105,10 +103,8 @@ class QuizActivity : AppCompatActivity() {
                     .toList()
 
                 Quad(
-                    if (currentLanguage != "en")
-                        "Sur quel continent se trouve ${correctCountry.translatedName} ?"
-                    else
-                        "Which continent is ${correctCountry.name} in?",
+                    getString(R.string.continent_question,
+                        if (currentLanguage != "en") correctCountry.translatedName else correctCountry.name),
                     if (currentLanguage != "en") correctCountry.translatedContinent else correctCountry.continent,
                     listOf(
                         if (currentLanguage != "en") correctCountry.translatedContinent else correctCountry.continent
@@ -121,12 +117,11 @@ class QuizActivity : AppCompatActivity() {
                 val comparisonCountry = countries[1]
                 val isLarger = correctCountry.population > comparisonCountry.population
                 Quad(
-                    if (currentLanguage != "en")
-                        "Est-ce que ${correctCountry.translatedName} a une population plus grande que ${comparisonCountry.translatedName} ?"
-                    else
-                        "Does ${correctCountry.name} have a larger population than ${comparisonCountry.name}?",
-                    if (currentLanguage != "en") (if (isLarger) "Oui" else "Non") else (if (isLarger) "Yes" else "No"),
-                    if (currentLanguage != "en") listOf("Oui", "Non") else listOf("Yes", "No"),
+                    getString(R.string.population_question,
+                        if (currentLanguage != "en") correctCountry.translatedName else correctCountry.name,
+                        if (currentLanguage != "en") comparisonCountry.translatedName else comparisonCountry.name),
+                    if (isLarger) getString(R.string.yes) else getString(R.string.no),
+                    listOf(getString(R.string.yes), getString(R.string.no)),
                     true
                 )
             }
@@ -142,10 +137,7 @@ class QuizActivity : AppCompatActivity() {
                     .toList()
 
                 Quad(
-                    if (currentLanguage != "en")
-                        "Lequel de ces pays a la plus grande superficie ?"
-                    else
-                        "Which of these countries has the largest area?",
+                    getString(R.string.area_question),
                     if (currentLanguage != "en") largestCountry.translatedName else largestCountry.name,
                     listOf(
                         if (currentLanguage != "en") largestCountry.translatedName else largestCountry.name
