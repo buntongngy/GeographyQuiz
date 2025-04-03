@@ -51,7 +51,8 @@ class SettingFragment : Fragment() {
             "Français" to "fr",
             "Español" to "es",
             "Deutsch" to "de",
-            "日本語" to "ja"
+            "日本語" to "ja",
+            "ខ្មែរ" to "kh"
         )
 
         val sharedPref = requireContext().getSharedPreferences("AppSettings", Context.MODE_PRIVATE)
@@ -120,6 +121,7 @@ class SettingFragment : Fragment() {
             "es" -> "Español"
             "de" -> "Deutsch"
             "ja" -> "日本語"
+            "kh" -> "ខ្មែរ"
             else -> "English"
         }
     }
