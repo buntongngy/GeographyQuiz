@@ -1,20 +1,19 @@
 [
-
   {
     "originalName": "Afghanistan",
     "translatedName": "Afghanistan",
     "translatedCapital": "Kaboul",
     "translatedCity1": "Kaboul",
-    "translatedCity2": "Herat",
+    "translatedCity2": "Hérat",
     "translatedCity3": "Kandahar",
     "translatedContinent": "Asie",
     "translatedRegion": "Asie du Sud",
-    "translatedCurrency": "Afghani afghan",
+    "translatedCurrency": "Afghani",
     "translatedLanguages": "Pachto, Dari",
     "population": 40218234,
-    "area": 652230
+    "area": 652867,
+    "category": "middle_eastern"
   },
-
   {
     "originalName": "Albania",
     "translatedName": "Albanie",
@@ -27,9 +26,9 @@
     "translatedCurrency": "Lek albanais",
     "translatedLanguages": "Albanais",
     "population": 2837743,
-    "area": 28748
+    "area": 28748,
+    "category": "balkan"
   },
-
   {
     "originalName": "Algeria",
     "translatedName": "Algérie",
@@ -42,7 +41,8 @@
     "translatedCurrency": "Dinar algérien",
     "translatedLanguages": "Arabe, Berbère, Français",
     "population": 43851044,
-    "area": 2381741
+    "area": 2381741,
+    "category": "arab"
   },
   {
     "originalName": "Angola",
@@ -56,7 +56,53 @@
     "translatedCurrency": "Kwanza",
     "translatedLanguages": "Portugais",
     "population": 32866272,
-    "area": 1246700
+    "area": 1246700,
+    "category": "african_portuguese"
+  },
+  {
+    "originalName": "Bangladesh",
+    "translatedName": "Bangladesh",
+    "translatedCapital": "Dacca",
+    "translatedCity1": "Chittagong",
+    "translatedCity2": "Rajshahi",
+    "translatedCity3": "Lobito",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud",
+    "translatedCurrency": "Taka",
+    "translatedLanguages": "Bengali",
+    "population": 174655977,
+    "area": 148460,
+    "category": "south_asia"
+  },
+  {
+    "originalName": "Belgium",
+    "translatedName": "Belgique",
+    "translatedCapital": "Bruxelles",
+    "translatedCity1": "Bruxelles",
+    "translatedCity2": "Anvers",
+    "translatedCity3": "Gand",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Ouest",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Néerlandais, Français, Allemand",
+    "population": 11812354,
+    "area": 30689,
+    "category": "western"
+  },
+  {
+    "originalName": "Cambodia",
+    "translatedName": "Cambodge",
+    "translatedCapital": "Phnom Penh",
+    "translatedCity1": "Phnom Penh",
+    "translatedCity2": "Takeo",
+    "translatedCity3": "Sihanoukville",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Riel",
+    "translatedLanguages": "Khmer",
+    "population": 17638801,
+    "area": 181035,
+    "category": "east_asian"
   },
   {
     "originalName": "Canada",
@@ -70,21 +116,8 @@
     "translatedCurrency": "Dollar canadien",
     "translatedLanguages": "Anglais, Français",
     "population": 37742154,
-    "area": 9984670
-  },
-  {
-    "originalName": "United States",
-    "translatedName": "États-Unis",
-    "translatedCapital": "Washington D.C.",
-    "translatedCity1": "New York",
-    "translatedCity2": "Los Angeles",
-    "translatedCity3": "Chicago",
-    "translatedContinent": "Amérique du Nord",
-    "translatedRegion": "Amérique du Nord",
-    "translatedCurrency": "Dollar américain",
-    "translatedLanguages": "Anglais",
-    "population": 331002651,
-    "area": 9833517
+    "area": 9984670,
+    "category": "western"
   },
   {
     "originalName": "China",
@@ -98,21 +131,23 @@
     "translatedCurrency": "Yuan",
     "translatedLanguages": "Mandarin, Cantonais, Wu, Min",
     "population": 1439323776,
-    "area": 9596961
+    "area": 9596961,
+    "category": "east_asian"
   },
   {
-    "originalName": "India",
-    "translatedName": "Inde",
-    "translatedCapital": "New Delhi",
-    "translatedCity1": "Mumbai",
-    "translatedCity2": "Delhi",
-    "translatedCity3": "Bangalore",
-    "translatedContinent": "Asie",
-    "translatedRegion": "Asie du Sud",
-    "translatedCurrency": "Roupie indienne",
-    "translatedLanguages": "Hindi, Anglais, Bengali, Telugu, Marathi",
-    "population": 1380004385,
-    "area": 3287263
+    "originalName": "Egypt",
+    "translatedName": "Égypte",
+    "translatedCapital": "Le Caire",
+    "translatedCity1": "Le Caire",
+    "translatedCity2": "Alexandrie",
+    "translatedCity3": "Gizeh",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique du Nord",
+    "translatedCurrency": "Livre égyptienne",
+    "translatedLanguages": "Arabe",
+    "population": 107304000,
+    "area": 1010408,
+    "category": "arab"
   },
   {
     "originalName": "France",
@@ -126,7 +161,8 @@
     "translatedCurrency": "Euro",
     "translatedLanguages": "Français",
     "population": 65273511,
-    "area": 551695
+    "area": 551695,
+    "category": "western"
   },
   {
     "originalName": "Germany",
@@ -140,7 +176,53 @@
     "translatedCurrency": "Euro",
     "translatedLanguages": "Allemand",
     "population": 83783942,
-    "area": 357022
+    "area": 357022,
+    "category": "western"
+  },
+  {
+    "originalName": "India",
+    "translatedName": "Inde",
+    "translatedCapital": "New Delhi",
+    "translatedCity1": "Mumbai",
+    "translatedCity2": "Delhi",
+    "translatedCity3": "Bangalore",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud",
+    "translatedCurrency": "Roupie indienne",
+    "translatedLanguages": "Hindi, Anglais, Bengali, Telugu, Marathi",
+    "population": 1380004385,
+    "area": 3287263,
+    "category": "south_asia"
+  },
+  {
+    "originalName": "Libya",
+    "translatedName": "Libye",
+    "translatedCapital": "Tripoli",
+    "translatedCity1": "Tripoli",
+    "translatedCity2": "Benghazi",
+    "translatedCity3": "Misrata",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique du Nord",
+    "translatedCurrency": "Dinar libyen",
+    "translatedLanguages": "Arabe",
+    "population": 7361263,
+    "area": 1759541,
+    "category": "arab"
+  },
+  {
+    "originalName": "Nepal",
+    "translatedName": "Népal",
+    "translatedCapital": "Katmandou",
+    "translatedCity1": "Katmandou",
+    "translatedCity2": "Pokhara",
+    "translatedCity3": "Patan",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud",
+    "translatedCurrency": "Roupie népalaise",
+    "translatedLanguages": "Népalais",
+    "population": 31122387,
+    "area": 147516,
+    "category": "south_asia"
   },
   {
     "originalName": "Singapore",
@@ -154,6 +236,82 @@
     "translatedCurrency": "Dollar de Singapour",
     "translatedLanguages": "Anglais, Malais, Mandarin, Tamoul",
     "population": 5870750,
-    "area": 750
+    "area": 750,
+    "category": "east_asia"
+  },
+  {
+    "originalName": "Spain",
+    "translatedName": "Espagne",
+    "translatedCapital": "Madrid",
+    "translatedCity1": "Madrid",
+    "translatedCity2": "Barcelone",
+    "translatedCity3": "Valence",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Ouest",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Espagnol",
+    "population": 49077984,
+    "area": 505990,
+    "category": "western"
+  },
+  {
+    "originalName": "Thailand",
+    "translatedName": "Thaïlande",
+    "translatedCapital": "Bangkok",
+    "translatedCity1": "Bangkok",
+    "translatedCity2": "Chiang Mai",
+    "translatedCity3": "Nakhon Ratchasima",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Baht",
+    "translatedLanguages": "Thaï",
+    "population": 65975198,
+    "area": 513120,
+    "category": "east_asia"
+  },
+  {
+    "originalName": "Tunisia",
+    "translatedName": "Tunisie",
+    "translatedCapital": "Tunis",
+    "translatedCity1": "Tunis",
+    "translatedCity2": "Sfax",
+    "translatedCity3": "Sousse",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique du Nord",
+    "translatedCurrency": "Dinar tunisien",
+    "translatedLanguages": "Arabe",
+    "population": 11887412,
+    "area": 163610,
+    "category": "arab"
+  },
+  {
+    "originalName": "Vietnam",
+    "translatedName": "Vietnam",
+    "translatedCapital": "Hanoï",
+    "translatedCity1": "Hô-Chi-Minh-Ville",
+    "translatedCity2": "Hanoï",
+    "translatedCity3": "Haïphong",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Dong",
+    "translatedLanguages": "Vietnamien",
+    "population": 100300000,
+    "area": 331344,
+    "category": "east_asia"
+  },
+  {
+    "originalName": "United States",
+    "translatedName": "États-Unis",
+    "translatedCapital": "Washington D.C.",
+    "translatedCity1": "New York",
+    "translatedCity2": "Los Angeles",
+    "translatedCity3": "Chicago",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique du Nord",
+    "translatedCurrency": "Dollar américain",
+    "translatedLanguages": "Anglais",
+    "population": 331002651,
+    "area": 9833517,
+    "category": "western"
   }
 ]

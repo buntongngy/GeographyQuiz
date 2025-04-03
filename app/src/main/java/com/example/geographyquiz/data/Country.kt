@@ -17,6 +17,7 @@ data class Country(
     val currency: String,
     val population: Int,
     val area: Int,
+    val category: String,
     // Translation fields
     val translatedName: String = name,
     val translatedCapital: String = capital,
@@ -45,7 +46,8 @@ data class Country(
                 languages = languagesList,
                 currency = cursor.getString(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_CURRENCY)),
                 population = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_POPULATION)),
-                area = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_AREA))
+                area = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_AREA)),
+                category = cursor.getString(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_CATEGORY))
             )
         }
 

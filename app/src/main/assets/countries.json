@@ -11,7 +11,8 @@
     "languages": ["Pashto", "Dari"],
     "currency": "Afghani",
     "population": 40218234,
-    "area": 652867
+    "area": 652867,
+    "category": "middle_eastern"
   },
 
   {
@@ -25,7 +26,8 @@
     "languages": ["Albanian"],
     "currency": "Albanian Lek",
     "population": 2837743,
-    "area": 28748
+    "area": 28748,
+    "category": "balkan"
   },
 
   {
@@ -39,7 +41,8 @@
     "languages": ["Arabic", "Berber", "French"],
     "currency": "Algerian Dinar",
     "population": 43851044,
-    "area": 2381741
+    "area": 2381741,
+    "category": "arab"
   },
   {
     "name": "Angola",
@@ -52,8 +55,55 @@
     "languages": ["Portuguese"],
     "currency": "Kwanza",
     "population": 32866272,
-    "area": 1246700
+    "area": 1246700,
+    "category": "african_portuguese"
   },
+
+  {
+    "name": "Bangladesh",
+    "capital": "Dhaka",
+    "bigCity": "Chittagong",
+    "secondCity": "Rajshahi",
+    "thirdCity": "Lobito",
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "languages": ["Bengali"],
+    "currency": "Taka",
+    "population": 174655977,
+    "area": 148460,
+    "category": "south_asia"
+  },
+
+  {
+    "name": "Belgium",
+    "capital": "Brussels",
+    "bigCity": "Brussels",
+    "secondCity": "Antwerpen",
+    "thirdCity": "Gent",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "languages": ["Dutch", "French", "German"],
+    "currency": "Euro",
+    "population": 11812354,
+    "area": 30689,
+    "category": "western"
+  },
+
+  {
+    "name": "Cambodia",
+    "capital": "Phnom Penh",
+    "bigCity": "Phnom Penh",
+    "secondCity": "Takeo",
+    "thirdCity": "Sihanoukville",
+    "continent": "Asia",
+    "region": "South East Asia",
+    "languages": ["Khmer"],
+    "currency": "Riel",
+    "population": 17638801,
+    "area": 181035,
+    "category": "east_asian"
+  },
+
   {
     "name": "Canada",
     "capital": "Ottawa",
@@ -65,21 +115,10 @@
     "languages": ["English", "French"],
     "currency": "Canadian Dollar",
     "population": 37742154,
-    "area": 9984670
+    "area": 9984670,
+    "category": "western"
   },
-  {
-    "name": "United States",
-    "capital": "Washington D.C.",
-    "bigCity": "New York",
-    "secondCity": "Los Angeles",
-    "thirdCity": "Chicago",
-    "continent": "North America",
-    "region": "North America",
-    "languages": ["English"],
-    "currency": "US Dollar",
-    "population": 331002651,
-    "area": 9833517
-  },
+
   {
     "name": "China",
     "capital": "Beijing",
@@ -91,21 +130,25 @@
     "languages": ["Mandarin", "Cantonese", "Wu", "Min"],
     "currency": "Yaun",
     "population": 1439323776,
-    "area": 9596961
+    "area": 9596961,
+    "category": "east_asian"
   },
+
   {
-    "name": "India",
-    "capital": "New Delhi",
-    "bigCity": "Mumbai",
-    "secondCity": "Delhi",
-    "thirdCity": "Bangalore",
-    "continent": "Asia",
-    "region": "Southern Asia",
-    "languages": ["Hindi", "English", "Bengali", "Telugu", "Marathi"],
-    "currency": "Indian Rupee",
-    "population": 1380004385,
-    "area": 3287263
+    "name": "Egypt",
+    "capital": "Cairo",
+    "bigCity": "Cairo",
+    "secondCity": "Alexandria",
+    "thirdCity": "Giza",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "languages": ["Arabic"],
+    "currency": "Egyptian pound",
+    "population": 107304000,
+    "area": 1010408,
+    "category": "arab"
   },
+
   {
   "name": "France",
   "capital": "Paris",
@@ -117,8 +160,9 @@
   "languages": ["French"],
   "currency": "Euro",
   "population": 65273511,
-  "area": 551695
-},
+  "area": 551695,
+    "category": "western"
+  },
   {
     "name": "Germany",
     "capital": "Berlin",
@@ -130,8 +174,55 @@
     "languages": ["German"],
     "currency": "Euro",
     "population": 83783942,
-    "area": 357022
+    "area": 357022,
+    "category": "western"
   },
+
+  {
+    "name": "India",
+    "capital": "New Delhi",
+    "bigCity": "Mumbai",
+    "secondCity": "Delhi",
+    "thirdCity": "Bangalore",
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "languages": ["Hindi", "English", "Bengali", "Telugu", "Marathi"],
+    "currency": "Indian Rupee",
+    "population": 1380004385,
+    "area": 3287263,
+    "category": "south_asia"
+  },
+
+  {
+    "name": "Libya",
+    "capital": "Tripoli",
+    "bigCity": "Tripoli",
+    "secondCity": "Benghazi",
+    "thirdCity": "Misrata",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "languages": ["Arabic"],
+    "currency": "Libyan dinar",
+    "population": 7361263,
+    "area": 1759541,
+    "category": "arab"
+  },
+
+  {
+    "name": "Nepal",
+    "capital": "Kathmandu",
+    "bigCity": "Kathmandu",
+    "secondCity": "Pokhara",
+    "thirdCity": "Patan",
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "languages": ["Nepali"],
+    "currency": "Nepalese Rupee",
+    "population": 31122387,
+    "area": 147516,
+    "category": "south_asia"
+  },
+
   {
     "name": "Singapore",
     "capital": "Singapore",
@@ -143,6 +234,82 @@
     "languages": ["English", "Malay", "Mandarin", "Tamil"],
     "currency": "Singapore Dollar",
     "population": 5870750,
-    "area": 750
+    "area": 750,
+    "category": "east_asia"
+  },
+
+  {
+    "name": "Spain",
+    "capital": "Madrid",
+    "bigCity": "Madrid",
+    "secondCity": "Barcelona",
+    "thirdCity": "Valencia",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "languages": ["Spanish"],
+    "currency": "Euro",
+    "population": 49077984,
+    "area": 505990,
+    "category": "western"
+  },
+
+  {
+    "name": "Thailand",
+    "capital": "Bangkok",
+    "bigCity": "Bangkok",
+    "secondCity": "Chiang Mai",
+    "thirdCity": "Nakhon Ratchasima",
+    "continent": "Asia",
+    "region": "South East Asia",
+    "languages": ["Thai"],
+    "currency": "Baht",
+    "population": 65975198,
+    "area": 513120,
+    "category": "east_asia"
+  },
+
+  {
+    "name": "Tunisia",
+    "capital": "Tunis",
+    "bigCity": "Tunis",
+    "secondCity": "Sfax",
+    "thirdCity": "Sousse",
+    "continent": "Africa",
+    "region": "Northern Africa",
+    "languages": ["Arabic"],
+    "currency": "Tunisian dinar",
+    "population": 11887412,
+    "area": 163610,
+    "category": "arab"
+  },
+
+  {
+    "name": "Vietnam",
+    "capital": "Hanoi",
+    "bigCity": "Ho Chi Minh City",
+    "secondCity": "Hanoi",
+    "thirdCity": "Haiphong",
+    "continent": "Asia",
+    "region": "South East Asia",
+    "languages": ["Vietnamese"],
+    "currency": "dong",
+    "population": 100300000,
+    "area": 331344,
+    "category": "east_asia"
+  },
+
+  {
+    "name": "United States",
+    "capital": "Washington D.C.",
+    "bigCity": "New York",
+    "secondCity": "Los Angeles",
+    "thirdCity": "Chicago",
+    "continent": "North America",
+    "region": "North America",
+    "languages": ["English"],
+    "currency": "US Dollar",
+    "population": 331002651,
+    "area": 9833517,
+    "category": "western"
   }
 ]
