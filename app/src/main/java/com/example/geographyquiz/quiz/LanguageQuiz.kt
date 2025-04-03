@@ -112,17 +112,44 @@ class LanguageQuiz : AppCompatActivity() {
         // Select one random language from target country as correct answer
         val correctLanguage = targetLanguages.random()
 
-        // Get all languages from other countries, excluding ALL languages from target country
-        val otherLanguages = allCountries
-            .filter { it.name != targetCountry.name }
+        // Filter countries based on similar characteristics
+        val similarCountries = allCountries.filter { otherCountry ->
+            // Keep the target country (we'll exclude it later)
+            if (otherCountry.name == targetCountry.name) return@filter false
+
+            // First priority: Same category
+            if (otherCountry.category == targetCountry.category) return@filter true
+
+            // Second priority: Same region
+            if (otherCountry.region == targetCountry.region) return@filter true
+
+            // Third priority: Same continent
+            if (otherCountry.continent == targetCountry.continent) return@filter true
+
+            // Fallback: Any country
+            false
+        }.ifEmpty {
+            // If no similar countries found, use all countries except target
+            allCountries.filter { it.name != targetCountry.name }
+        }
+
+        // Get languages from similar countries
+        val otherLanguages = similarCountries
             .flatMap { if (currentLanguage != "en") it.translatedLanguages else it.languages }
             .filter { !targetLanguages.contains(it) }
             .distinct()
             .toMutableList()
 
-        // If we don't have enough distinct languages from other countries, fall back to count question
+        // If we don't have enough distinct languages from similar countries,
+        // expand to all countries (except target)
         if (otherLanguages.size < 3) {
-            return generateLanguageCountQuestion(targetCountry)
+            otherLanguages.addAll(
+                allCountries
+                    .filter { it.name != targetCountry.name }
+                    .flatMap { if (currentLanguage != "en") it.translatedLanguages else it.languages }
+                    .filter { !targetLanguages.contains(it) }
+                    .distinct()
+            )
         }
 
         // Select 3 incorrect answers from other countries' languages
