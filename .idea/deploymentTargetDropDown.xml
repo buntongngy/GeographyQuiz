@@ -9,13 +9,13 @@
               <type value="RUNNING_DEVICE_TARGET" />
               <deviceKey>
                 <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\Buntong Ngy\.android\avd\Pixel_2_API_35_1.avd" />
+                  <type value="SERIAL_NUMBER" />
+                  <value value="adb-R5CW22DVBDA-QbIFKj._adb-tls-connect._tcp" />
                 </Key>
               </deviceKey>
             </Target>
           </runningDeviceTargetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2025-04-03T18:28:25.159673600Z" />
+          <timeTargetWasSelectedWithDropDown value="2025-04-03T18:47:47.352279400Z" />
         </State>
       </entry>
     </value>

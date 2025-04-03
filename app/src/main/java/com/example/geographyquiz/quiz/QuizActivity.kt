@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.geographyquiz.R
 import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
+import kotlin.random.Random
 
 class QuizActivity : AppCompatActivity() {
 
@@ -91,42 +92,6 @@ class QuizActivity : AppCompatActivity() {
         }
     }
 
-    private fun generateCapitalQuestion(
-        targetCountry: Country,
-        similarCountries: List<Country>,
-        allCountries: List<Country>
-    ): Triple<String, String, List<String>> {
-        val correctAnswer = if (currentLanguage != "en") targetCountry.translatedCapital else targetCountry.capital
-
-        // First try to get options from similar countries
-        val similarOptions = similarCountries
-            .map { if (currentLanguage != "en") it.translatedCapital else it.capital }
-            .filter { it != correctAnswer && it.isNotBlank() }
-            .distinct()
-            .shuffled()
-            .take(3)
-
-        // If not enough similar options, supplement with random countries
-        val otherOptions = if (similarOptions.size < 3) {
-            similarOptions + allCountries
-                .filter { it.name != targetCountry.name && !similarCountries.contains(it) }
-                .map { if (currentLanguage != "en") it.translatedCapital else it.capital }
-                .filter { it != correctAnswer && it.isNotBlank() }
-                .distinct()
-                .shuffled()
-                .take(3 - similarOptions.size)
-        } else {
-            similarOptions
-        }
-
-        return Triple(
-            getString(R.string.capital_question,
-                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
-            correctAnswer,
-            (listOf(correctAnswer) + otherOptions).shuffled()
-        )
-    }
-
     private fun generateBiggestCityQuestion(
         targetCountry: Country,
         similarCountries: List<Country>,
@@ -134,30 +99,112 @@ class QuizActivity : AppCompatActivity() {
     ): Triple<String, String, List<String>> {
         val correctAnswer = if (currentLanguage != "en") targetCountry.translatedBigCity else targetCountry.bigCity
 
-        val similarOptions = similarCountries
-            .map { if (currentLanguage != "en") it.translatedBigCity else it.bigCity }
-            .filter { it != correctAnswer && it.isNotBlank() }
-            .distinct()
-            .shuffled()
-            .take(3)
+        // Get other cities from the same country
+        val sameCountryCities = listOfNotNull(
+            if (currentLanguage != "en") targetCountry.translatedCapital else targetCountry.capital,
+            if (currentLanguage != "en") targetCountry.translatedSecondCity else targetCountry.secondCity,
+            if (currentLanguage != "en") targetCountry.translatedThirdCity else targetCountry.thirdCity
+        ).filter { it.isNotBlank() && it != correctAnswer }.distinct()
 
-        val otherOptions = if (similarOptions.size < 3) {
-            similarOptions + allCountries
-                .filter { it.name != targetCountry.name && !similarCountries.contains(it) }
+        // Create answer options with desired probabilities
+        val answerOptions = mutableListOf<String>().apply {
+            add(correctAnswer) // Always include correct answer
+
+            // 90% chance to include at least one other city from same country
+            if (sameCountryCities.isNotEmpty() && Random.nextFloat() < 0.9f) {
+                add(sameCountryCities.random())
+            }
+
+            // 50% chance to include another city from same country (if available)
+            if (sameCountryCities.size > 1 && Random.nextFloat() < 0.5f) {
+                sameCountryCities.filterNot { it in this }.randomOrNull()?.let { add(it) }
+            }
+
+            // Fill remaining slots with cities from similar countries
+            val similarOptions = similarCountries
                 .map { if (currentLanguage != "en") it.translatedBigCity else it.bigCity }
-                .filter { it != correctAnswer && it.isNotBlank() }
+                .filter { it.isNotBlank() && it !in this }
                 .distinct()
                 .shuffled()
-                .take(3 - similarOptions.size)
-        } else {
-            similarOptions
+
+            // If still not enough, use random cities from other countries
+            val remainingOptions = if (similarOptions.size < (4 - this.size)) {
+                similarOptions + allCountries
+                    .filter { it.name != targetCountry.name && !similarCountries.contains(it) }
+                    .map { if (currentLanguage != "en") it.translatedBigCity else it.bigCity }
+                    .filter { it.isNotBlank() && it !in this }
+                    .distinct()
+                    .shuffled()
+            } else {
+                similarOptions
+            }
+
+            addAll(remainingOptions.take(4 - this.size))
         }
 
         return Triple(
             getString(R.string.city_question,
                 if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
             correctAnswer,
-            (listOf(correctAnswer) + otherOptions).shuffled()
+            answerOptions.shuffled()
+        )
+    }
+
+    private fun generateCapitalQuestion(
+        targetCountry: Country,
+        similarCountries: List<Country>,
+        allCountries: List<Country>
+    ): Triple<String, String, List<String>> {
+        val correctAnswer = if (currentLanguage != "en") targetCountry.translatedCapital else targetCountry.capital
+
+        // Get other cities from the same country
+        val sameCountryCities = listOfNotNull(
+            if (currentLanguage != "en") targetCountry.translatedBigCity else targetCountry.bigCity,
+            if (currentLanguage != "en") targetCountry.translatedSecondCity else targetCountry.secondCity,
+            if (currentLanguage != "en") targetCountry.translatedThirdCity else targetCountry.thirdCity
+        ).filter { it.isNotBlank() && it != correctAnswer }.distinct()
+
+        // Create answer options with desired probabilities
+        val answerOptions = mutableListOf<String>().apply {
+            add(correctAnswer) // Always include correct answer
+
+            // 90% chance to include at least one other city from same country
+            if (sameCountryCities.isNotEmpty() && Random.nextFloat() < 0.9f) {
+                add(sameCountryCities.random())
+            }
+
+            // 50% chance to include another city from same country (if available)
+            if (sameCountryCities.size > 1 && Random.nextFloat() < 0.5f) {
+                sameCountryCities.filterNot { it in this }.randomOrNull()?.let { add(it) }
+            }
+
+            // Fill remaining slots with capitals from similar countries
+            val similarOptions = similarCountries
+                .map { if (currentLanguage != "en") it.translatedCapital else it.capital }
+                .filter { it.isNotBlank() && it !in this }
+                .distinct()
+                .shuffled()
+
+            // If still not enough, use random capitals from other countries
+            val remainingOptions = if (similarOptions.size < (4 - this.size)) {
+                similarOptions + allCountries
+                    .filter { it.name != targetCountry.name && !similarCountries.contains(it) }
+                    .map { if (currentLanguage != "en") it.translatedCapital else it.capital }
+                    .filter { it.isNotBlank() && it !in this }
+                    .distinct()
+                    .shuffled()
+            } else {
+                similarOptions
+            }
+
+            addAll(remainingOptions.take(4 - this.size))
+        }
+
+        return Triple(
+            getString(R.string.capital_question,
+                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
+            correctAnswer,
+            answerOptions.shuffled()
         )
     }
 
