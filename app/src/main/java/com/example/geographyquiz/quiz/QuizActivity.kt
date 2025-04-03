@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.geographyquiz.R
+import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
 
 class QuizActivity : AppCompatActivity() {
@@ -16,24 +17,21 @@ class QuizActivity : AppCompatActivity() {
 
     enum class QuestionType {
         CAPITAL,
-        CONTINENT,
-        POPULATION,
-        AREA
+        BIGGEST_CITY,
+        CITY_IN_COUNTRY
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
-        // Get current language
         val sharedPref = getSharedPreferences("AppSettings", MODE_PRIVATE)
         currentLanguage = sharedPref.getString("app_language", "en") ?: "en"
-
         databaseHelper = CountryDatabase(this)
-        loadDynamicQuestion()
+        loadCityQuestion()
     }
 
-    private fun loadDynamicQuestion() {
+    private fun loadCityQuestion() {
         val questionText = findViewById<TextView>(R.id.questionText)
         val option1Btn = findViewById<Button>(R.id.option1Button)
         val option2Btn = findViewById<Button>(R.id.option2Button)
@@ -43,131 +41,33 @@ class QuizActivity : AppCompatActivity() {
 
         feedbackText.text = ""
 
-        // Reset all buttons to visible by default
-        option1Btn.visibility = View.VISIBLE
-        option2Btn.visibility = View.VISIBLE
-        option3Btn.visibility = View.VISIBLE
-        option4Btn.visibility = View.VISIBLE
-
-        // Get countries with translations if needed
         val countries = if (currentLanguage != "en") {
-            databaseHelper.getTranslatedRandomCountries(10, currentLanguage) // Get more countries to ensure unique options
+            databaseHelper.getTranslatedRandomCountries(20, currentLanguage)
         } else {
-            databaseHelper.getRandomCountries(10)
+            databaseHelper.getRandomCountries(20)
         }
 
         if (countries.size < 4) {
-            questionText.text = if (currentLanguage != "en")
-                getString(R.string.notEnoughCountry)
-            else
-                getString(R.string.notEnoughCountry)
-            option1Btn.visibility = View.GONE
-            option2Btn.visibility = View.GONE
-            option3Btn.visibility = View.GONE
-            option4Btn.visibility = View.GONE
+            showNotEnoughCountriesError(questionText, option1Btn, option2Btn, option3Btn, option4Btn)
             return
         }
 
+        val targetCountry = countries.random()
+        val similarCountries = getSimilarCountries(targetCountry, countries)
         val questionType = QuestionType.values().random()
-        val (question, correctAnswer, allAnswers, isYesNoQuestion) = when (questionType) {
-            QuestionType.CAPITAL -> {
-                val correctCountry = countries[0]
-                // Get unique capitals from other countries
-                val otherCapitals = countries.subList(1, countries.size)
-                    .asSequence()
-                    .map { if (currentLanguage != "en") it.translatedCapital else it.capital }
-                    .distinct()
-                    .filter { it != (if (currentLanguage != "en") correctCountry.translatedCapital else correctCountry.capital) }
-                    .take(3)
-                    .toList()
 
-                Quad(
-                    getString(R.string.capital_question,
-                        if (currentLanguage != "en") correctCountry.translatedName else correctCountry.name),
-                    if (currentLanguage != "en") correctCountry.translatedCapital else correctCountry.capital,
-                    listOf(
-                        if (currentLanguage != "en") correctCountry.translatedCapital else correctCountry.capital
-                    ) + otherCapitals,
-                    false
-                )
-            }
-            QuestionType.CONTINENT -> {
-                val correctCountry = countries[0]
-                // Get unique continents from other countries
-                val otherContinents = countries.subList(1, countries.size)
-                    .asSequence()
-                    .map { if (currentLanguage != "en") it.translatedContinent else it.continent }
-                    .distinct()
-                    .filter { it != (if (currentLanguage != "en") correctCountry.translatedContinent else correctCountry.continent) }
-                    .take(3)
-                    .toList()
-
-                Quad(
-                    getString(R.string.continent_question,
-                        if (currentLanguage != "en") correctCountry.translatedName else correctCountry.name),
-                    if (currentLanguage != "en") correctCountry.translatedContinent else correctCountry.continent,
-                    listOf(
-                        if (currentLanguage != "en") correctCountry.translatedContinent else correctCountry.continent
-                    ) + otherContinents,
-                    false
-                )
-            }
-            QuestionType.POPULATION -> {
-                val correctCountry = countries[0]
-                val comparisonCountry = countries[1]
-                val isLarger = correctCountry.population > comparisonCountry.population
-                Quad(
-                    getString(R.string.population_question,
-                        if (currentLanguage != "en") correctCountry.translatedName else correctCountry.name,
-                        if (currentLanguage != "en") comparisonCountry.translatedName else comparisonCountry.name),
-                    if (isLarger) getString(R.string.yes) else getString(R.string.no),
-                    listOf(getString(R.string.yes), getString(R.string.no)),
-                    true
-                )
-            }
-            QuestionType.AREA -> {
-                val largestCountry = countries.maxByOrNull { it.area } ?: countries[0]
-                // Get unique country names for options
-                val otherCountries = countries
-                    .asSequence()
-                    .filter { it.name != largestCountry.name }
-                    .map { if (currentLanguage != "en") it.translatedName else it.name }
-                    .distinct()
-                    .take(3)
-                    .toList()
-
-                Quad(
-                    getString(R.string.area_question),
-                    if (currentLanguage != "en") largestCountry.translatedName else largestCountry.name,
-                    listOf(
-                        if (currentLanguage != "en") largestCountry.translatedName else largestCountry.name
-                    ) + otherCountries,
-                    false
-                )
-            }
+        val (question, correctAnswer, allAnswers) = when (questionType) {
+            QuestionType.CAPITAL -> generateCapitalQuestion(targetCountry, similarCountries, countries)
+            QuestionType.BIGGEST_CITY -> generateBiggestCityQuestion(targetCountry, similarCountries, countries)
+            QuestionType.CITY_IN_COUNTRY -> generateCityInCountryQuestion(targetCountry, similarCountries, countries)
         }
-
-        val shuffledAnswers = allAnswers.shuffled()
 
         questionText.text = question
-
-        if (isYesNoQuestion) {
-            // Only show two buttons for Yes/No questions
-            option1Btn.text = shuffledAnswers[0]
-            option2Btn.text = shuffledAnswers[1]
-            option3Btn.visibility = View.GONE
-            option4Btn.visibility = View.GONE
-
-            correctAnswerIndex = shuffledAnswers.indexOf(correctAnswer) + 1
-        } else {
-            // Show all four buttons for other question types
-            option1Btn.text = shuffledAnswers.getOrElse(0) { "" }
-            option2Btn.text = shuffledAnswers.getOrElse(1) { "" }
-            option3Btn.text = shuffledAnswers.getOrElse(2) { "" }
-            option4Btn.text = shuffledAnswers.getOrElse(3) { "" }
-
-            correctAnswerIndex = shuffledAnswers.indexOf(correctAnswer) + 1
-        }
+        option1Btn.text = allAnswers[0]
+        option2Btn.text = allAnswers[1]
+        option3Btn.text = allAnswers[2]
+        option4Btn.text = allAnswers[3]
+        correctAnswerIndex = allAnswers.indexOf(correctAnswer) + 1
 
         option1Btn.setOnClickListener { checkAnswer(1) }
         option2Btn.setOnClickListener { checkAnswer(2) }
@@ -175,17 +75,164 @@ class QuizActivity : AppCompatActivity() {
         option4Btn.setOnClickListener { checkAnswer(4) }
 
         findViewById<Button>(R.id.nextButton).setOnClickListener {
-            loadDynamicQuestion()
+            loadCityQuestion()
         }
+    }
+
+    private fun getSimilarCountries(targetCountry: Country, allCountries: List<Country>): List<Country> {
+        return allCountries.filter { otherCountry ->
+            when {
+                otherCountry.name == targetCountry.name -> false
+                otherCountry.category == targetCountry.category -> true
+                otherCountry.region == targetCountry.region -> true
+                otherCountry.continent == targetCountry.continent -> true
+                else -> false
+            }
+        }
+    }
+
+    private fun generateCapitalQuestion(
+        targetCountry: Country,
+        similarCountries: List<Country>,
+        allCountries: List<Country>
+    ): Triple<String, String, List<String>> {
+        val correctAnswer = if (currentLanguage != "en") targetCountry.translatedCapital else targetCountry.capital
+
+        // First try to get options from similar countries
+        val similarOptions = similarCountries
+            .map { if (currentLanguage != "en") it.translatedCapital else it.capital }
+            .filter { it != correctAnswer && it.isNotBlank() }
+            .distinct()
+            .shuffled()
+            .take(3)
+
+        // If not enough similar options, supplement with random countries
+        val otherOptions = if (similarOptions.size < 3) {
+            similarOptions + allCountries
+                .filter { it.name != targetCountry.name && !similarCountries.contains(it) }
+                .map { if (currentLanguage != "en") it.translatedCapital else it.capital }
+                .filter { it != correctAnswer && it.isNotBlank() }
+                .distinct()
+                .shuffled()
+                .take(3 - similarOptions.size)
+        } else {
+            similarOptions
+        }
+
+        return Triple(
+            getString(R.string.capital_question,
+                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
+            correctAnswer,
+            (listOf(correctAnswer) + otherOptions).shuffled()
+        )
+    }
+
+    private fun generateBiggestCityQuestion(
+        targetCountry: Country,
+        similarCountries: List<Country>,
+        allCountries: List<Country>
+    ): Triple<String, String, List<String>> {
+        val correctAnswer = if (currentLanguage != "en") targetCountry.translatedBigCity else targetCountry.bigCity
+
+        val similarOptions = similarCountries
+            .map { if (currentLanguage != "en") it.translatedBigCity else it.bigCity }
+            .filter { it != correctAnswer && it.isNotBlank() }
+            .distinct()
+            .shuffled()
+            .take(3)
+
+        val otherOptions = if (similarOptions.size < 3) {
+            similarOptions + allCountries
+                .filter { it.name != targetCountry.name && !similarCountries.contains(it) }
+                .map { if (currentLanguage != "en") it.translatedBigCity else it.bigCity }
+                .filter { it != correctAnswer && it.isNotBlank() }
+                .distinct()
+                .shuffled()
+                .take(3 - similarOptions.size)
+        } else {
+            similarOptions
+        }
+
+        return Triple(
+            getString(R.string.city_question,
+                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
+            correctAnswer,
+            (listOf(correctAnswer) + otherOptions).shuffled()
+        )
+    }
+
+    private fun generateCityInCountryQuestion(
+        targetCountry: Country,
+        similarCountries: List<Country>,
+        allCountries: List<Country>
+    ): Triple<String, String, List<String>> {
+        val targetCities = listOfNotNull(
+            if (currentLanguage != "en") targetCountry.translatedCapital else targetCountry.capital,
+            if (currentLanguage != "en") targetCountry.translatedBigCity else targetCountry.bigCity,
+            if (currentLanguage != "en") targetCountry.translatedSecondCity else targetCountry.secondCity,
+            if (currentLanguage != "en") targetCountry.translatedThirdCity else targetCountry.thirdCity
+        ).filter { it.isNotBlank() }.distinct()
+
+        val correctCity = targetCities.random()
+
+        // Get cities from similar countries first
+        val similarOptions = similarCountries
+            .flatMap { country ->
+                listOfNotNull(
+                    if (currentLanguage != "en") country.translatedCapital else country.capital,
+                    if (currentLanguage != "en") country.translatedBigCity else country.bigCity,
+                    if (currentLanguage != "en") country.translatedSecondCity else country.secondCity,
+                    if (currentLanguage != "en") country.translatedThirdCity else country.thirdCity
+                )
+            }
+            .filter { it.isNotBlank() && !targetCities.contains(it) }
+            .distinct()
+            .shuffled()
+            .take(3)
+
+        // If not enough, supplement with other countries
+        val otherOptions = if (similarOptions.size < 3) {
+            similarOptions + allCountries
+                .filter { it.name != targetCountry.name && !similarCountries.contains(it) }
+                .flatMap { country ->
+                    listOfNotNull(
+                        if (currentLanguage != "en") country.translatedCapital else country.capital,
+                        if (currentLanguage != "en") country.translatedBigCity else country.bigCity,
+                        if (currentLanguage != "en") country.translatedSecondCity else country.secondCity,
+                        if (currentLanguage != "en") country.translatedThirdCity else country.thirdCity
+                    )
+                }
+                .filter { it.isNotBlank() && !targetCities.contains(it) }
+                .distinct()
+                .shuffled()
+                .take(3 - similarOptions.size)
+        } else {
+            similarOptions
+        }
+
+        return Triple(
+            getString(R.string.city_in_country_question,
+                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
+            correctCity,
+            (listOf(correctCity) + otherOptions).shuffled()
+        )
+    }
+
+    private fun showNotEnoughCountriesError(
+        questionText: TextView,
+        vararg buttons: Button
+    ) {
+        questionText.text = getString(R.string.notEnoughCountry)
+        buttons.forEach { it.visibility = View.GONE }
     }
 
     private fun checkAnswer(selectedOption: Int) {
         val isCorrect = selectedOption == correctAnswerIndex
         val feedbackText = findViewById<TextView>(R.id.feedbackText)
         feedbackText.text = if (isCorrect) {
-            if (currentLanguage != "en") "Correct! 🎉" else "Correct! 🎉"
+            getString(R.string.correct)
         } else {
-            if (currentLanguage != "en") "Faux! 😢" else "Wrong! 😢"
+            getString(R.string.wrong)
         }
     }
 
@@ -193,12 +240,4 @@ class QuizActivity : AppCompatActivity() {
         databaseHelper.close()
         super.onDestroy()
     }
-
-    // Helper data class for returning four values from when expression
-    private data class Quad<T1, T2, T3, T4>(
-        val first: T1,
-        val second: T2,
-        val third: T3,
-        val fourth: T4
-    )
 }

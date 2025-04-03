@@ -2,8 +2,8 @@
 <string name="app_name">GeographyQuiz</string>
     <string name="home">Home</string>
     <string name="setting">Setting</string>
-<string name="notEnoughCountry">Not enough countries in database</string>
-<string name="capital_question">What is the capital of %1$s?</string>
+
+
     <string name="languageQuestion">Which language is spoken in %1$s?</string>
     <string name="languageCountQuestion">How many languages are spoken in %1$s?</string>
 <string name="continent_question">Which continent is %1$s in?</string>
@@ -14,6 +14,12 @@
 <string name="correct">Correct! 🎉</string>
 <string name="wrong">Wrong! 😢</string>
 
+    <!-- City Question-->
+    <string name="capital_question">What is the capital of %1$s?</string>
+    <string name="city_question">What is the biggest city in %1$s?</string>
+    <string name="city_in_country_question">Which of these city is in %1$s?</string>
+
     <!--Error Log -->
     <string name="unkLang">Unknown Language</string>
+    <string name="notEnoughCountry">Not enough countries in database</string>
 </resources>
