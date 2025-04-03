@@ -10,7 +10,7 @@ import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
 import kotlin.random.Random
 
-class QuizActivity : AppCompatActivity() {
+class CityQuiz : AppCompatActivity() {
 
     private var correctAnswerIndex = 0
     private lateinit var databaseHelper: CountryDatabase

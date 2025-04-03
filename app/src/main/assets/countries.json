@@ -12,7 +12,8 @@
     "currency": "Afghani",
     "population": 40218234,
     "area": 652867,
-    "category": "middle_eastern"
+    "category": "middle_eastern",
+    "countryCode": "af"
   },
 
   {
@@ -27,7 +28,8 @@
     "currency": "Albanian Lek",
     "population": 2837743,
     "area": 28748,
-    "category": "balkan"
+    "category": "balkan",
+    "countryCode": "al"
   },
 
   {
@@ -42,7 +44,8 @@
     "currency": "Algerian Dinar",
     "population": 43851044,
     "area": 2381741,
-    "category": "arab"
+    "category": "arab",
+    "countryCode": "dz"
   },
   {
     "name": "Angola",
@@ -56,7 +59,8 @@
     "currency": "Kwanza",
     "population": 32866272,
     "area": 1246700,
-    "category": "african_portuguese"
+    "category": "african_portuguese",
+    "countryCode": "ao"
   },
 
   {
@@ -71,7 +75,8 @@
     "currency": "Taka",
     "population": 174655977,
     "area": 148460,
-    "category": "south_asia"
+    "category": "south_asia",
+    "countryCode": "bd"
   },
 
   {
@@ -86,7 +91,8 @@
     "currency": "Euro",
     "population": 11812354,
     "area": 30689,
-    "category": "western"
+    "category": "western",
+    "countryCode": "be"
   },
 
   {
@@ -101,7 +107,8 @@
     "currency": "Riel",
     "population": 17638801,
     "area": 181035,
-    "category": "east_asian"
+    "category": "east_asian",
+    "countryCode": "kh"
   },
 
   {
@@ -116,7 +123,8 @@
     "currency": "Canadian Dollar",
     "population": 37742154,
     "area": 9984670,
-    "category": "western"
+    "category": "western",
+    "countryCode": "ca"
   },
 
   {
@@ -131,7 +139,8 @@
     "currency": "Yaun",
     "population": 1439323776,
     "area": 9596961,
-    "category": "east_asian"
+    "category": "east_asian",
+    "countryCode": "cn"
   },
 
   {
@@ -146,7 +155,8 @@
     "currency": "Egyptian pound",
     "population": 107304000,
     "area": 1010408,
-    "category": "arab"
+    "category": "arab",
+    "countryCode": "eg"
   },
 
   {
@@ -161,7 +171,8 @@
   "currency": "Euro",
   "population": 65273511,
   "area": 551695,
-    "category": "western"
+    "category": "western",
+    "countryCode": "fr"
   },
   {
     "name": "Germany",
@@ -175,7 +186,8 @@
     "currency": "Euro",
     "population": 83783942,
     "area": 357022,
-    "category": "western"
+    "category": "western",
+    "countryCode": "de"
   },
 
   {
@@ -190,7 +202,8 @@
     "currency": "Indian Rupee",
     "population": 1380004385,
     "area": 3287263,
-    "category": "south_asia"
+    "category": "south_asia",
+    "countryCode": "in"
   },
 
   {
@@ -205,7 +218,8 @@
     "currency": "Libyan dinar",
     "population": 7361263,
     "area": 1759541,
-    "category": "arab"
+    "category": "arab",
+    "countryCode": "ly"
   },
 
   {
@@ -220,7 +234,8 @@
     "currency": "Nepalese Rupee",
     "population": 31122387,
     "area": 147516,
-    "category": "south_asia"
+    "category": "south_asia",
+    "countryCode": "np"
   },
 
   {
@@ -235,7 +250,8 @@
     "currency": "Singapore Dollar",
     "population": 5870750,
     "area": 750,
-    "category": "east_asia"
+    "category": "east_asia",
+    "countryCode": "sg"
   },
 
   {
@@ -250,7 +266,8 @@
     "currency": "Euro",
     "population": 49077984,
     "area": 505990,
-    "category": "western"
+    "category": "western",
+    "countryCode": "es"
   },
 
   {
@@ -265,7 +282,8 @@
     "currency": "Baht",
     "population": 65975198,
     "area": 513120,
-    "category": "east_asia"
+    "category": "east_asia",
+    "countryCode": "th"
   },
 
   {
@@ -280,7 +298,8 @@
     "currency": "Tunisian dinar",
     "population": 11887412,
     "area": 163610,
-    "category": "arab"
+    "category": "arab",
+    "countryCode": "tn"
   },
 
   {
@@ -295,7 +314,8 @@
     "currency": "dong",
     "population": 100300000,
     "area": 331344,
-    "category": "east_asia"
+    "category": "east_asia",
+    "countryCode": "vn"
   },
 
   {
@@ -310,6 +330,7 @@
     "currency": "US Dollar",
     "population": 331002651,
     "area": 9833517,
-    "category": "western"
+    "category": "western",
+    "countryCode": "us"
   }
 ]

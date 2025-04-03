@@ -12,7 +12,8 @@
     "translatedLanguages": "Pachto, Dari",
     "population": 40218234,
     "area": 652867,
-    "category": "middle_eastern"
+    "category": "middle_eastern",
+    "countryCode": "af"
   },
   {
     "originalName": "Albania",
@@ -27,7 +28,8 @@
     "translatedLanguages": "Albanais",
     "population": 2837743,
     "area": 28748,
-    "category": "balkan"
+    "category": "balkan",
+    "countryCode": "al"
   },
   {
     "originalName": "Algeria",
@@ -42,7 +44,8 @@
     "translatedLanguages": "Arabe, Berbère, Français",
     "population": 43851044,
     "area": 2381741,
-    "category": "arab"
+    "category": "arab",
+    "countryCode": "dz"
   },
   {
     "originalName": "Angola",
@@ -57,7 +60,8 @@
     "translatedLanguages": "Portugais",
     "population": 32866272,
     "area": 1246700,
-    "category": "african_portuguese"
+    "category": "african_portuguese",
+    "countryCode": "ao"
   },
   {
     "originalName": "Bangladesh",
@@ -72,7 +76,8 @@
     "translatedLanguages": "Bengali",
     "population": 174655977,
     "area": 148460,
-    "category": "south_asia"
+    "category": "south_asia",
+    "countryCode": "bd"
   },
   {
     "originalName": "Belgium",
@@ -87,7 +92,8 @@
     "translatedLanguages": "Néerlandais, Français, Allemand",
     "population": 11812354,
     "area": 30689,
-    "category": "western"
+    "category": "western",
+    "countryCode": "be"
   },
   {
     "originalName": "Cambodia",
@@ -102,7 +108,8 @@
     "translatedLanguages": "Khmer",
     "population": 17638801,
     "area": 181035,
-    "category": "east_asian"
+    "category": "east_asian",
+    "countryCode": "kh"
   },
   {
     "originalName": "Canada",
@@ -117,7 +124,8 @@
     "translatedLanguages": "Anglais, Français",
     "population": 37742154,
     "area": 9984670,
-    "category": "western"
+    "category": "western",
+    "countryCode": "ca"
   },
   {
     "originalName": "China",
@@ -132,7 +140,8 @@
     "translatedLanguages": "Mandarin, Cantonais, Wu, Min",
     "population": 1439323776,
     "area": 9596961,
-    "category": "east_asian"
+    "category": "east_asian",
+    "countryCode": "cn"
   },
   {
     "originalName": "Egypt",
@@ -147,7 +156,8 @@
     "translatedLanguages": "Arabe",
     "population": 107304000,
     "area": 1010408,
-    "category": "arab"
+    "category": "arab",
+    "countryCode": "eg"
   },
   {
     "originalName": "France",
@@ -162,7 +172,8 @@
     "translatedLanguages": "Français",
     "population": 65273511,
     "area": 551695,
-    "category": "western"
+    "category": "western",
+    "countryCode": "fr"
   },
   {
     "originalName": "Germany",
@@ -177,7 +188,8 @@
     "translatedLanguages": "Allemand",
     "population": 83783942,
     "area": 357022,
-    "category": "western"
+    "category": "western",
+    "countryCode": "de"
   },
   {
     "originalName": "India",
@@ -192,7 +204,8 @@
     "translatedLanguages": "Hindi, Anglais, Bengali, Telugu, Marathi",
     "population": 1380004385,
     "area": 3287263,
-    "category": "south_asia"
+    "category": "south_asia",
+    "countryCode": "in"
   },
   {
     "originalName": "Libya",
@@ -207,7 +220,8 @@
     "translatedLanguages": "Arabe",
     "population": 7361263,
     "area": 1759541,
-    "category": "arab"
+    "category": "arab",
+    "countryCode": "ly"
   },
   {
     "originalName": "Nepal",
@@ -222,7 +236,8 @@
     "translatedLanguages": "Népalais",
     "population": 31122387,
     "area": 147516,
-    "category": "south_asia"
+    "category": "south_asia",
+    "countryCode": "np"
   },
   {
     "originalName": "Singapore",
@@ -237,7 +252,8 @@
     "translatedLanguages": "Anglais, Malais, Mandarin, Tamoul",
     "population": 5870750,
     "area": 750,
-    "category": "east_asia"
+    "category": "east_asia",
+    "countryCode": "sg"
   },
   {
     "originalName": "Spain",
@@ -252,7 +268,8 @@
     "translatedLanguages": "Espagnol",
     "population": 49077984,
     "area": 505990,
-    "category": "western"
+    "category": "western",
+    "countryCode": "es"
   },
   {
     "originalName": "Thailand",
@@ -267,7 +284,8 @@
     "translatedLanguages": "Thaï",
     "population": 65975198,
     "area": 513120,
-    "category": "east_asia"
+    "category": "east_asia",
+    "countryCode": "th"
   },
   {
     "originalName": "Tunisia",
@@ -282,7 +300,8 @@
     "translatedLanguages": "Arabe",
     "population": 11887412,
     "area": 163610,
-    "category": "arab"
+    "category": "arab",
+    "countryCode": "tn"
   },
   {
     "originalName": "Vietnam",
@@ -297,7 +316,8 @@
     "translatedLanguages": "Vietnamien",
     "population": 100300000,
     "area": 331344,
-    "category": "east_asia"
+    "category": "east_asia",
+    "countryCode": "vn"
   },
   {
     "originalName": "United States",
@@ -312,6 +332,7 @@
     "translatedLanguages": "Anglais",
     "population": 331002651,
     "area": 9833517,
-    "category": "western"
+    "category": "western",
+    "countryCode": "us"
   }
 ]

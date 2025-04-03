@@ -11,8 +11,9 @@ import android.content.Intent
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.geographyquiz.ExplorerAdapter
-import com.example.geographyquiz.quiz.QuizActivity
+import com.example.geographyquiz.quiz.CityQuiz
 import com.example.geographyquiz.R
+import com.example.geographyquiz.quiz.FlagQuiz
 import com.example.geographyquiz.quiz.LanguageQuiz
 
 class HomeFragment : Fragment() {
@@ -30,11 +31,15 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = ExplorerAdapter(getExplorerItems()) { item ->
             when (item.title) {
                 "Capital City" -> {
-                    val intent = Intent(requireContext(), QuizActivity::class.java)
+                    val intent = Intent(requireContext(), CityQuiz::class.java)
                     startActivity(intent)
                 }
                 "Country Language" -> {
                     val intent = Intent(requireContext(), LanguageQuiz::class.java)
+                    startActivity(intent)
+                }
+                "Flag Quiz" -> {
+                    val intent = Intent(requireContext(), FlagQuiz::class.java)
                     startActivity(intent)
                 }
             }

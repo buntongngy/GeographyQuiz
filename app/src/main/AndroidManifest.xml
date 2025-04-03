@@ -22,9 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".quiz.QuizActivity"
+        <activity android:name=".quiz.CityQuiz"
                   android:exported="false"/>
         <activity android:name=".quiz.LanguageQuiz"
+                  android:exported="false"/>
+        <activity android:name=".quiz.FlagQuiz"
                   android:exported="false"/>
     </application>
 

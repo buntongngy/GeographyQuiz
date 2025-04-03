@@ -36,6 +36,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         const val COLUMN_POPULATION = "population"
         const val COLUMN_AREA = "area"
         const val COLUMN_CATEGORY = "category"
+        const val COLUMN_CODE = "code"
 
         // Translation table
         const val TABLE_COUNTRY_TRANSLATION = "country_translation"
@@ -82,7 +83,8 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
                 $COLUMN_CURRENCY TEXT NOT NULL,
                 $COLUMN_POPULATION INTEGER NOT NULL,
                 $COLUMN_AREA INTEGER NOT NULL,
-                $COLUMN_CATEGORY TEXT NOT NULL
+                $COLUMN_CATEGORY TEXT NOT NULL,
+                $COLUMN_CODE TEXT NOT NUll
             )
         """.trimIndent())
 
@@ -151,6 +153,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
             put(COLUMN_POPULATION, country.population)
             put(COLUMN_AREA, country.area)
             put(COLUMN_CATEGORY, country.category)
+            put(COLUMN_CODE, country.countryCode)
         }
         return db.insertWithOnConflict(TABLE_COUNTRIES, null, values, SQLiteDatabase.CONFLICT_REPLACE)
     }
@@ -231,6 +234,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         val population: Long,
         val area: Long,
         val category: String,
+        val countryCode: String
     )
 
     private data class TranslationData(
