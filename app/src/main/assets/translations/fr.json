@@ -1,4 +1,35 @@
 [
+
+  {
+    "originalName": "Afghanistan",
+    "translatedName": "Afghanistan",
+    "translatedCapital": "Kaboul",
+    "translatedCity1": "Kaboul",
+    "translatedCity2": "Herat",
+    "translatedCity3": "Kandahar",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud",
+    "translatedCurrency": "Afghani afghan",
+    "translatedLanguages": "Pachto, Dari",
+    "population": 40218234,
+    "area": 652230
+  },
+
+  {
+    "originalName": "Albania",
+    "translatedName": "Albanie",
+    "translatedCapital": "Tirana",
+    "translatedCity1": "Tirana",
+    "translatedCity2": "Durrës",
+    "translatedCity3": "Vlorë",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Lek albanais",
+    "translatedLanguages": "Albanais",
+    "population": 2837743,
+    "area": 28748
+  },
+
   {
     "originalName": "Algeria",
     "translatedName": "Algérie",

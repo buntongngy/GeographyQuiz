@@ -34,22 +34,19 @@ class LanguageQuiz : AppCompatActivity() {
         val option3Btn = findViewById<Button>(R.id.option3Button)
         val option4Btn = findViewById<Button>(R.id.option4Button)
         val feedbackText = findViewById<TextView>(R.id.feedbackText)
+        val nextButton = findViewById<Button>(R.id.nextButton)
 
         feedbackText.text = ""
 
         // Get countries with translations if needed
         val countries = if (currentLanguage != "en") {
-            databaseHelper.getTranslatedRandomCountries(4, currentLanguage)
+            databaseHelper.getTranslatedRandomCountries(10, currentLanguage)
         } else {
-            databaseHelper.getRandomCountries(4)
+            databaseHelper.getRandomCountries(10)
         }
 
-        if (countries.size < 4) {
-            questionText.text = getString(R.string.notEnoughCountry)
-            option1Btn.visibility = View.GONE
-            option2Btn.visibility = View.GONE
-            option3Btn.visibility = View.GONE
-            option4Btn.visibility = View.GONE
+        if (countries.isEmpty()) {
+            showNotEnoughCountriesError(questionText, option1Btn, option2Btn, option3Btn, option4Btn)
             return
         }
 
@@ -66,16 +63,28 @@ class LanguageQuiz : AppCompatActivity() {
         option3Btn.text = questionData.answers[2]
         option4Btn.text = questionData.answers[3]
 
-        correctAnswerIndex = questionData.answers.indexOf(questionData.correctAnswer) + 1
+        correctAnswerIndex = questionData.answers.indexOf(questionData.correctAnswer)
+        if (correctAnswerIndex == -1) {
+            showNotEnoughCountriesError(questionText, option1Btn, option2Btn, option3Btn, option4Btn)
+            return
+        }
 
         option1Btn.setOnClickListener { checkAnswer(1) }
         option2Btn.setOnClickListener { checkAnswer(2) }
         option3Btn.setOnClickListener { checkAnswer(3) }
         option4Btn.setOnClickListener { checkAnswer(4) }
 
-        findViewById<Button>(R.id.nextButton).setOnClickListener {
+        nextButton.setOnClickListener {
             loadLanguageQuestion()
         }
+    }
+
+    private fun showNotEnoughCountriesError(
+        questionText: TextView,
+        vararg buttons: Button
+    ) {
+        questionText.text = getString(R.string.notEnoughCountry)
+        buttons.forEach { it.visibility = View.GONE }
     }
 
     private data class QuestionData(
@@ -88,20 +97,40 @@ class LanguageQuiz : AppCompatActivity() {
         targetCountry: Country,
         allCountries: List<Country>
     ): QuestionData {
-        val correctLanguage = if (currentLanguage != "en") {
-            targetCountry.translatedLanguages.random()
+        // Get target country's languages
+        val targetLanguages = if (currentLanguage != "en") {
+            targetCountry.translatedLanguages
         } else {
-            targetCountry.languages.random()
+            targetCountry.languages
         }
 
+        // If country has no languages, fall back to count question
+        if (targetLanguages.isEmpty()) {
+            return generateLanguageCountQuestion(targetCountry)
+        }
+
+        // Select one random language from target country as correct answer
+        val correctLanguage = targetLanguages.random()
+
+        // Get all languages from other countries, excluding ALL languages from target country
         val otherLanguages = allCountries
+            .filter { it.name != targetCountry.name }
             .flatMap { if (currentLanguage != "en") it.translatedLanguages else it.languages }
-            .filter { !targetCountry.languages.contains(it) }
+            .filter { !targetLanguages.contains(it) }
             .distinct()
+            .toMutableList()
+
+        // If we don't have enough distinct languages from other countries, fall back to count question
+        if (otherLanguages.size < 3) {
+            return generateLanguageCountQuestion(targetCountry)
+        }
+
+        // Select 3 incorrect answers from other countries' languages
+        val incorrectAnswers = otherLanguages
             .shuffled()
             .take(3)
 
-        val answers = (listOf(correctLanguage) + otherLanguages).shuffled()
+        val answers = (listOf(correctLanguage) + incorrectAnswers).shuffled()
 
         return QuestionData(
             getString(
@@ -115,12 +144,38 @@ class LanguageQuiz : AppCompatActivity() {
 
     private fun generateLanguageCountQuestion(targetCountry: Country): QuestionData {
         val correctCount = targetCountry.languages.size
-        val possibleCounts = listOf(
-            correctCount,
-            (correctCount - 1).coerceAtLeast(1),
-            (correctCount + 1).coerceAtMost(10),
-            (correctCount + 2).coerceAtMost(10)
-        ).distinct().shuffled().take(4)
+        val possibleCounts = mutableListOf<Int>()
+
+        // Generate plausible nearby counts
+        when {
+            correctCount == 1 -> possibleCounts.addAll(listOf(1, 2, 4, 3))
+            correctCount == 2 -> possibleCounts.addAll(listOf(2, 1, 3, 4))
+            else -> possibleCounts.addAll(listOf(
+                correctCount,
+                correctCount - 1,
+                correctCount + 1,
+                if (correctCount > 2) correctCount - 2 else correctCount + 2
+            ))
+        }
+
+        // Ensure all counts are positive and we have exactly 4 unique options
+        val uniqueCounts = possibleCounts
+            .filter { it >= (if (correctCount == 1)1 else 0) }
+            .distinct()
+            .take(4)
+            .toMutableList()
+
+        // If we somehow don't have enough, fill with reasonable numbers
+        while (uniqueCounts.size < 4) {
+            val nextNum = uniqueCounts.maxOrNull()?.plus(1) ?: 1
+            if (!uniqueCounts.contains(nextNum)) {
+                uniqueCounts.add(nextNum)
+            } else {
+                uniqueCounts.add((1..10).random())
+            }
+        }
+
+        val answers = uniqueCounts.shuffled().map { it.toString() }
 
         return QuestionData(
             getString(
@@ -128,12 +183,12 @@ class LanguageQuiz : AppCompatActivity() {
                 if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name
             ),
             correctCount.toString(),
-            possibleCounts.map { it.toString() }
+            answers
         )
     }
 
     private fun checkAnswer(selectedOption: Int) {
-        val isCorrect = selectedOption == correctAnswerIndex
+        val isCorrect = (selectedOption - 1) == correctAnswerIndex
         val feedbackText = findViewById<TextView>(R.id.feedbackText)
         feedbackText.text = if (isCorrect) {
             getString(R.string.correct)

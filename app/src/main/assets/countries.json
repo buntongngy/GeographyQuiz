@@ -1,4 +1,33 @@
 [
+
+  {
+    "name": "Afghanistan",
+    "capital": "Kabul",
+    "bigCity": "Kabul",
+    "secondCity": "Herat",
+    "thirdCity": "Kandahar",
+    "continent": "Asia",
+    "region": "Southern Asia",
+    "languages": ["Pashto", "Dari"],
+    "currency": "Afghani",
+    "population": 40218234,
+    "area": 652867
+  },
+
+  {
+    "name": "Albania",
+    "capital": "Tirana",
+    "bigCity": "Tirana",
+    "secondCity": "Durrës",
+    "thirdCity": "Vlorë",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "languages": ["Albanian"],
+    "currency": "Albanian Lek",
+    "population": 2837743,
+    "area": 28748
+  },
+
   {
     "name": "Algeria",
     "capital": "Algiers",

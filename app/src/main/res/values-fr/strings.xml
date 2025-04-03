@@ -14,4 +14,10 @@
     <string name="no">Non</string>
     <string name="correct">Correct! 🎉</string>
     <string name="wrong">Faux! 😢</string>
+
+
+
+    <!--Error Log -->
+    <string name="unkLang">Langue inconnue</string>
+
 </resources>
