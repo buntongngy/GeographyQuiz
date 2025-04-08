@@ -23,33 +23,46 @@ class LandmarkQuiz : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quiz_img) // Reusing the same layout as FlagQuiz
+        setContentView(R.layout.activity_quiz_landmark) // Reusing the same layout as FlagQuiz
 
-        landmarkImageView = findViewById(R.id.flagImageView) // Reusing the same ImageView
+        landmarkImageView = findViewById(R.id.landmarkImageView) // Reusing the same ImageView
         databaseHelper = CountryDatabase(this)
         loadLandmarkQuestion()
     }
 
     private fun loadLandmarkQuestion() {
-        // Get 4 random countries that have landmarks
-        val countries = databaseHelper.getRandomCountriesWithLandmarks(4)
-        if (countries.size < 4) {
+        // 1. Get all countries with their landmarks (each country appears once with all its landmarks)
+        val allCountries = databaseHelper.getAllCountriesWithLandmarks()
+            .filter { it.landmarks.isNotEmpty() }
+
+        // Need at least 4 unique countries with landmarks
+        if (allCountries.size < 4) {
             showError()
             return
         }
 
-        // Select a random country from the 4
-        val targetCountry = countries.random()
+        // 2. Select a random country that has at least one landmark
+        val targetCountry = allCountries.random()
 
-        // Select a random landmark from the country's landmarks
+        // 3. Select a random landmark from this country
         val targetLandmark = targetCountry.landmarks.random()
-        currentLandmarkPath = targetLandmark.imagePath
 
-        // Load the landmark image
+        // 4. Prepare answer options:
+        //    - Target country + 3 other random unique countries (excluding target country)
+        val otherCountries = allCountries
+            .filter { it != targetCountry }
+            .shuffled()
+            .take(3)
+
+        val answerOptions = (listOf(targetCountry) + otherCountries).shuffled()
+        correctAnswerIndex = answerOptions.indexOf(targetCountry)
+
+        // 5. Load the landmark
+        currentLandmarkPath = targetLandmark.imagePath
         loadLandmarkImage(targetLandmark.imagePath)
 
-        val questionText = findViewById<TextView>(R.id.questionText)
-        questionText.text = "Which country has this landmark?"
+        // 6. Set up UI
+        findViewById<TextView>(R.id.questionText).text = "Which country has this landmark?"
 
         val options = listOf(
             findViewById<Button>(R.id.option1Button),
@@ -58,20 +71,17 @@ class LandmarkQuiz : AppCompatActivity() {
             findViewById<Button>(R.id.option4Button)
         )
 
-        // Shuffle the countries for answer options
-        val shuffledCountries = countries.shuffled()
-        correctAnswerIndex = shuffledCountries.indexOf(targetCountry)
-
-        shuffledCountries.forEachIndexed { index, country ->
+        answerOptions.forEachIndexed { index, country ->
             options[index].text = country.name
             options[index].setOnClickListener { checkAnswer(index) }
+            options[index].visibility = View.VISIBLE
         }
 
+        // 7. Set up Next button
         findViewById<Button>(R.id.nextButton).setOnClickListener {
             loadLandmarkQuestion()
         }
 
-        // Clear previous feedback
         findViewById<TextView>(R.id.feedbackText).text = ""
     }
 

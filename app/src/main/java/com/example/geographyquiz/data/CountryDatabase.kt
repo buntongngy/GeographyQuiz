@@ -424,6 +424,33 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
             }
         }
     }
+
+    fun getAllCountriesWithLandmarks(): List<Country> {
+        val db = readableDatabase
+        return db.rawQuery(
+            """
+        SELECT c.*, 
+               GROUP_CONCAT(l.$COLUMN_LANDMARK_NAME, '|') as landmark_names,
+               GROUP_CONCAT(l.$COLUMN_IMAGE_PATH, '|') as landmark_paths
+        FROM $TABLE_COUNTRIES c
+        JOIN $TABLE_LANDMARKS l ON c.$COLUMN_ID = l.$COLUMN_COUNTRY_ID
+        GROUP BY c.$COLUMN_ID
+        """, null
+        ).use { cursor ->
+            mutableListOf<Country>().apply {
+                while (cursor.moveToNext()) {
+                    val country = Country.fromCursor(cursor)
+                    val landmarkNames = cursor.getString(cursor.getColumnIndexOrThrow("landmark_names")).split("|")
+                    val landmarkPaths = cursor.getString(cursor.getColumnIndexOrThrow("landmark_paths")).split("|")
+                    val landmarks = landmarkNames.zip(landmarkPaths).map { (name, path) ->
+                        Landmark(name = name, imagePath = path)
+                    }
+                    add(country.copy(landmarks = landmarks))
+                }
+            }
+        }
+    }
+
     fun getLandmarksForCountry(countryId: Int, languageCode: String = "en"): List<Landmark> {
         val db = readableDatabase
         return db.rawQuery(

@@ -116,7 +116,12 @@
     "area": 181035,
     "category": "east_asian",
     "countryCode": "kh",
-    "translatedLandmarks": ["ប្រាសាទអង្គរវត្ត"]
+    "translatedLandmarks": [
+      {
+        "originalName": "Angkor Wat",
+        "translatedName": "អង្គរវត្ត"
+      }
+    ]
   },
   {
     "originalName": "Canada",
@@ -133,7 +138,12 @@
     "area": 9984670,
     "category": "western",
     "countryCode": "ca",
-    "translatedLandmarks": ["តួរស៊ីអិន "]
+    "translatedLandmarks": [
+      {
+        "originalName": "CN Tower",
+        "translatedName": "តួរសុីអិន"
+      }
+    ]
   },
   {
     "originalName": "China",
@@ -167,7 +177,12 @@
     "area": 1010408,
     "category": "arab",
     "countryCode": "eg",
-    "translatedLandmarks": ["ប្រាសាទពីរ៉ាមីត"]
+    "translatedLandmarks": [
+      {
+        "originalName": "Pyramid of Giza",
+        "translatedName": "ប្រាសាទពីរ៉ាមីត"
+      }
+    ]
   },
   {
     "originalName": "France",
@@ -184,7 +199,17 @@
     "area": 551695,
     "category": "western",
     "countryCode": "fr",
-    "translatedLandmarks": ["តួរអ៊ីហ្វែល"]
+    "translatedLandmarks": [
+      {
+        "originalName": "Eiffel Tower",
+        "translatedName": "តួរអាយហ្វែល"
+      },
+      {
+        "originalName": "Mont-Saint-Michel",
+        "translatedName": "ម៉ុងសង់មីសែល"
+      }
+
+    ]
   },
   {
     "originalName": "Germany",
@@ -252,7 +277,12 @@
     "area": 147516,
     "category": "south_asia",
     "countryCode": "np",
-    "translatedLandmarks": ["ភ្នំអេវើរេស្ត"]
+    "translatedLandmarks": [
+      {
+        "originalName": "Mount Everest",
+        "translatedName": "ភ្នំអេវ៉ារិស"
+      }
+    ]
   },
   {
     "originalName": "Singapore",

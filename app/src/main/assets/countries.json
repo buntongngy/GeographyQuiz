@@ -195,6 +195,10 @@
       {
         "name": "Eiffel Tower",
         "imagePath": "landmark/france/eiffel_tower.jpg"
+      },
+      {
+        "name": "Mont-Saint-Michell",
+        "imagePath": "landmark/france/mont_saint_michel.jpg"
       }
     ]
   },
