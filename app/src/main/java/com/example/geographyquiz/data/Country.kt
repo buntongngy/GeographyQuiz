@@ -19,6 +19,7 @@ data class Country(
     val area: Int,
     val category: String,
     val countryCode: String,
+    val landmarks: List<Landmark> = emptyList(),
     // Translation fields
     val translatedName: String = name,
     val translatedCapital: String = capital,
@@ -28,7 +29,8 @@ data class Country(
     val translatedContinent: String = continent,
     val translatedRegion: String = region,
     val translatedCurrency: String = currency,
-    val translatedLanguages: List<String> = languages
+    val translatedLanguages: List<String> = languages,
+    val translatedLandmarks: List<Landmark> = landmarks
 ) {
     companion object {
         fun fromCursor(cursor: Cursor): Country {
@@ -94,6 +96,14 @@ data class Country(
             translatedLanguages.joinToString(", ")
         } else {
             languages.joinToString(", ")
+        }
+    }
+
+    fun getDisplayLandmarks(languageCode: String): List<Landmark> {
+        return if (languageCode != "en" && translatedLandmarks.isNotEmpty()) {
+            translatedLandmarks
+        } else {
+            landmarks
         }
     }
 }

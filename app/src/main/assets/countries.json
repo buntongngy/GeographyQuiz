@@ -108,7 +108,13 @@
     "population": 17638801,
     "area": 181035,
     "category": "east_asian",
-    "countryCode": "kh"
+    "countryCode": "kh",
+    "landmarks": [
+      {
+        "name": "Angkor Wat",
+        "imagePath": "landmark/Cambodia/kh_angkor_wat.jpg"
+      }
+    ]
   },
 
   {
@@ -124,7 +130,13 @@
     "population": 37742154,
     "area": 9984670,
     "category": "western",
-    "countryCode": "ca"
+    "countryCode": "ca",
+    "landmarks": [
+      {
+        "name": "CN Tower",
+        "imagePath": "landmark/Canada/cn_tower.jpg"
+      }
+    ]
   },
 
   {
@@ -156,7 +168,13 @@
     "population": 107304000,
     "area": 1010408,
     "category": "arab",
-    "countryCode": "eg"
+    "countryCode": "eg",
+    "landmarks": [
+      {
+        "name": "Pyramid of Giza",
+        "imagePath": "landmark/Egypt/eg_pyramid.jpg"
+      }
+    ]
   },
 
   {
@@ -172,7 +190,13 @@
   "population": 65273511,
   "area": 551695,
     "category": "western",
-    "countryCode": "fr"
+    "countryCode": "fr",
+    "landmarks": [
+      {
+        "name": "Eiffel Tower",
+        "imagePath": "landmark/france/eiffel_tower.jpg"
+      }
+    ]
   },
   {
     "name": "Germany",
@@ -235,7 +259,13 @@
     "population": 31122387,
     "area": 147516,
     "category": "south_asia",
-    "countryCode": "np"
+    "countryCode": "np",
+    "landmarks": [
+      {
+        "name": "Mount Everest",
+        "imagePath": "landmark/Nepal/mount_everest.jpg"
+      }
+    ]
   },
 
   {

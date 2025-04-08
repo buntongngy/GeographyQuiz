@@ -13,7 +13,8 @@
     "population": 40218234,
     "area": 652867,
     "category": "middle_eastern",
-    "countryCode": "af"
+    "countryCode": "af",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Albania",
@@ -29,7 +30,8 @@
     "population": 2837743,
     "area": 28748,
     "category": "balkan",
-    "countryCode": "al"
+    "countryCode": "al",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Algeria",
@@ -45,7 +47,8 @@
     "population": 43851044,
     "area": 2381741,
     "category": "arab",
-    "countryCode": "dz"
+    "countryCode": "dz",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Angola",
@@ -61,7 +64,8 @@
     "population": 32866272,
     "area": 1246700,
     "category": "african_portuguese",
-    "countryCode": "ao"
+    "countryCode": "ao",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Bangladesh",
@@ -77,7 +81,8 @@
     "population": 174655977,
     "area": 148460,
     "category": "south_asia",
-    "countryCode": "bd"
+    "countryCode": "bd",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Belgium",
@@ -93,7 +98,8 @@
     "population": 11812354,
     "area": 30689,
     "category": "western",
-    "countryCode": "be"
+    "countryCode": "be",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Cambodia",
@@ -109,7 +115,8 @@
     "population": 17638801,
     "area": 181035,
     "category": "east_asian",
-    "countryCode": "kh"
+    "countryCode": "kh",
+    "translatedLandmarks": ["ប្រាសាទអង្គរវត្ត"]
   },
   {
     "originalName": "Canada",
@@ -125,7 +132,8 @@
     "population": 37742154,
     "area": 9984670,
     "category": "western",
-    "countryCode": "ca"
+    "countryCode": "ca",
+    "translatedLandmarks": ["តួរស៊ីអិន "]
   },
   {
     "originalName": "China",
@@ -141,7 +149,8 @@
     "population": 1439323776,
     "area": 9596961,
     "category": "east_asian",
-    "countryCode": "cn"
+    "countryCode": "cn",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Egypt",
@@ -157,7 +166,8 @@
     "population": 107304000,
     "area": 1010408,
     "category": "arab",
-    "countryCode": "eg"
+    "countryCode": "eg",
+    "translatedLandmarks": ["ប្រាសាទពីរ៉ាមីត"]
   },
   {
     "originalName": "France",
@@ -173,7 +183,8 @@
     "population": 65273511,
     "area": 551695,
     "category": "western",
-    "countryCode": "fr"
+    "countryCode": "fr",
+    "translatedLandmarks": ["តួរអ៊ីហ្វែល"]
   },
   {
     "originalName": "Germany",
@@ -189,7 +200,8 @@
     "population": 83783942,
     "area": 357022,
     "category": "western",
-    "countryCode": "de"
+    "countryCode": "de",
+    "translatedLandmarks": []
   },
   {
     "originalName": "India",
@@ -205,7 +217,8 @@
     "population": 1380004385,
     "area": 3287263,
     "category": "south_asia",
-    "countryCode": "in"
+    "countryCode": "in",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Libya",
@@ -221,7 +234,8 @@
     "population": 7361263,
     "area": 1759541,
     "category": "arab",
-    "countryCode": "ly"
+    "countryCode": "ly",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Nepal",
@@ -237,7 +251,8 @@
     "population": 31122387,
     "area": 147516,
     "category": "south_asia",
-    "countryCode": "np"
+    "countryCode": "np",
+    "translatedLandmarks": ["ភ្នំអេវើរេស្ត"]
   },
   {
     "originalName": "Singapore",
@@ -253,7 +268,8 @@
     "population": 5870750,
     "area": 750,
     "category": "east_asia",
-    "countryCode": "sg"
+    "countryCode": "sg",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Spain",
@@ -269,7 +285,8 @@
     "population": 49077984,
     "area": 505990,
     "category": "western",
-    "countryCode": "es"
+    "countryCode": "es",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Thailand",
@@ -285,7 +302,8 @@
     "population": 65975198,
     "area": 513120,
     "category": "east_asia",
-    "countryCode": "th"
+    "countryCode": "th",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Tunisia",
@@ -301,7 +319,8 @@
     "population": 11887412,
     "area": 163610,
     "category": "arab",
-    "countryCode": "tn"
+    "countryCode": "tn",
+    "translatedLandmarks": []
   },
   {
     "originalName": "Vietnam",
@@ -317,7 +336,8 @@
     "population": 100300000,
     "area": 331344,
     "category": "east_asia",
-    "countryCode": "vn"
+    "countryCode": "vn",
+    "translatedLandmarks": []
   },
   {
     "originalName": "United States",
@@ -333,6 +353,7 @@
     "population": 331002651,
     "area": 9833517,
     "category": "western",
-    "countryCode": "us"
+    "countryCode": "us",
+    "translatedLandmarks": []
   }
 ]

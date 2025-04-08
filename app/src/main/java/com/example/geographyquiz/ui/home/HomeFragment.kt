@@ -14,6 +14,7 @@ import com.example.geographyquiz.ExplorerAdapter
 import com.example.geographyquiz.quiz.CityQuiz
 import com.example.geographyquiz.R
 import com.example.geographyquiz.quiz.FlagQuiz
+import com.example.geographyquiz.quiz.LandmarkQuiz
 import com.example.geographyquiz.quiz.LanguageQuiz
 
 class HomeFragment : Fragment() {
@@ -40,6 +41,10 @@ class HomeFragment : Fragment() {
                 }
                 "Flag Quiz" -> {
                     val intent = Intent(requireContext(), FlagQuiz::class.java)
+                    startActivity(intent)
+                }
+                "Landmark" -> {
+                    val intent = Intent(requireContext(), LandmarkQuiz::class.java)
                     startActivity(intent)
                 }
             }

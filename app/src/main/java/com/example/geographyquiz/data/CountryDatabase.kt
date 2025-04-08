@@ -5,6 +5,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
+import androidx.core.database.getStringOrNull
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
@@ -19,7 +20,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         // Database constants
         private const val TAG = "CountryDatabase"
         private const val DATABASE_NAME = "world_countries.db"
-        private const val DATABASE_VERSION = 2
+        private const val DATABASE_VERSION = 3  // Incremented version for schema changes
 
         // Countries table
         const val TABLE_COUNTRIES = "countries"
@@ -51,26 +52,47 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         const val COLUMN_TRANSLATED_REGION = "translated_region"
         const val COLUMN_TRANSLATED_CURRENCY = "translated_currency"
         const val COLUMN_TRANSLATED_LANG = "translated_languages"
+
+        // Landmark table
+        const val TABLE_LANDMARKS = "landmarks"
+        const val COLUMN_LANDMARK_ID = "landmark_id"
+        const val COLUMN_LANDMARK_NAME = "landmark_name"
+        const val COLUMN_IMAGE_PATH = "image_path"
+
+        // Landmark translation table
+        const val TABLE_LANDMARK_TRANSLATIONS = "landmark_translations"
+        const val COLUMN_TRANSLATED_LANDMARK_NAME = "translated_landmark_name"
     }
 
     override fun onCreate(db: SQLiteDatabase) {
-        createTables(db)
-        createIndexes(db)
-        refreshAllCountries(db)
+        try {
+            createTables(db)
+            createIndexes(db)
+            refreshAllCountries(db)
+        } catch (e: Exception) {
+            Log.e(TAG, "Error creating database", e)
+            throw e
+        }
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-        if (oldVersion < 2) {
+        try {
+            // Drop all tables and recreate them
             db.execSQL("DROP TABLE IF EXISTS $TABLE_COUNTRIES")
             db.execSQL("DROP TABLE IF EXISTS $TABLE_COUNTRY_TRANSLATION")
+            db.execSQL("DROP TABLE IF EXISTS $TABLE_LANDMARKS")
+            db.execSQL("DROP TABLE IF EXISTS $TABLE_LANDMARK_TRANSLATIONS")
             onCreate(db)
+        } catch (e: Exception) {
+            Log.e(TAG, "Error upgrading database", e)
+            throw e
         }
     }
 
     private fun createTables(db: SQLiteDatabase) {
         // Main countries table
         db.execSQL("""
-            CREATE TABLE $TABLE_COUNTRIES (
+            CREATE TABLE IF NOT EXISTS $TABLE_COUNTRIES (
                 $COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT,
                 $COLUMN_NAME TEXT NOT NULL UNIQUE,
                 $COLUMN_CAPITAL TEXT NOT NULL,
@@ -84,13 +106,13 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
                 $COLUMN_POPULATION INTEGER NOT NULL,
                 $COLUMN_AREA INTEGER NOT NULL,
                 $COLUMN_CATEGORY TEXT NOT NULL,
-                $COLUMN_CODE TEXT NOT NUll
+                $COLUMN_CODE TEXT NOT NULL
             )
         """.trimIndent())
 
         // Translation table
         db.execSQL("""
-            CREATE TABLE $TABLE_COUNTRY_TRANSLATION (
+            CREATE TABLE IF NOT EXISTS $TABLE_COUNTRY_TRANSLATION (
                 $COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT,
                 $COLUMN_COUNTRY_ID INTEGER NOT NULL,
                 $COLUMN_LANGUAGE_CODE TEXT NOT NULL,
@@ -107,6 +129,29 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
                 UNIQUE($COLUMN_COUNTRY_ID, $COLUMN_LANGUAGE_CODE)
             )
         """.trimIndent())
+
+        // Landmarks table
+        db.execSQL("""
+            CREATE TABLE IF NOT EXISTS $TABLE_LANDMARKS (
+                $COLUMN_LANDMARK_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+                $COLUMN_COUNTRY_ID INTEGER NOT NULL,
+                $COLUMN_LANDMARK_NAME TEXT NOT NULL,
+                $COLUMN_IMAGE_PATH TEXT NOT NULL,
+                FOREIGN KEY($COLUMN_COUNTRY_ID) REFERENCES $TABLE_COUNTRIES($COLUMN_ID)
+            )
+        """.trimIndent())
+
+        // Landmark translations table
+        db.execSQL("""
+            CREATE TABLE IF NOT EXISTS $TABLE_LANDMARK_TRANSLATIONS (
+                $COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+                $COLUMN_LANDMARK_ID INTEGER NOT NULL,
+                $COLUMN_LANGUAGE_CODE TEXT NOT NULL,
+                $COLUMN_TRANSLATED_LANDMARK_NAME TEXT NOT NULL,
+                FOREIGN KEY($COLUMN_LANDMARK_ID) REFERENCES $TABLE_LANDMARKS($COLUMN_LANDMARK_ID),
+                UNIQUE($COLUMN_LANDMARK_ID, $COLUMN_LANGUAGE_CODE)
+            )
+        """.trimIndent())
     }
 
     private fun createIndexes(db: SQLiteDatabase) {
@@ -115,25 +160,36 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         db.execSQL("CREATE INDEX IF NOT EXISTS idx_country_region ON $TABLE_COUNTRIES($COLUMN_REGION)")
         db.execSQL("CREATE INDEX IF NOT EXISTS idx_translation_country ON $TABLE_COUNTRY_TRANSLATION($COLUMN_COUNTRY_ID)")
         db.execSQL("CREATE INDEX IF NOT EXISTS idx_translation_language ON $TABLE_COUNTRY_TRANSLATION($COLUMN_LANGUAGE_CODE)")
+        db.execSQL("CREATE INDEX IF NOT EXISTS idx_landmark_country ON $TABLE_LANDMARKS($COLUMN_COUNTRY_ID)")
     }
 
     private fun refreshAllCountries(db: SQLiteDatabase) {
-        val countries = loadCountriesFromJson()
-        val translations = loadAllTranslations()
-
         db.beginTransaction()
         try {
+            // Clear all tables
             db.execSQL("DELETE FROM $TABLE_COUNTRIES")
             db.execSQL("DELETE FROM $TABLE_COUNTRY_TRANSLATION")
+            db.execSQL("DELETE FROM $TABLE_LANDMARKS")
+            db.execSQL("DELETE FROM $TABLE_LANDMARK_TRANSLATIONS")
+
+            val countries = loadCountriesFromJson()
+            val translations = loadAllTranslations()
+            val landmarkTranslations = loadAllLandmarkTranslations()
 
             for (country in countries) {
-                val countryId = insertCountry(db, country)
-                insertTranslations(db, countryId, country.name, translations)
+                try {
+                    val countryId = insertCountry(db, country)
+                    insertTranslations(db, countryId, country.name, translations)
+                    insertLandmarks(db, countryId, country, landmarkTranslations)
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error inserting country ${country.name}", e)
+                }
             }
             db.setTransactionSuccessful()
-            Log.d(TAG, "Loaded ${countries.size} countries with ${translations.size} language translations")
+            Log.d(TAG, "Successfully loaded ${countries.size} countries with landmarks")
         } catch (e: Exception) {
             Log.e(TAG, "Error refreshing countries", e)
+            throw e
         } finally {
             db.endTransaction()
         }
@@ -148,7 +204,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
             put(COLUMN_THIRD_CITY, country.thirdCity)
             put(COLUMN_CONTINENT, country.continent)
             put(COLUMN_REGION, country.region)
-            put(COLUMN_LANG, country.languages.joinToString(","))
+            put(COLUMN_LANG, country.languages?.joinToString(",") ?: "")
             put(COLUMN_CURRENCY, country.currency)
             put(COLUMN_POPULATION, country.population)
             put(COLUMN_AREA, country.area)
@@ -162,7 +218,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         db: SQLiteDatabase,
         countryId: Long,
         countryName: String,
-        translations: Map<String, List<TranslationData>>
+        translations: Map<String, List<CountryTranslationData>>
     ) {
         translations.forEach { (languageCode, langTranslations) ->
             langTranslations.find { it.originalName == countryName }?.let { translation ->
@@ -184,23 +240,77 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         }
     }
 
+    private fun insertLandmarks(
+        db: SQLiteDatabase,
+        countryId: Long,
+        country: CountryData,
+        translations: Map<String, List<LandmarkTranslationData>>
+    ) {
+        country.landmarks?.let { landmarks ->
+            if (landmarks.isEmpty()) {
+                Log.d(TAG, "No landmarks for ${country.name}")
+                return
+            }
+
+            Log.d(TAG, "Inserting ${landmarks.size} landmarks for ${country.name}")
+
+            landmarks.forEach { landmark ->
+                try {
+                    val values = ContentValues().apply {
+                        put(COLUMN_COUNTRY_ID, countryId)
+                        put(COLUMN_LANDMARK_NAME, landmark.name)
+                        put(COLUMN_IMAGE_PATH, landmark.imagePath)
+                    }
+
+                    val landmarkId = db.insertWithOnConflict(
+                        TABLE_LANDMARKS,
+                        null,
+                        values,
+                        SQLiteDatabase.CONFLICT_REPLACE
+                    )
+
+                    Log.d(TAG, "Inserted landmark ${landmark.name} with ID $landmarkId")
+
+                    // Insert translations
+                    translations.forEach { (languageCode, langTranslations) ->
+                        langTranslations.find { it.originalName == landmark.name }?.let { translation ->
+                            val transValues = ContentValues().apply {
+                                put(COLUMN_LANDMARK_ID, landmarkId)
+                                put(COLUMN_LANGUAGE_CODE, languageCode)
+                                put(COLUMN_TRANSLATED_LANDMARK_NAME, translation.translatedName)
+                            }
+                            db.insertWithOnConflict(
+                                TABLE_LANDMARK_TRANSLATIONS,
+                                null,
+                                transValues,
+                                SQLiteDatabase.CONFLICT_REPLACE
+                            )
+                        }
+                    }
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error inserting landmark ${landmark.name}", e)
+                }
+            }
+        } ?: Log.d(TAG, "Landmarks is null for ${country.name}")
+    }
+
     private fun loadCountriesFromJson(): List<CountryData> {
         return try {
             val json = appContext.assets.open("countries.json")
                 .bufferedReader().use { it.readText() }
-            gson.fromJson(json, object : TypeToken<List<CountryData>>() {}.type)
+            gson.fromJson(json, object : TypeToken<List<CountryData>>() {}.type) ?: emptyList()
         } catch (e: IOException) {
             Log.e(TAG, "Error loading countries.json", e)
             emptyList()
         }
     }
 
-    private fun loadAllTranslations(): Map<String, List<TranslationData>> {
+    private fun loadAllTranslations(): Map<String, List<CountryTranslationData>> {
         return try {
             val translationFiles = appContext.assets.list("translations")?.toList() ?: emptyList()
             translationFiles.associate { filename ->
                 val languageCode = filename.removeSuffix(".json")
-                val translations = loadTranslationsForLanguage(languageCode)
+                val translations = loadCountryTranslationsForLanguage(languageCode)
                 languageCode to translations
             }
         } catch (e: IOException) {
@@ -209,46 +319,41 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         }
     }
 
-    private fun loadTranslationsForLanguage(languageCode: String): List<TranslationData> {
+    private fun loadAllLandmarkTranslations(): Map<String, List<LandmarkTranslationData>> {
+        return try {
+            val translationFiles = appContext.assets.list("landmark_translations")?.toList() ?: emptyList()
+            translationFiles.associate { filename ->
+                val languageCode = filename.removeSuffix(".json")
+                val translations = loadLandmarkTranslationsForLanguage(languageCode)
+                languageCode to translations
+            }
+        } catch (e: IOException) {
+            Log.e(TAG, "Error loading landmark translations", e)
+            emptyMap()
+        }
+    }
+
+    private fun loadCountryTranslationsForLanguage(languageCode: String): List<CountryTranslationData> {
         return try {
             val json = appContext.assets.open("translations/$languageCode.json")
                 .bufferedReader().use { it.readText() }
-            gson.fromJson(json, object : TypeToken<List<TranslationData>>() {}.type)
+            gson.fromJson(json, object : TypeToken<List<CountryTranslationData>>() {}.type) ?: emptyList()
         } catch (e: IOException) {
             Log.e(TAG, "Error loading $languageCode translations", e)
             emptyList()
         }
     }
 
-    // Data classes
-    private data class CountryData(
-        val name: String,
-        val capital: String,
-        val bigCity: String,
-        val secondCity: String?,
-        val thirdCity: String?,
-        val continent: String,
-        val region: String,
-        val languages: List<String>,
-        val currency: String,
-        val population: Long,
-        val area: Long,
-        val category: String,
-        val countryCode: String
-    )
-
-    private data class TranslationData(
-        val originalName: String,
-        val translatedName: String,
-        val translatedCapital: String,
-        val translatedCity1: String,
-        val translatedCity2: String?,
-        val translatedCity3: String?,
-        val translatedContinent: String,
-        val translatedRegion: String,
-        val translatedCurrency: String,
-        val translatedLanguages: String
-    )
+    private fun loadLandmarkTranslationsForLanguage(languageCode: String): List<LandmarkTranslationData> {
+        return try {
+            val json = appContext.assets.open("landmark_translations/$languageCode.json")
+                .bufferedReader().use { it.readText() }
+            gson.fromJson(json, object : TypeToken<List<LandmarkTranslationData>>() {}.type) ?: emptyList()
+        } catch (e: IOException) {
+            Log.e(TAG, "Error loading $languageCode landmark translations", e)
+            emptyList()
+        }
+    }
 
     // Public query methods
     fun getRandomCountries(count: Int): List<Country> {
@@ -289,6 +394,62 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         }
     }
 
+    fun getRandomCountriesWithLandmarks(count: Int, languageCode: String = "en"): List<Country> {
+        val db = readableDatabase
+        return db.rawQuery(
+            """
+        SELECT c.*, 
+               l.$COLUMN_LANDMARK_NAME as landmark_name,
+               l.$COLUMN_IMAGE_PATH as landmark_path,
+               lt.$COLUMN_TRANSLATED_LANDMARK_NAME as translated_landmark_name
+        FROM $TABLE_COUNTRIES c
+        JOIN $TABLE_LANDMARKS l ON c.$COLUMN_ID = l.$COLUMN_COUNTRY_ID
+        LEFT JOIN $TABLE_LANDMARK_TRANSLATIONS lt ON l.$COLUMN_LANDMARK_ID = lt.$COLUMN_LANDMARK_ID 
+            AND lt.$COLUMN_LANGUAGE_CODE = ?
+        ORDER BY RANDOM() LIMIT $count
+        """.trimIndent(),
+            arrayOf(languageCode)
+        ).use { cursor ->
+            mutableListOf<Country>().apply {
+                while (cursor.moveToNext()) {
+                    val country = Country.fromCursor(cursor)
+                    val landmark = Landmark(
+                        name = cursor.getString(cursor.getColumnIndexOrThrow("landmark_name")),
+                        translatedName = cursor.getStringOrNull(cursor.getColumnIndexOrThrow("translated_landmark_name"))
+                            ?: cursor.getString(cursor.getColumnIndexOrThrow("landmark_name")),
+                        imagePath = cursor.getString(cursor.getColumnIndexOrThrow("landmark_path"))
+                    )
+                    add(country.copy(landmarks = listOf(landmark)))
+                }
+            }
+        }
+    }
+    fun getLandmarksForCountry(countryId: Int, languageCode: String = "en"): List<Landmark> {
+        val db = readableDatabase
+        return db.rawQuery(
+            """
+            SELECT l.$COLUMN_LANDMARK_NAME, l.$COLUMN_IMAGE_PATH, 
+                   lt.$COLUMN_TRANSLATED_LANDMARK_NAME
+            FROM $TABLE_LANDMARKS l
+            LEFT JOIN $TABLE_LANDMARK_TRANSLATIONS lt ON l.$COLUMN_LANDMARK_ID = lt.$COLUMN_LANDMARK_ID 
+                AND lt.$COLUMN_LANGUAGE_CODE = ?
+            WHERE l.$COLUMN_COUNTRY_ID = ?
+            """.trimIndent(),
+            arrayOf(languageCode, countryId.toString())
+        ).use { cursor ->
+            mutableListOf<Landmark>().apply {
+                while (cursor.moveToNext()) {
+                    add(Landmark(
+                        name = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LANDMARK_NAME)),
+                        translatedName = cursor.getStringOrNull(cursor.getColumnIndexOrThrow(COLUMN_TRANSLATED_LANDMARK_NAME))
+                            ?: cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LANDMARK_NAME)),
+                        imagePath = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_IMAGE_PATH))
+                    ))
+                }
+            }
+        }
+    }
+
     fun getAvailableLanguages(): List<String> {
         return try {
             appContext.assets.list("translations")?.map {
@@ -299,5 +460,44 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         }
     }
 
-    // Add other query methods as needed...
+    // Data classes
+    private data class CountryData(
+        val name: String,
+        val capital: String,
+        val bigCity: String,
+        val secondCity: String?,
+        val thirdCity: String?,
+        val continent: String,
+        val region: String,
+        val languages: List<String>?,
+        val currency: String,
+        val population: Long,
+        val area: Long,
+        val category: String,
+        val countryCode: String,
+        val landmarks: List<LandmarkData>? = null
+    )
+
+    private data class CountryTranslationData(
+        val originalName: String,
+        val translatedName: String,
+        val translatedCapital: String,
+        val translatedCity1: String,
+        val translatedCity2: String?,
+        val translatedCity3: String?,
+        val translatedContinent: String,
+        val translatedRegion: String,
+        val translatedCurrency: String,
+        val translatedLanguages: String
+    )
+
+    private data class LandmarkData(
+        val name: String,
+        val imagePath: String
+    )
+
+    private data class LandmarkTranslationData(
+        val originalName: String,
+        val translatedName: String
+    )
 }
