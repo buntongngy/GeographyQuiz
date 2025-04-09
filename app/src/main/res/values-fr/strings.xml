@@ -19,6 +19,10 @@
     <string name="city_question">Quelle est la plus grande ville de \n%1$s?</string>
     <string name="city_in_country_question">Laquelle de ces villes se trouve en \n%1$s?</string>
 
+    <!-- Landmark Question -->
+    <string name="landmark_question">Dans quel pays se trouve ce monument ?</string>
+    <string name="notLandmark">Pas assez de monuments disponibles</string>
+
 
     <!--Error Log -->
     <string name="unkLang">Langue inconnue</string>

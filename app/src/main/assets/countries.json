@@ -247,7 +247,13 @@
     "population": 7361263,
     "area": 1759541,
     "category": "arab",
-    "countryCode": "ly"
+    "countryCode": "ly",
+    "landmarks": [
+      {
+        "name": "Leptis Magna",
+        "imagePath": "landmark/Libya/Leptis_Magna.jpg"
+      }
+    ]
   },
 
   {
@@ -285,7 +291,13 @@
     "population": 5870750,
     "area": 750,
     "category": "east_asia",
-    "countryCode": "sg"
+    "countryCode": "sg",
+    "landmarks":[
+      {
+        "name": "Marina Bay Sand",
+        "imagePath": "landmark/Singapore/Marina_Bay_Sand.jpg"
+      }
+    ]
   },
 
   {
@@ -301,7 +313,13 @@
     "population": 49077984,
     "area": 505990,
     "category": "western",
-    "countryCode": "es"
+    "countryCode": "es",
+    "landmarks":[
+      {
+        "name": "Sagrade Familia",
+        "imagePath": "landmark/Spain/Sagrade_Familia.jpg"
+      }
+    ]
   },
 
   {
@@ -317,7 +335,13 @@
     "population": 65975198,
     "area": 513120,
     "category": "east_asia",
-    "countryCode": "th"
+    "countryCode": "th",
+    "landmarks":[
+      {
+        "name": "Wat Rong Khun",
+        "imagePath": "landmark/Thailand/white_temple.jpg"
+      }
+    ]
   },
 
   {
@@ -333,7 +357,13 @@
     "population": 11887412,
     "area": 163610,
     "category": "arab",
-    "countryCode": "tn"
+    "countryCode": "tn",
+    "landmarks":[
+      {
+        "name": "Amphitheatre of El Jem",
+        "imagePath": "landmark/Tunisia/El_Djem.jpg"
+      }
+    ]
   },
 
   {

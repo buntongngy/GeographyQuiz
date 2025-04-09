@@ -425,25 +425,43 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         }
     }
 
-    fun getAllCountriesWithLandmarks(): List<Country> {
+    fun getAllCountriesWithLandmarks(languageCode: String = "en"): List<Country> {
         val db = readableDatabase
         return db.rawQuery(
             """
         SELECT c.*, 
+               t.*,
                GROUP_CONCAT(l.$COLUMN_LANDMARK_NAME, '|') as landmark_names,
-               GROUP_CONCAT(l.$COLUMN_IMAGE_PATH, '|') as landmark_paths
+               GROUP_CONCAT(l.$COLUMN_IMAGE_PATH, '|') as landmark_paths,
+               GROUP_CONCAT(lt.$COLUMN_TRANSLATED_LANDMARK_NAME, '|') as translated_landmark_names
         FROM $TABLE_COUNTRIES c
+        LEFT JOIN $TABLE_COUNTRY_TRANSLATION t ON c.$COLUMN_ID = t.$COLUMN_COUNTRY_ID 
+            AND t.$COLUMN_LANGUAGE_CODE = ?
         JOIN $TABLE_LANDMARKS l ON c.$COLUMN_ID = l.$COLUMN_COUNTRY_ID
+        LEFT JOIN $TABLE_LANDMARK_TRANSLATIONS lt ON l.$COLUMN_LANDMARK_ID = lt.$COLUMN_LANDMARK_ID 
+            AND lt.$COLUMN_LANGUAGE_CODE = ?
         GROUP BY c.$COLUMN_ID
-        """, null
+        """, arrayOf(languageCode, languageCode)
         ).use { cursor ->
             mutableListOf<Country>().apply {
                 while (cursor.moveToNext()) {
-                    val country = Country.fromCursor(cursor)
+                    val country = if (!cursor.isNull(cursor.getColumnIndexOrThrow(COLUMN_TRANSLATED_NAME))) {
+                        Country.withTranslations(Country.fromCursor(cursor), cursor)
+                    } else {
+                        Country.fromCursor(cursor)
+                    }
+
                     val landmarkNames = cursor.getString(cursor.getColumnIndexOrThrow("landmark_names")).split("|")
                     val landmarkPaths = cursor.getString(cursor.getColumnIndexOrThrow("landmark_paths")).split("|")
-                    val landmarks = landmarkNames.zip(landmarkPaths).map { (name, path) ->
-                        Landmark(name = name, imagePath = path)
+                    val translatedLandmarkNames = cursor.getStringOrNull(cursor.getColumnIndexOrThrow("translated_landmark_names"))
+                        ?.split("|") ?: landmarkNames
+
+                    val landmarks = landmarkNames.zip(landmarkPaths).zip(translatedLandmarkNames).map {
+                        Landmark(
+                            name = it.first.first,
+                            translatedName = it.second,
+                            imagePath = it.first.second
+                        )
                     }
                     add(country.copy(landmarks = landmarks))
                 }

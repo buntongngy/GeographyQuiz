@@ -260,7 +260,13 @@
     "area": 1759541,
     "category": "arab",
     "countryCode": "ly",
-    "translatedLandmarks": []
+    "translatedLandmarks": [
+      {
+        "originalName": "Leptis Magna",
+        "translatedName": "លេបទីស ម៉ាញ៉ា"
+      }
+
+    ]
   },
   {
     "originalName": "Nepal",
@@ -299,7 +305,12 @@
     "area": 750,
     "category": "east_asia",
     "countryCode": "sg",
-    "translatedLandmarks": []
+    "translatedLandmarks": [
+      {
+        "originalName": "Marina Bay Sand",
+        "translatedName": "ម៉ារីណា បេ សែនដ៍"
+      }
+    ]
   },
   {
     "originalName": "Spain",
@@ -316,7 +327,12 @@
     "area": 505990,
     "category": "western",
     "countryCode": "es",
-    "translatedLandmarks": []
+    "translatedLandmarks": [
+      {
+        "originalName": "Sagrade Familia",
+        "translatedName": "សាហ្គ្រាដាហ្វាមីលីអា"
+      }
+    ]
   },
   {
     "originalName": "Thailand",
@@ -333,7 +349,12 @@
     "area": 513120,
     "category": "east_asia",
     "countryCode": "th",
-    "translatedLandmarks": []
+    "translatedLandmarks": [
+      {
+        "originalName": "Wat Rong Khun",
+        "translatedName": " វត្តរ៉ង់ឃុន "
+      }
+    ]
   },
   {
     "originalName": "Tunisia",
@@ -350,7 +371,12 @@
     "area": 163610,
     "category": "arab",
     "countryCode": "tn",
-    "translatedLandmarks": []
+    "translatedLandmarks" : [
+      {
+        "originalName": "Amphitheatre of El Jem",
+        "translatedName": "អាមីធីត្រៈអែលហ្សែម"
+      }
+    ]
   },
   {
     "originalName": "Vietnam",

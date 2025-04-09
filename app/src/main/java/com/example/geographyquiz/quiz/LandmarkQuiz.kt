@@ -16,6 +16,7 @@ import java.io.InputStream
 
 class LandmarkQuiz : AppCompatActivity() {
 
+    private var currentLanguage = "en";
     private lateinit var databaseHelper: CountryDatabase
     private lateinit var landmarkImageView: ImageView
     private var correctAnswerIndex = 0
@@ -25,30 +26,24 @@ class LandmarkQuiz : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_landmark) // Reusing the same layout as FlagQuiz
 
+        val sharedPref = getSharedPreferences("AppSettings", MODE_PRIVATE)
+        currentLanguage = sharedPref.getString("app_language", "en") ?: "en"
         landmarkImageView = findViewById(R.id.landmarkImageView) // Reusing the same ImageView
         databaseHelper = CountryDatabase(this)
         loadLandmarkQuestion()
     }
 
     private fun loadLandmarkQuestion() {
-        // 1. Get all countries with their landmarks (each country appears once with all its landmarks)
-        val allCountries = databaseHelper.getAllCountriesWithLandmarks()
+        val allCountries = databaseHelper.getAllCountriesWithLandmarks(currentLanguage)
             .filter { it.landmarks.isNotEmpty() }
 
-        // Need at least 4 unique countries with landmarks
         if (allCountries.size < 4) {
             showError()
             return
         }
 
-        // 2. Select a random country that has at least one landmark
         val targetCountry = allCountries.random()
-
-        // 3. Select a random landmark from this country
         val targetLandmark = targetCountry.landmarks.random()
-
-        // 4. Prepare answer options:
-        //    - Target country + 3 other random unique countries (excluding target country)
         val otherCountries = allCountries
             .filter { it != targetCountry }
             .shuffled()
@@ -57,12 +52,10 @@ class LandmarkQuiz : AppCompatActivity() {
         val answerOptions = (listOf(targetCountry) + otherCountries).shuffled()
         correctAnswerIndex = answerOptions.indexOf(targetCountry)
 
-        // 5. Load the landmark
         currentLandmarkPath = targetLandmark.imagePath
         loadLandmarkImage(targetLandmark.imagePath)
 
-        // 6. Set up UI
-        findViewById<TextView>(R.id.questionText).text = "Which country has this landmark?"
+        findViewById<TextView>(R.id.questionText).text = getString(R.string.landmark_question)
 
         val options = listOf(
             findViewById<Button>(R.id.option1Button),
@@ -72,12 +65,11 @@ class LandmarkQuiz : AppCompatActivity() {
         )
 
         answerOptions.forEachIndexed { index, country ->
-            options[index].text = country.name
+            options[index].text = if (currentLanguage != "en") country.translatedName else country.name
             options[index].setOnClickListener { checkAnswer(index) }
             options[index].visibility = View.VISIBLE
         }
 
-        // 7. Set up Next button
         findViewById<Button>(R.id.nextButton).setOnClickListener {
             loadLandmarkQuestion()
         }
@@ -106,8 +98,9 @@ class LandmarkQuiz : AppCompatActivity() {
         }
     }
 
+
     private fun showError() {
-        findViewById<TextView>(R.id.questionText).text = "not enough landmark"
+        findViewById<TextView>(R.id.questionText).text = getString(R.string.notLandmark)
         listOf(R.id.option1Button, R.id.option2Button, R.id.option3Button, R.id.option4Button).forEach {
             findViewById<Button>(it).visibility = View.GONE
         }
