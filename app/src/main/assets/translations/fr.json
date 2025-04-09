@@ -31,7 +31,12 @@
     "area": 28748,
     "category": "balkan",
     "countryCode": "al",
-    "translatedLandmarks" : []
+    "landmarks": [
+      {
+        "name": "Berat City",
+        "translatedName": "Ville de Berat"
+      }
+    ]
   },
   {
     "originalName": "Algeria",
@@ -48,7 +53,12 @@
     "area": 2381741,
     "category": "arab",
     "countryCode": "dz",
-    "translatedLandmarks" : []
+    "landmarks": [
+      {
+        "name": "Timgad",
+        "translatedName": "Timgad"
+      }
+    ]
   },
   {
     "originalName": "Angola",
@@ -82,7 +92,12 @@
     "area": 148460,
     "category": "south_asia",
     "countryCode": "bd",
-    "translatedLandmarks" : []
+    "landmarks": [
+      {
+        "name": "Lalbagh Fort",
+        "translatedName": "Fort de Lalbagh"
+      }
+    ]
   },
   {
     "originalName": "Belgium",
@@ -391,7 +406,12 @@
     "area": 331344,
     "category": "east_asia",
     "countryCode": "vn",
-    "translatedLandmarks" : []
+    "translatedLandmarks" : [
+      {
+        "originalName": "Ha Long Bay",
+        "translatedName": "Baie d'Ha Long"
+      }
+    ]
   },
   {
     "originalName": "United States",
@@ -408,6 +428,11 @@
     "area": 9833517,
     "category": "western",
     "countryCode": "us",
-    "translatedLandmarks" : []
+    "translatedLandmarks" : [
+      {
+        "originalName": "Yosemite Valley",
+        "translatedName": "Vallée de Yosemite"
+      }
+    ]
   }
 ]

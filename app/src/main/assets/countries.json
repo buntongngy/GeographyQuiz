@@ -29,7 +29,13 @@
     "population": 2837743,
     "area": 28748,
     "category": "balkan",
-    "countryCode": "al"
+    "countryCode": "al",
+    "landmarks": [
+      {
+        "name": "Berat City",
+        "imagePath": "landmark/Albania/berat.jpg"
+      }
+    ]
   },
 
   {
@@ -45,7 +51,13 @@
     "population": 43851044,
     "area": 2381741,
     "category": "arab",
-    "countryCode": "dz"
+    "countryCode": "dz",
+    "landmarks": [
+      {
+        "name": "Timgad",
+        "imagePath": "landmark/Algeria/timgad.jpg"
+      }
+    ]
   },
   {
     "name": "Angola",
@@ -76,7 +88,13 @@
     "population": 174655977,
     "area": 148460,
     "category": "south_asia",
-    "countryCode": "bd"
+    "countryCode": "bd",
+    "landmarks": [
+      {
+        "name": "Lalbagh Fort",
+        "imagePath": "landmark/Bangladesh/lalbagh_fort.jpeg"
+      }
+    ]
   },
 
   {
@@ -379,7 +397,13 @@
     "population": 100300000,
     "area": 331344,
     "category": "east_asia",
-    "countryCode": "vn"
+    "countryCode": "vn",
+    "landmarks":[
+      {
+        "name": "Ha Long Bay",
+        "imagePath": "landmark/Vietnam/Ha_long.jpg"
+      }
+    ]
   },
 
   {
@@ -395,6 +419,12 @@
     "population": 331002651,
     "area": 9833517,
     "category": "western",
-    "countryCode": "us"
+    "countryCode": "us",
+    "landmarks":[
+      {
+        "name": "Yosemite Valley",
+        "imagePath": "landmark/US/Yosemite.jpg"
+      }
+    ]
   }
 ]

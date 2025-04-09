@@ -31,7 +31,12 @@
     "area": 28748,
     "category": "balkan",
     "countryCode": "al",
-    "translatedLandmarks": []
+    "landmarks": [
+      {
+        "name": "Berat City",
+        "translatedName": "ទីក្រុងបេរ៉ាត"
+      }
+    ]
   },
   {
     "originalName": "Algeria",
@@ -48,7 +53,12 @@
     "area": 2381741,
     "category": "arab",
     "countryCode": "dz",
-    "translatedLandmarks": []
+    "landmarks": [
+      {
+        "name": "Timgad",
+        "translatedName": "ទីមហ្គាដ"
+      }
+    ]
   },
   {
     "originalName": "Angola",
@@ -82,7 +92,12 @@
     "area": 148460,
     "category": "south_asia",
     "countryCode": "bd",
-    "translatedLandmarks": []
+    "landmarks": [
+      {
+        "name": "Lalbagh Fort",
+        "translatedName": "បន្ទាយលាល់បាគ៍"
+      }
+    ]
   },
   {
     "originalName": "Belgium",
@@ -393,7 +408,12 @@
     "area": 331344,
     "category": "east_asia",
     "countryCode": "vn",
-    "translatedLandmarks": []
+    "translatedLandmarks" : [
+      {
+        "originalName": "Ha Long Bay",
+        "translatedName": "ឆ្នេរសមុទ្រហាឡុង"
+      }
+    ]
   },
   {
     "originalName": "United States",
@@ -410,6 +430,11 @@
     "area": 9833517,
     "category": "western",
     "countryCode": "us",
-    "translatedLandmarks": []
+    "translatedLandmarks" : [
+      {
+        "originalName": "Yosemite Valley",
+        "translatedName": "ជ្រលងភ្នំយ៉ូសេម៉ាតី"
+      }
+    ]
   }
 ]
