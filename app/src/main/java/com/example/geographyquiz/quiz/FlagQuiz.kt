@@ -16,6 +16,7 @@ import java.io.InputStream
 
 class FlagQuiz : AppCompatActivity() {
 
+    private var currentLanguage = "en";
     private lateinit var databaseHelper: CountryDatabase
     private lateinit var flagImageView: ImageView
     private var correctAnswerIndex = 0
@@ -24,13 +25,19 @@ class FlagQuiz : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_img)
 
+        val sharedPref = getSharedPreferences("AppSettings", MODE_PRIVATE)
+        currentLanguage = sharedPref.getString("app_language", "en") ?: "en"
         flagImageView = findViewById(R.id.flagImageView)
         databaseHelper = CountryDatabase(this)
         loadFlagQuestion()
     }
 
     private fun loadFlagQuestion() {
-        val countries = databaseHelper.getRandomCountries(4)
+        val countries = if (currentLanguage != "en") {
+            databaseHelper.getTranslatedRandomCountries(4, currentLanguage)
+        } else {
+            databaseHelper.getRandomCountries(4)
+        }
         if (countries.size < 4) {
             showError()
             return
@@ -40,7 +47,7 @@ class FlagQuiz : AppCompatActivity() {
         loadSvgFlag(targetCountry.countryCode)
 
         val questionText = findViewById<TextView>(R.id.questionText)
-        questionText.text = "Which country have this flag"
+        questionText.text = getString(R.string.flag_question)
 
         val options = listOf(
             findViewById<Button>(R.id.option1Button),
@@ -54,7 +61,7 @@ class FlagQuiz : AppCompatActivity() {
         correctAnswerIndex = shuffledCountries.indexOf(targetCountry)
 
         shuffledCountries.forEachIndexed { index, country ->
-            options[index].text = country.name
+            options[index].text = if (currentLanguage != "en") country.translatedName else country.name
             options[index].setOnClickListener { checkAnswer(index) }
         }
 

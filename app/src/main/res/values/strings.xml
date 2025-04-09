@@ -19,6 +19,9 @@
     <string name="city_question">What is the biggest city in \n%1$s?</string>
     <string name="city_in_country_question">Which of these city is in \n%1$s?</string>
 
+    <!-- Flag Question -->
+    <string name="flag_question">Which country have this flag</string>
+
     <!-- Landmark Question -->
     <string name="landmark_question">Which country has this landmark</string>
     <string name="notLandmark">Not enough Landmark</string>
