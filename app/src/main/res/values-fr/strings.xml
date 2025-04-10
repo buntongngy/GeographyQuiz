@@ -28,9 +28,11 @@
     <string name="landmark_question">Dans quel pays se trouve ce monument ?</string>
     <string name="notLandmark">Pas assez de monuments disponibles</string>
 
-
     <!--Error Log -->
     <string name="unkLang">Langue inconnue</string>
     <string name="notEnoughCountry">Pas assez de pays dans la base de données</string>
+
+    <!-- Next Button -->
+    <string name="nextBtn">Question suivante</string>
 
 </resources>

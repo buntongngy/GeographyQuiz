@@ -3,8 +3,6 @@
     <string name="home">Home</string>
     <string name="setting">Setting</string>
 
-
-
 <string name="continent_question">Which continent is %1$s in?</string>
 <string name="population_question">Does %1$s have a larger population than \n%2$s?</string>
 <string name="area_question">Which of these countries has the largest area?</string>
@@ -12,6 +10,13 @@
 <string name="no">No</string>
 <string name="correct">Correct! 🎉</string>
 <string name="wrong">Wrong! 😢</string>
+
+    <!-- Score -->
+    <string name="score_format">Score: %1$d</string>
+    <string name="remaining_format">Remaining: %d</string>
+    <string name="quiz_complete">Quiz Complete!\nYour score: %1$d/%2$d</string>
+    <string name="next_question">Next Question</string>
+    <string name="restart_quiz">Restart Quiz</string>
 
     <!-- City Question-->
     <string name="capital_question">What is the capital city of \n%1$s?</string>
@@ -32,4 +37,8 @@
     <!--Error Log -->
     <string name="unkLang">Unknown Language</string>
     <string name="notEnoughCountry">Not enough countries in database</string>
+    <string name="unknownAns">Unknown Answer</string>
+
+    <!-- Button -->
+    <string name="nextBtn">Next Question</string>
 </resources>
