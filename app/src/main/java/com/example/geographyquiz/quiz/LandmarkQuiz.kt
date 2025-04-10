@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.geographyquiz.R
 import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
+import com.example.geographyquiz.utils.TranslationUtils
 import java.io.IOException
 import java.io.InputStream
 
@@ -55,7 +56,8 @@ class LandmarkQuiz : AppCompatActivity() {
         currentLandmarkPath = targetLandmark.imagePath
         loadLandmarkImage(targetLandmark.imagePath)
 
-        findViewById<TextView>(R.id.questionText).text = getString(R.string.landmark_question)
+        findViewById<TextView>(R.id.questionText).text = TranslationUtils.getTranslatedString(this,
+            R.string.landmark_question, currentLanguage)
 
         val options = listOf(
             findViewById<Button>(R.id.option1Button),
@@ -92,9 +94,9 @@ class LandmarkQuiz : AppCompatActivity() {
     private fun checkAnswer(selectedIndex: Int) {
         val feedbackText = findViewById<TextView>(R.id.feedbackText)
         feedbackText.text = if (selectedIndex == correctAnswerIndex) {
-            getString(R.string.correct)
+            TranslationUtils.getTranslatedString(this,R.string.correct, currentLanguage)
         } else {
-            getString(R.string.wrong)
+            TranslationUtils.getTranslatedString(this,R.string.wrong, currentLanguage)
         }
     }
 

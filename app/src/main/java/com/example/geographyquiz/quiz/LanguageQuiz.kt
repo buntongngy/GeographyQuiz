@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.geographyquiz.R
 import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
+import com.example.geographyquiz.utils.TranslationUtils
 
 class LanguageQuiz : AppCompatActivity() {
 
@@ -160,8 +161,9 @@ class LanguageQuiz : AppCompatActivity() {
         val answers = (listOf(correctLanguage) + incorrectAnswers).shuffled()
 
         return QuestionData(
-            getString(
+            TranslationUtils.getTranslatedStringWithFormat(this,
                 R.string.languageQuestion,
+                currentLanguage,
                 if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name
             ),
             correctLanguage,
@@ -205,8 +207,9 @@ class LanguageQuiz : AppCompatActivity() {
         val answers = uniqueCounts.shuffled().map { it.toString() }
 
         return QuestionData(
-            getString(
+            TranslationUtils.getTranslatedStringWithFormat(this,
                 R.string.languageCountQuestion,
+                currentLanguage,
                 if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name
             ),
             correctCount.toString(),
@@ -218,9 +221,9 @@ class LanguageQuiz : AppCompatActivity() {
         val isCorrect = (selectedOption - 1) == correctAnswerIndex
         val feedbackText = findViewById<TextView>(R.id.feedbackText)
         feedbackText.text = if (isCorrect) {
-            getString(R.string.correct)
+            TranslationUtils.getTranslatedString(this, R.string.correct,  currentLanguage)
         } else {
-            getString(R.string.wrong)
+            TranslationUtils.getTranslatedString(this, R.string.wrong, currentLanguage)
         }
     }
 

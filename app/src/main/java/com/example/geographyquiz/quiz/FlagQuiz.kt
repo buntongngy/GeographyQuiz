@@ -12,7 +12,9 @@ import com.caverock.androidsvg.SVG
 import com.example.geographyquiz.R
 import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
+import com.example.geographyquiz.utils.TranslationUtils
 import java.io.InputStream
+import java.util.*
 
 class FlagQuiz : AppCompatActivity() {
 
@@ -33,6 +35,10 @@ class FlagQuiz : AppCompatActivity() {
     }
 
     private fun loadFlagQuestion() {
+
+        val questionText = findViewById<TextView>(R.id.questionText)
+        questionText.text = TranslationUtils.getTranslatedString(this, R.string.flag_question, currentLanguage)
+
         val countries = if (currentLanguage != "en") {
             databaseHelper.getTranslatedRandomCountries(4, currentLanguage)
         } else {
@@ -46,8 +52,7 @@ class FlagQuiz : AppCompatActivity() {
         val targetCountry = countries.random()
         loadSvgFlag(targetCountry.countryCode)
 
-        val questionText = findViewById<TextView>(R.id.questionText)
-        questionText.text = getString(R.string.flag_question)
+
 
         val options = listOf(
             findViewById<Button>(R.id.option1Button),
@@ -90,9 +95,9 @@ class FlagQuiz : AppCompatActivity() {
     private fun checkAnswer(selectedIndex: Int) {
         val feedbackText = findViewById<TextView>(R.id.feedbackText)
         feedbackText.text = if (selectedIndex == correctAnswerIndex) {
-            getString(R.string.correct)
+            TranslationUtils.getTranslatedString(this, R.string.correct, currentLanguage)
         } else {
-            getString(R.string.wrong)
+            TranslationUtils.getTranslatedString(this, R.string.wrong, currentLanguage)
         }
     }
 

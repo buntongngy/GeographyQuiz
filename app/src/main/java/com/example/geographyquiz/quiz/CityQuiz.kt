@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.geographyquiz.R
 import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
+import com.example.geographyquiz.utils.TranslationUtils
+import java.util.*
 import kotlin.random.Random
 
 class CityQuiz : AppCompatActivity() {
@@ -143,7 +145,7 @@ class CityQuiz : AppCompatActivity() {
         }
 
         return Triple(
-            getString(R.string.city_question,
+            TranslationUtils.getTranslatedStringWithFormat(this, R.string.city_question, currentLanguage,
                 if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
             correctAnswer,
             answerOptions.shuffled()
@@ -201,8 +203,8 @@ class CityQuiz : AppCompatActivity() {
         }
 
         return Triple(
-            getString(R.string.capital_question,
-                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
+            TranslationUtils.getTranslatedStringWithFormat(this, R.string.capital_question, currentLanguage,
+                 if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
             correctAnswer,
             answerOptions.shuffled()
         )
@@ -258,12 +260,13 @@ class CityQuiz : AppCompatActivity() {
         }
 
         return Triple(
-            getString(R.string.city_in_country_question,
+            TranslationUtils.getTranslatedStringWithFormat(this,R.string.city_in_country_question, currentLanguage,
                 if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name),
             correctCity,
             (listOf(correctCity) + otherOptions).shuffled()
         )
     }
+
 
     private fun showNotEnoughCountriesError(
         questionText: TextView,
@@ -277,9 +280,9 @@ class CityQuiz : AppCompatActivity() {
         val isCorrect = selectedOption == correctAnswerIndex
         val feedbackText = findViewById<TextView>(R.id.feedbackText)
         feedbackText.text = if (isCorrect) {
-            getString(R.string.correct)
+            TranslationUtils.getTranslatedString(this,R.string.correct, currentLanguage)
         } else {
-            getString(R.string.wrong)
+            TranslationUtils.getTranslatedString(this,R.string.wrong, currentLanguage)
         }
     }
 

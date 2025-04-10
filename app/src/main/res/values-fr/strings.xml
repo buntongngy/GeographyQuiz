@@ -3,8 +3,6 @@
     <string name="app_name">GeographyQuiz</string>
     <string name="home">Accueil</string>
     <string name="setting">Paramètres</string>
-    <string name="languageQuestion">Quelle langue est parlée en \n%1$s ?</string>
-    <string name="languageCountQuestion">Combien de langues sont parlée en \n%1$s ?</string>
 
     <string name="continent_question">Sur quel continent se trouve %1$s ?</string>
     <string name="population_question">Est-ce que %1$s a une population plus grande que \n%2$s ?</string>
@@ -18,6 +16,10 @@
     <string name="capital_question">Quelle est la capitale de \n%1$s ?</string>
     <string name="city_question">Quelle est la plus grande ville de \n%1$s?</string>
     <string name="city_in_country_question">Laquelle de ces villes se trouve en \n%1$s?</string>
+
+    <!-- Language Quesiton -->
+    <string name="languageQuestion">Quelle langue est parlée en \n%1$s ?</string>
+    <string name="languageCountQuestion">Combien de langues sont parlée en \n%1$s?</string>
 
     <!-- Flag Question -->
     <string name="flag_question">Quel pays a ce drapeau</string>
