@@ -63,6 +63,19 @@
     "landmarks": []
   },
 
+  {
+    "originalName": "Antigua and Barbuda",
+    "translatedName": "Antigua-et-Barbuda",
+    "translatedCapital": "Saint John's",
+    "translatedCity1": "Saint John's",
+    "translatedCity2": "All Saints",
+    "translatedCity3": "Liberta",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar des Caraïbes orientales",
+    "translatedLanguages": "Anglais",
+    "translatedLandmarks": []
+  },
 
   {
     "originalName": "Angola",
@@ -77,6 +90,79 @@
     "translatedLanguages": "Portugais",
     "landmarks" : []
   },
+
+  {
+    "originalName": "Argentina",
+    "translatedName": "Argentine",
+    "translatedCapital": "Buenos Aires",
+    "translatedCity1": "Buenos Aires",
+    "translatedCity2": "Córdoba",
+    "translatedCity3": "Rosario",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Cône Sud",
+    "translatedCurrency": "Peso",
+    "translatedLanguages": "Espagnol",
+    "translatedLandmarks": []
+  },
+
+  {
+    "originalName": "Armenia",
+    "translatedName": "Arménie",
+    "translatedCapital": "Erevan",
+    "translatedCity1": "Erevan",
+    "translatedCity2": "Gyumri",
+    "translatedCity3": "Vanadzor",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Caucase du Sud",
+    "translatedCurrency": "Dram",
+    "translatedLanguages": "Arménien",
+    "translatedLandmarks": []
+  },
+
+  {
+    "originalName": "Australia",
+    "translatedName": "Australie",
+    "translatedCapital": "Canberra",
+    "translatedCity1": "Sydney",
+    "translatedCity2": "Melbourne",
+    "translatedCity3": "Brisbane",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Australasie",
+    "translatedCurrency": "Dollar australien",
+    "translatedLanguages": "Anglais",
+    "translatedLandmarks": []
+  },
+
+  {
+    "originalName": "Austria",
+    "translatedName": "Autriche",
+    "translatedCapital": "Vienne",
+    "translatedCity1": "Vienne",
+    "translatedCity2": "Graz",
+    "translatedCity3": "Linz",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe centrale",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Allemand",
+    "translatedLandmarks": []
+  },
+
+  {
+    "originalName": "Azerbaijan",
+    "translatedName": "Azerbaïdjan",
+    "translatedCapital": "Bakou",
+    "translatedCity1": "Bakou",
+    "translatedCity2": "Ganja",
+    "translatedCity3": "Sumqayit",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Caucase du Sud",
+    "translatedCurrency": "Manat",
+    "translatedLanguages": "Azerbaïdjanais",
+    "translatedLandmarks": []
+  },
+
+
+
   {
     "originalName": "Bangladesh",
     "translatedName": "Bangladesh",
@@ -205,7 +291,7 @@
     "translatedCity2": "Hambourg",
     "translatedCity3": "Munich",
     "translatedContinent": "Europe",
-    "translatedRegion": "Europe de l'Ouest",
+    "translatedRegion": "Europe centrale",
     "translatedCurrency": "Euro",
     "translatedLanguages": "Allemand",
     "landmarks": []

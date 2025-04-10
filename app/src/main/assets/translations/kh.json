@@ -63,6 +63,19 @@
     "landmarks": []
   },
 
+  {
+    "originalName": "Antigua and Barbuda",
+    "translatedName": "អង់ទីហ្គា និង បារបុយដា",
+    "translatedCapital": "សែន ជន់ស៍",
+    "translatedCity1": "សែន ជន់ស៍",
+    "translatedCity2": "អូល សែនតស៍",
+    "translatedCity3": "លីប៊ែតា",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាប៊ីន",
+    "translatedCurrency": "ដុល្លារ ការ៉ាប៊ីនខាងកើត",
+    "translatedLanguages": "អង់គ្លេស",
+    "translatedLandmarks": []
+  },
 
   {
     "originalName": "Angola",
@@ -77,6 +90,78 @@
     "translatedLanguages": "ព័រទុយហ្គាល់",
     "landmarks": []
   },
+
+  {
+    "originalName": "Argentina",
+    "translatedName": "អាហ្គែនទីន",
+    "translatedCapital": "ប៊ុយណូស អាយរេស",
+    "translatedCity1": "ប៊ុយណូស អាយរេស",
+    "translatedCity2": "កូដូបា",
+    "translatedCity3": "រ៉ូសារីយ៉ូ",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "កូនខាងត្បូង",
+    "translatedCurrency": "ពេសូ",
+    "translatedLanguages": "អេស្បាញ",
+    "translatedLandmarks": []
+  },
+
+  {
+    "originalName": "Armenia",
+    "translatedName": "អាមេនី",
+    "translatedCapital": "យេរ៉េវ៉ាន់",
+    "translatedCity1": "យេរ៉េវ៉ាន់",
+    "translatedCity2": "គ្យូម្រី",
+    "translatedCity3": "វ៉ានាតហ្ស័រ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "កូវកាសខាងត្បូង",
+    "translatedCurrency": "ដ្រាំ",
+    "translatedLanguages": "អាមេនី",
+    "translatedLandmarks": []
+  },
+
+  {
+    "originalName": "Australia",
+    "translatedName": "អូស្ត្រាលី",
+    "translatedCapital": "កានបេរ៉ា",
+    "translatedCity1": "ស៊ីដនី",
+    "translatedCity2": "មែលប៊ើន",
+    "translatedCity3": "ប្រេសបេន",
+    "translatedContinent": "អូសេានី",
+    "translatedRegion": "អូស្ត្រាលេស៊ី",
+    "translatedCurrency": "ដុល្លារ អូស្ត្រាលី",
+    "translatedLanguages": "អង់គ្លេស",
+    "translatedLandmarks": []
+  },
+
+  {
+    "originalName": "Austria",
+    "translatedName": "អូទ្រីស",
+    "translatedCapital": "វីយេណា",
+    "translatedCity1": "វីយេណា",
+    "translatedCity2": "ក្រាស",
+    "translatedCity3": "លីនច",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបកណ្ដាល",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "អាល្លឺម៉ង់",
+    "translatedLandmarks": []
+  },
+
+  {
+    "originalName": "Azerbaijan",
+    "translatedName": "អាស៊ែបៃសង់",
+    "translatedCapital": "បាកូ",
+    "translatedCity1": "បាកូ",
+    "translatedCity2": "ហ្គាន់ចា",
+    "translatedCity3": "សូមគៃត",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "កូវកាសខាងត្បូង",
+    "translatedCurrency": "ម៉ាណាត",
+    "translatedLanguages": "អាស៊ែបៃសង់",
+    "translatedLandmarks": []
+  },
+
+
   {
     "originalName": "Bangladesh",
     "translatedName": "បង់ក្លាដែស្ស",
@@ -206,7 +291,7 @@
     "translatedCity2": "ហាំប៊ួក",
     "translatedCity3": "មុយនិច",
     "translatedContinent": "អឺរ៉ុប",
-    "translatedRegion": "អឺរ៉ុបខាងលិច",
+    "translatedRegion": "អឺរ៉ុបកណ្ដាល",
     "translatedCurrency": "អឺរ៉ូ",
     "translatedLanguages": "អាល្លឺម៉ង់",
     "landmarks": []

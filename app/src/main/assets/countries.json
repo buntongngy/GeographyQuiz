@@ -99,6 +99,22 @@
     "difficulty": 3
   },
 
+  {
+    "name": "Antigua and Barbuda",
+    "capital": "Saint John",
+    "bigCity": "Saint John",
+    "secondCity": "All Saints",
+    "thirdCity": "Liberta",
+    "continent": "North America",
+    "region": "Caribbean",
+    "languages": ["English"],
+    "currency": "East Caribbean dollar",
+    "population": 81799,
+    "area": 440,
+    "category": "caribbean",
+    "countryCode": "ag",
+    "difficulty": 3
+  },
 
   {
     "name": "Angola",
@@ -115,6 +131,91 @@
     "category": "african_portuguese",
     "countryCode": "ao",
     "difficulty": 2
+  },
+
+  {
+    "name": "Argentina",
+    "capital": "Buenos Aires",
+    "bigCity": "Buenos Aires",
+    "secondCity": "Córdoba",
+    "thirdCity": "Rosario",
+    "continent": "South America",
+    "region": "Southern Cone",
+    "languages": ["Spanish"],
+    "currency": "Peso",
+    "population": 42669500,
+    "area": 2780400,
+    "category": "latin",
+    "countryCode": "ar",
+    "difficulty": 2
+  },
+
+  {
+    "name": "Armenia",
+    "capital": "Yerevan",
+    "bigCity": "Yerevan",
+    "secondCity": "Gyumri",
+    "thirdCity": "Vanadzor",
+    "continent": "Asia",
+    "region": "South Caucasus",
+    "languages": ["Armenian"],
+    "currency": "Dram",
+    "population": 3000756,
+    "area": 29734,
+    "category": "eastern eu",
+    "countryCode": "am",
+    "difficulty": 3
+  },
+
+  {
+    "name": "Australia",
+    "capital": "Canberra",
+    "bigCity": "Sydney",
+    "secondCity": "Melbourne",
+    "thirdCity": "Brisbane",
+    "continent": "Oceania",
+    "region": "Australasia",
+    "languages": ["English"],
+    "currency": "Australian Dollar",
+    "population": 27845000,
+    "area": 7692024,
+    "category": "western",
+    "countryCode": "au",
+    "difficulty": 1
+  },
+
+  {
+    "name": "Austria",
+    "capital": "Vienna",
+    "bigCity": "Vienna",
+    "secondCity": "Graz",
+    "thirdCity": "Linz",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "languages": ["German"],
+    "currency": "Euro",
+    "population": 8935112,
+    "area": 83883,
+    "category": "Western",
+    "countryCode": "at",
+    "difficulty": 2
+  },
+
+  {
+    "name": "Azerbaijan",
+    "capital": "Baku",
+    "bigCity": "Baku",
+    "secondCity": "Ganja",
+    "thirdCity": "Sumqayit",
+    "continent": "Asia",
+    "region": "South Caucasus",
+    "languages": ["Azerbaijani"],
+    "currency": "Manat",
+    "population": 1013010,
+    "area": 86600,
+    "category": "eastern eu",
+    "countryCode": "az",
+    "difficulty": 3
   },
 
   {
@@ -282,7 +383,7 @@
     "secondCity": "Hamburg",
     "thirdCity": "Munich",
     "continent": "Europe",
-    "region": "Western Europe",
+    "region": "Central Europe",
     "languages": ["German"],
     "currency": "Euro",
     "population": 83783942,
