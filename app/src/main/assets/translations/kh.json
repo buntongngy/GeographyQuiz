@@ -10,11 +10,7 @@
     "translatedRegion": "អាស៊ីខាងត្បូង",
     "translatedCurrency": "អាហ្វហ្គានី",
     "translatedLanguages": "ប៉ាស្តូ, ដារី",
-    "population": 40218234,
-    "area": 652867,
-    "category": "middle_eastern",
-    "countryCode": "af",
-    "translatedLandmarks": []
+    "landmarks": []
   },
   {
     "originalName": "Albania",
@@ -27,10 +23,6 @@
     "translatedRegion": "អឺរ៉ុបខាងត្បូង",
     "translatedCurrency": "លែក អាល់បានី",
     "translatedLanguages": "អាល់បានី",
-    "population": 2837743,
-    "area": 28748,
-    "category": "balkan",
-    "countryCode": "al",
     "landmarks": [
       {
         "name": "Berat City",
@@ -49,10 +41,6 @@
     "translatedRegion": "អាហ្វ្រិកខាងជើង",
     "translatedCurrency": "ឌីណារ អាល់ហ្សេរី",
     "translatedLanguages": "អារ៉ាប់, ប៊ែរប៊ែរ, បារាំង",
-    "population": 43851044,
-    "area": 2381741,
-    "category": "arab",
-    "countryCode": "dz",
     "landmarks": [
       {
         "name": "Timgad",
@@ -60,6 +48,22 @@
       }
     ]
   },
+
+  {
+    "originalName": "Andorra",
+    "translatedName": "អង់ដូរ៉ា",
+    "translatedCapital": "អង់ដូរ៉ា ឡា វៀលឡា",
+    "translatedCity1": "អង់ដូរ៉ា ឡា វៀលឡា",
+    "translatedCity2": "អេស្កាល់ដេស-អេងហ្គោដានី",
+    "translatedCity3": "អេនខាំ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងលិច",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "កាតាឡាន",
+    "landmarks": []
+  },
+
+
   {
     "originalName": "Angola",
     "translatedName": "អង់ហ្គោឡា",
@@ -71,11 +75,7 @@
     "translatedRegion": "អាហ្វ្រិកកណ្តាល",
     "translatedCurrency": "ខ្វាន់ហ្សា",
     "translatedLanguages": "ព័រទុយហ្គាល់",
-    "population": 32866272,
-    "area": 1246700,
-    "category": "african_portuguese",
-    "countryCode": "ao",
-    "translatedLandmarks": []
+    "landmarks": []
   },
   {
     "originalName": "Bangladesh",
@@ -88,10 +88,6 @@
     "translatedRegion": "អាស៊ីខាងត្បូង",
     "translatedCurrency": "តាកា",
     "translatedLanguages": "បេនហ្គាលី",
-    "population": 174655977,
-    "area": 148460,
-    "category": "south_asia",
-    "countryCode": "bd",
     "landmarks": [
       {
         "name": "Lalbagh Fort",
@@ -110,11 +106,7 @@
     "translatedRegion": "អឺរ៉ុបខាងលិច",
     "translatedCurrency": "អឺរ៉ូ",
     "translatedLanguages": "ហូឡង់, បារាំង, អាល្លឺម៉ង់",
-    "population": 11812354,
-    "area": 30689,
-    "category": "western",
-    "countryCode": "be",
-    "translatedLandmarks": []
+    "landmarks": []
   },
   {
     "originalName": "Cambodia",
@@ -127,11 +119,7 @@
     "translatedRegion": "អាស៊ីអាគ្នេយ៍",
     "translatedCurrency": "រៀល",
     "translatedLanguages": "ខ្មែរ",
-    "population": 17638801,
-    "area": 181035,
-    "category": "east_asian",
-    "countryCode": "kh",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "Angkor Wat",
         "translatedName": "អង្គរវត្ត"
@@ -149,11 +137,7 @@
     "translatedRegion": "អាមេរិកខាងជើង",
     "translatedCurrency": "ដុល្លារ កាណាដា",
     "translatedLanguages": "អង់គ្លេស, បារាំង",
-    "population": 37742154,
-    "area": 9984670,
-    "category": "western",
-    "countryCode": "ca",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "CN Tower",
         "translatedName": "តួរសុីអិន"
@@ -171,11 +155,7 @@
     "translatedRegion": "អាស៊ីខាងកើត",
     "translatedCurrency": "យ៉ន",
     "translatedLanguages": "ម៉ាន់ដារីន, កាតាំង, អ៊ូ, មីន",
-    "population": 1439323776,
-    "area": 9596961,
-    "category": "east_asian",
-    "countryCode": "cn",
-    "translatedLandmarks": []
+    "landmarks": []
   },
   {
     "originalName": "Egypt",
@@ -188,11 +168,7 @@
     "translatedRegion": "អាហ្វ្រិកខាងជើង",
     "translatedCurrency": "ផោន អេហ្ស៊ីប",
     "translatedLanguages": "អារ៉ាប់",
-    "population": 107304000,
-    "area": 1010408,
-    "category": "arab",
-    "countryCode": "eg",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "Pyramid of Giza",
         "translatedName": "ប្រាសាទពីរ៉ាមីត"
@@ -210,11 +186,7 @@
     "translatedRegion": "អឺរ៉ុបខាងលិច",
     "translatedCurrency": "អឺរ៉ូ",
     "translatedLanguages": "បារាំង",
-    "population": 65273511,
-    "area": 551695,
-    "category": "western",
-    "countryCode": "fr",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "Eiffel Tower",
         "translatedName": "តួរអាយហ្វែល"
@@ -237,11 +209,7 @@
     "translatedRegion": "អឺរ៉ុបខាងលិច",
     "translatedCurrency": "អឺរ៉ូ",
     "translatedLanguages": "អាល្លឺម៉ង់",
-    "population": 83783942,
-    "area": 357022,
-    "category": "western",
-    "countryCode": "de",
-    "translatedLandmarks": []
+    "landmarks": []
   },
   {
     "originalName": "India",
@@ -254,11 +222,7 @@
     "translatedRegion": "អាស៊ីខាងត្បូង",
     "translatedCurrency": "រូពី ឥណ្ឌា",
     "translatedLanguages": "ហិណ្ឌី, អង់គ្លេស, បេនហ្គាលី, តេលុគុ, មរាឋី",
-    "population": 1380004385,
-    "area": 3287263,
-    "category": "south_asia",
-    "countryCode": "in",
-    "translatedLandmarks": []
+    "landmarks": []
   },
   {
     "originalName": "Libya",
@@ -271,11 +235,7 @@
     "translatedRegion": "អាហ្វ្រិកខាងជើង",
     "translatedCurrency": "ឌីណារ លីប៊ី",
     "translatedLanguages": "អារ៉ាប់",
-    "population": 7361263,
-    "area": 1759541,
-    "category": "arab",
-    "countryCode": "ly",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "Leptis Magna",
         "translatedName": "លេបទីស ម៉ាញ៉ា"
@@ -294,11 +254,7 @@
     "translatedRegion": "អាស៊ីខាងត្បូង",
     "translatedCurrency": "រូពី នេប៉ាល់",
     "translatedLanguages": "នេប៉ាលី",
-    "population": 31122387,
-    "area": 147516,
-    "category": "south_asia",
-    "countryCode": "np",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "Mount Everest",
         "translatedName": "ភ្នំអេវ៉ារិស"
@@ -316,11 +272,7 @@
     "translatedRegion": "អាស៊ីអាគ្នេយ៍",
     "translatedCurrency": "ដុល្លារ សិង្ហបុរី",
     "translatedLanguages": "អង់គ្លេស, ម៉ាឡេ, ម៉ាន់ដារីន, តាមីល",
-    "population": 5870750,
-    "area": 750,
-    "category": "east_asia",
-    "countryCode": "sg",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "Marina Bay Sand",
         "translatedName": "ម៉ារីណា បេ សែនដ៍"
@@ -338,11 +290,7 @@
     "translatedRegion": "អឺរ៉ុបខាងលិច",
     "translatedCurrency": "អឺរ៉ូ",
     "translatedLanguages": "អេស្ប៉ាញ",
-    "population": 49077984,
-    "area": 505990,
-    "category": "western",
-    "countryCode": "es",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "Sagrade Familia",
         "translatedName": "សាហ្គ្រាដាហ្វាមីលីអា"
@@ -360,11 +308,7 @@
     "translatedRegion": "អាស៊ីអាគ្នេយ៍",
     "translatedCurrency": "បាត",
     "translatedLanguages": "ថៃ",
-    "population": 65975198,
-    "area": 513120,
-    "category": "east_asia",
-    "countryCode": "th",
-    "translatedLandmarks": [
+    "landmarks": [
       {
         "originalName": "Wat Rong Khun",
         "translatedName": " វត្តរ៉ង់ឃុន "
@@ -382,11 +326,7 @@
     "translatedRegion": "អាហ្វ្រិកខាងជើង",
     "translatedCurrency": "ឌីណារ ទុយនេស៊ី",
     "translatedLanguages": "អារ៉ាប់",
-    "population": 11887412,
-    "area": 163610,
-    "category": "arab",
-    "countryCode": "tn",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Amphitheatre of El Jem",
         "translatedName": "អាមីធីត្រៈអែលហ្សែម"
@@ -404,11 +344,7 @@
     "translatedRegion": "អាស៊ីអាគ្នេយ៍",
     "translatedCurrency": "ដុង",
     "translatedLanguages": "វៀតណាម",
-    "population": 100300000,
-    "area": 331344,
-    "category": "east_asia",
-    "countryCode": "vn",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Ha Long Bay",
         "translatedName": "ឆ្នេរសមុទ្រហាឡុង"
@@ -426,11 +362,7 @@
     "translatedRegion": "អាមេរិកខាងជើង",
     "translatedCurrency": "ដុល្លារ អាមេរិក",
     "translatedLanguages": "អង់គ្លេស",
-    "population": 331002651,
-    "area": 9833517,
-    "category": "western",
-    "countryCode": "us",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Yosemite Valley",
         "translatedName": "ជ្រលងភ្នំយ៉ូសេម៉ាតី"

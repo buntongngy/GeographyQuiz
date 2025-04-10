@@ -10,11 +10,7 @@
     "translatedRegion": "Asie du Sud",
     "translatedCurrency": "Afghani",
     "translatedLanguages": "Pachto, Dari",
-    "population": 40218234,
-    "area": 652867,
-    "category": "middle_eastern",
-    "countryCode": "af",
-    "translatedLandmarks" : []
+    "landmarks": []
   },
   {
     "originalName": "Albania",
@@ -27,10 +23,6 @@
     "translatedRegion": "Europe du Sud",
     "translatedCurrency": "Lek albanais",
     "translatedLanguages": "Albanais",
-    "population": 2837743,
-    "area": 28748,
-    "category": "balkan",
-    "countryCode": "al",
     "landmarks": [
       {
         "name": "Berat City",
@@ -49,10 +41,6 @@
     "translatedRegion": "Afrique du Nord",
     "translatedCurrency": "Dinar algérien",
     "translatedLanguages": "Arabe, Berbère, Français",
-    "population": 43851044,
-    "area": 2381741,
-    "category": "arab",
-    "countryCode": "dz",
     "landmarks": [
       {
         "name": "Timgad",
@@ -60,6 +48,22 @@
       }
     ]
   },
+
+  {
+    "originalName": "Andorra",
+    "translatedName": "Andorre",
+    "translatedCapital": "Andorre-la-Vieille",
+    "translatedCity1": "Andorre-la-Vieille",
+    "translatedCity2": "Escaldes-Engordany",
+    "translatedCity3": "Encamp",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Ouest",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Catalan",
+    "landmarks": []
+  },
+
+
   {
     "originalName": "Angola",
     "translatedName": "Angola",
@@ -71,11 +75,7 @@
     "translatedRegion": "Afrique centrale",
     "translatedCurrency": "Kwanza",
     "translatedLanguages": "Portugais",
-    "population": 32866272,
-    "area": 1246700,
-    "category": "african_portuguese",
-    "countryCode": "ao",
-    "translatedLandmarks" : []
+    "landmarks" : []
   },
   {
     "originalName": "Bangladesh",
@@ -88,10 +88,6 @@
     "translatedRegion": "Asie du Sud",
     "translatedCurrency": "Taka",
     "translatedLanguages": "Bengali",
-    "population": 174655977,
-    "area": 148460,
-    "category": "south_asia",
-    "countryCode": "bd",
     "landmarks": [
       {
         "name": "Lalbagh Fort",
@@ -110,11 +106,7 @@
     "translatedRegion": "Europe de l'Ouest",
     "translatedCurrency": "Euro",
     "translatedLanguages": "Néerlandais, Français, Allemand",
-    "population": 11812354,
-    "area": 30689,
-    "category": "western",
-    "countryCode": "be",
-    "translatedLandmarks" : []
+    "landmarks" : []
   },
   {
     "originalName": "Cambodia",
@@ -127,11 +119,7 @@
     "translatedRegion": "Asie du Sud-Est",
     "translatedCurrency": "Riel",
     "translatedLanguages": "Khmer",
-    "population": 17638801,
-    "area": 181035,
-    "category": "east_asian",
-    "countryCode": "kh",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Angkor Wat",
         "translatedName": "Angkor Vat"
@@ -149,11 +137,7 @@
     "translatedRegion": "Amérique du Nord",
     "translatedCurrency": "Dollar canadien",
     "translatedLanguages": "Anglais, Français",
-    "population": 37742154,
-    "area": 9984670,
-    "category": "western",
-    "countryCode": "ca",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "CN Tower",
         "translatedName": "Tour CN"
@@ -171,11 +155,7 @@
     "translatedRegion": "Asie de l'Est",
     "translatedCurrency": "Yuan",
     "translatedLanguages": "Mandarin, Cantonais, Wu, Min",
-    "population": 1439323776,
-    "area": 9596961,
-    "category": "east_asian",
-    "countryCode": "cn",
-    "translatedLandmarks" : []
+    "landmarks": []
   },
   {
     "originalName": "Egypt",
@@ -188,11 +168,7 @@
     "translatedRegion": "Afrique du Nord",
     "translatedCurrency": "Livre égyptienne",
     "translatedLanguages": "Arabe",
-    "population": 107304000,
-    "area": 1010408,
-    "category": "arab",
-    "countryCode": "eg",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Pyramid of Giza",
         "translatedName": "Pyramide de Gizeh"
@@ -210,11 +186,7 @@
     "translatedRegion": "Europe de l'Ouest",
     "translatedCurrency": "Euro",
     "translatedLanguages": "Français",
-    "population": 65273511,
-    "area": 551695,
-    "category": "western",
-    "countryCode": "fr",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Eiffel Tower",
         "translatedName": "Tour Eiffel"
@@ -236,11 +208,7 @@
     "translatedRegion": "Europe de l'Ouest",
     "translatedCurrency": "Euro",
     "translatedLanguages": "Allemand",
-    "population": 83783942,
-    "area": 357022,
-    "category": "western",
-    "countryCode": "de",
-    "translatedLandmarks" : []
+    "landmarks": []
   },
   {
     "originalName": "India",
@@ -253,11 +221,7 @@
     "translatedRegion": "Asie du Sud",
     "translatedCurrency": "Roupie indienne",
     "translatedLanguages": "Hindi, Anglais, Bengali, Telugu, Marathi",
-    "population": 1380004385,
-    "area": 3287263,
-    "category": "south_asia",
-    "countryCode": "in",
-    "translatedLandmarks" : []
+    "landmarks": []
   },
   {
     "originalName": "Libya",
@@ -270,11 +234,7 @@
     "translatedRegion": "Afrique du Nord",
     "translatedCurrency": "Dinar libyen",
     "translatedLanguages": "Arabe",
-    "population": 7361263,
-    "area": 1759541,
-    "category": "arab",
-    "countryCode": "ly",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Leptis Magna",
         "translatedName": "Léptis Magna"
@@ -292,11 +252,7 @@
     "translatedRegion": "Asie du Sud",
     "translatedCurrency": "Roupie népalaise",
     "translatedLanguages": "Népalais",
-    "population": 31122387,
-    "area": 147516,
-    "category": "south_asia",
-    "countryCode": "np",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Mount Everest",
         "translatedName": "Mont Everest"
@@ -314,11 +270,7 @@
     "translatedRegion": "Asie du Sud-Est",
     "translatedCurrency": "Dollar de Singapour",
     "translatedLanguages": "Anglais, Malais, Mandarin, Tamoul",
-    "population": 5870750,
-    "area": 750,
-    "category": "east_asia",
-    "countryCode": "sg",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Marina Bay Sand",
         "translatedName": "Marina Bay Sand"
@@ -336,11 +288,7 @@
     "translatedRegion": "Europe de l'Ouest",
     "translatedCurrency": "Euro",
     "translatedLanguages": "Espagnol",
-    "population": 49077984,
-    "area": 505990,
-    "category": "western",
-    "countryCode": "es",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Sagrade Familia",
         "translatedName": "La Sagrada Família"
@@ -358,11 +306,7 @@
     "translatedRegion": "Asie du Sud-Est",
     "translatedCurrency": "Baht",
     "translatedLanguages": "Thaï",
-    "population": 65975198,
-    "area": 513120,
-    "category": "east_asia",
-    "countryCode": "th",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Wat Rong Khun",
         "translatedName": "Wat Rong Khun"
@@ -380,11 +324,7 @@
     "translatedRegion": "Afrique du Nord",
     "translatedCurrency": "Dinar tunisien",
     "translatedLanguages": "Arabe",
-    "population": 11887412,
-    "area": 163610,
-    "category": "arab",
-    "countryCode": "tn",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Amphitheatre of El Jem",
         "translatedName": "L'amphithéâtre d'El Jem"
@@ -402,11 +342,7 @@
     "translatedRegion": "Asie du Sud-Est",
     "translatedCurrency": "Dong",
     "translatedLanguages": "Vietnamien",
-    "population": 100300000,
-    "area": 331344,
-    "category": "east_asia",
-    "countryCode": "vn",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Ha Long Bay",
         "translatedName": "Baie d'Ha Long"
@@ -424,11 +360,7 @@
     "translatedRegion": "Amérique du Nord",
     "translatedCurrency": "Dollar américain",
     "translatedLanguages": "Anglais",
-    "population": 331002651,
-    "area": 9833517,
-    "category": "western",
-    "countryCode": "us",
-    "translatedLandmarks" : [
+    "landmarks": [
       {
         "originalName": "Yosemite Valley",
         "translatedName": "Vallée de Yosemite"

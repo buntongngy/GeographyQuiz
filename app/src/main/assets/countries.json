@@ -64,6 +64,42 @@
     ],
     "difficulty": 2
   },
+
+  {
+    "name": "Andorra",
+    "capital": "Andorra la Vella",
+    "bigCity": "Andorra la Vella",
+    "secondCity": "Escaldes-Engordany",
+    "thirdCity": "Encamp",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "languages": ["Catalan"],
+    "currency": "Euro",
+    "population": 77543,
+    "area": 468,
+    "category": "western",
+    "countryCode": "ad",
+    "difficulty": 2
+  },
+
+  {
+    "name": "Andorra",
+    "capital": "Andorra la Vella",
+    "bigCity": "Andorra la Vella",
+    "secondCity": "Escaldes-Engordany",
+    "thirdCity": "Encamp",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "languages": ["Catalan"],
+    "currency": "Euro",
+    "population": 77543,
+    "area": 468,
+    "category": "western",
+    "countryCode": "ad",
+    "difficulty": 3
+  },
+
+
   {
     "name": "Angola",
     "capital": "Luanda",
@@ -119,7 +155,7 @@
     "area": 30689,
     "category": "western",
     "countryCode": "be",
-    "difficulty": 2
+    "difficulty": 1
   },
 
   {
