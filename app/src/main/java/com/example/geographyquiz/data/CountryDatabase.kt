@@ -38,6 +38,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         const val COLUMN_AREA = "area"
         const val COLUMN_CATEGORY = "category"
         const val COLUMN_CODE = "code"
+        const val COLUMN_DIFFICULTY = "difficulty"
 
         // Translation table
         const val TABLE_COUNTRY_TRANSLATION = "country_translation"
@@ -106,7 +107,8 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
                 $COLUMN_POPULATION INTEGER NOT NULL,
                 $COLUMN_AREA INTEGER NOT NULL,
                 $COLUMN_CATEGORY TEXT NOT NULL,
-                $COLUMN_CODE TEXT NOT NULL
+                $COLUMN_CODE TEXT NOT NULL,
+                $COLUMN_DIFFICULTY INTEGER NOT NULL
             )
         """.trimIndent())
 
@@ -210,6 +212,7 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
             put(COLUMN_AREA, country.area)
             put(COLUMN_CATEGORY, country.category)
             put(COLUMN_CODE, country.countryCode)
+            put(COLUMN_DIFFICULTY, country.difficulty)
         }
         return db.insertWithOnConflict(TABLE_COUNTRIES, null, values, SQLiteDatabase.CONFLICT_REPLACE)
     }
@@ -425,6 +428,84 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         }
     }
 
+    fun getCountriesByDifficulty(difficulty: Int, limit: Int = 3, languageCode: String = "en"): List<Country> {
+        val db = readableDatabase
+        return db.rawQuery(
+            """
+        SELECT c.*, t.* 
+        FROM $TABLE_COUNTRIES c
+        LEFT JOIN $TABLE_COUNTRY_TRANSLATION t 
+        ON c.$COLUMN_ID = t.$COLUMN_COUNTRY_ID AND t.$COLUMN_LANGUAGE_CODE = ?
+        WHERE c.$COLUMN_DIFFICULTY = ?
+        ORDER BY RANDOM() LIMIT $limit
+        """.trimIndent(),
+            arrayOf(languageCode, difficulty.toString())
+        ).use { cursor ->
+            mutableListOf<Country>().apply {
+                while (cursor.moveToNext()) {
+                    val country = Country.fromCursor(cursor)
+                    if (!cursor.isNull(cursor.getColumnIndexOrThrow(COLUMN_TRANSLATED_NAME))) {
+                        add(Country.withTranslations(country, cursor))
+                    } else {
+                        add(country)
+                    }
+                }
+            }
+        }
+    }
+
+    fun getCountriesWithLandmarksByDifficulty(difficulty: Int, limit: Int = 3, languageCode: String = "en"): List<Country> {
+        val db = readableDatabase
+        return db.rawQuery(
+            """
+        SELECT c.*, 
+               t.*,
+               l.$COLUMN_LANDMARK_NAME as landmark_name,
+               l.$COLUMN_IMAGE_PATH as landmark_path,
+               lt.$COLUMN_TRANSLATED_LANDMARK_NAME as translated_landmark_name
+        FROM $TABLE_COUNTRIES c
+        LEFT JOIN $TABLE_COUNTRY_TRANSLATION t ON c.$COLUMN_ID = t.$COLUMN_COUNTRY_ID 
+            AND t.$COLUMN_LANGUAGE_CODE = ?
+        JOIN $TABLE_LANDMARKS l ON c.$COLUMN_ID = l.$COLUMN_COUNTRY_ID
+        LEFT JOIN $TABLE_LANDMARK_TRANSLATIONS lt ON l.$COLUMN_LANDMARK_ID = lt.$COLUMN_LANDMARK_ID 
+            AND lt.$COLUMN_LANGUAGE_CODE = ?
+        WHERE c.$COLUMN_DIFFICULTY = ?
+        ORDER BY RANDOM() LIMIT $limit
+        """.trimIndent(),
+            arrayOf(languageCode, languageCode, difficulty.toString())
+        ).use { cursor ->
+            mutableListOf<Country>().apply {
+                while (cursor.moveToNext()) {
+                    val country = if (!cursor.isNull(cursor.getColumnIndexOrThrow(COLUMN_TRANSLATED_NAME))) {
+                        Country.withTranslations(Country.fromCursor(cursor), cursor)
+                    } else {
+                        Country.fromCursor(cursor)
+                    }
+
+                    val landmark = Landmark(
+                        name = cursor.getString(cursor.getColumnIndexOrThrow("landmark_name")),
+                        translatedName = cursor.getStringOrNull(cursor.getColumnIndexOrThrow("translated_landmark_name"))
+                            ?: cursor.getString(cursor.getColumnIndexOrThrow("landmark_name")),
+                        imagePath = cursor.getString(cursor.getColumnIndexOrThrow("landmark_path"))
+                    )
+
+                    // Check if we already have this country in our list
+                    val existingCountry = find { it.id == country.id }
+                    if (existingCountry != null) {
+                        // Add landmark to existing country
+                        val index = indexOf(existingCountry)
+                        this[index] = existingCountry.copy(
+                            landmarks = existingCountry.landmarks + landmark
+                        )
+                    } else {
+                        // Add new country with landmark
+                        add(country.copy(landmarks = listOf(landmark)))
+                    }
+                }
+            }
+        }
+    }
+
     fun getAllCountriesWithLandmarks(languageCode: String = "en"): List<Country> {
         val db = readableDatabase
         return db.rawQuery(
@@ -505,40 +586,10 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         }
     }
 
-    // Data classes
-    private data class CountryData(
+    data class LandmarkData(
         val name: String,
-        val capital: String,
-        val bigCity: String,
-        val secondCity: String?,
-        val thirdCity: String?,
-        val continent: String,
-        val region: String,
-        val languages: List<String>?,
-        val currency: String,
-        val population: Long,
-        val area: Long,
-        val category: String,
-        val countryCode: String,
-        val landmarks: List<LandmarkData>? = null
-    )
-
-    private data class CountryTranslationData(
-        val originalName: String,
-        val translatedName: String,
-        val translatedCapital: String,
-        val translatedCity1: String,
-        val translatedCity2: String?,
-        val translatedCity3: String?,
-        val translatedContinent: String,
-        val translatedRegion: String,
-        val translatedCurrency: String,
-        val translatedLanguages: String
-    )
-
-    private data class LandmarkData(
-        val name: String,
-        val imagePath: String
+        val imagePath: String,
+        val difficulty: Int
     )
 
     private data class LandmarkTranslationData(

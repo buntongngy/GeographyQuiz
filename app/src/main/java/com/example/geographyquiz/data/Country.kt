@@ -20,6 +20,7 @@ data class Country(
     val category: String,
     val countryCode: String,
     val landmarks: List<Landmark> = emptyList(),
+    val difficulty: Int,
     // Translation fields
     val translatedName: String = name,
     val translatedCapital: String = capital,
@@ -51,7 +52,8 @@ data class Country(
                 population = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_POPULATION)),
                 area = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_AREA)),
                 category = cursor.getString(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_CATEGORY)),
-                countryCode = cursor.getString(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_CODE))
+                countryCode = cursor.getString(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_CODE)),
+                difficulty = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_DIFFICULTY))
             )
         }
 

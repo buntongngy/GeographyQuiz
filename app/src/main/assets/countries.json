@@ -13,7 +13,8 @@
     "population": 40218234,
     "area": 652867,
     "category": "middle_eastern",
-    "countryCode": "af"
+    "countryCode": "af",
+    "difficulty": 2
   },
 
   {
@@ -33,9 +34,11 @@
     "landmarks": [
       {
         "name": "Berat City",
-        "imagePath": "landmark/Albania/berat.jpg"
+        "imagePath": "landmark/Albania/berat.jpg",
+        "difficulty": 2
       }
-    ]
+    ],
+    "difficulty": 2
   },
 
   {
@@ -55,9 +58,11 @@
     "landmarks": [
       {
         "name": "Timgad",
-        "imagePath": "landmark/Algeria/timgad.jpg"
+        "imagePath": "landmark/Algeria/timgad.jpg",
+        "difficulty": 3
       }
-    ]
+    ],
+    "difficulty": 2
   },
   {
     "name": "Angola",
@@ -72,7 +77,8 @@
     "population": 32866272,
     "area": 1246700,
     "category": "african_portuguese",
-    "countryCode": "ao"
+    "countryCode": "ao",
+    "difficulty": 2
   },
 
   {
@@ -92,9 +98,11 @@
     "landmarks": [
       {
         "name": "Lalbagh Fort",
-        "imagePath": "landmark/Bangladesh/lalbagh_fort.jpeg"
+        "imagePath": "landmark/Bangladesh/lalbagh_fort.jpeg",
+        "difficulty": 2
       }
-    ]
+    ],
+    "difficulty": 2
   },
 
   {
@@ -110,7 +118,8 @@
     "population": 11812354,
     "area": 30689,
     "category": "western",
-    "countryCode": "be"
+    "countryCode": "be",
+    "difficulty": 2
   },
 
   {
@@ -130,9 +139,11 @@
     "landmarks": [
       {
         "name": "Angkor Wat",
-        "imagePath": "landmark/Cambodia/kh_angkor_wat.jpg"
+        "imagePath": "landmark/Cambodia/kh_angkor_wat.jpg",
+        "difficulty": 2
       }
-    ]
+    ],
+    "difficulty": 2
   },
 
   {
@@ -152,9 +163,11 @@
     "landmarks": [
       {
         "name": "CN Tower",
-        "imagePath": "landmark/Canada/cn_tower.jpg"
+        "imagePath": "landmark/Canada/cn_tower.jpg",
+        "difficulty": 1
       }
-    ]
+    ],
+    "difficulty": 1
   },
 
   {
@@ -170,7 +183,8 @@
     "population": 1439323776,
     "area": 9596961,
     "category": "east_asian",
-    "countryCode": "cn"
+    "countryCode": "cn",
+    "difficulty": 1
   },
 
   {
@@ -190,9 +204,11 @@
     "landmarks": [
       {
         "name": "Pyramid of Giza",
-        "imagePath": "landmark/Egypt/eg_pyramid.jpg"
+        "imagePath": "landmark/Egypt/eg_pyramid.jpg",
+        "difficulty": 1
       }
-    ]
+    ],
+    "difficulty": 1
   },
 
   {
@@ -212,13 +228,16 @@
     "landmarks": [
       {
         "name": "Eiffel Tower",
-        "imagePath": "landmark/france/eiffel_tower.jpg"
+        "imagePath": "landmark/france/eiffel_tower.jpg",
+        "difficulty": 1
       },
       {
         "name": "Mont-Saint-Michell",
-        "imagePath": "landmark/france/mont_saint_michel.jpg"
+        "imagePath": "landmark/france/mont_saint_michel.jpg",
+        "difficulty": 1
       }
-    ]
+    ],
+    "difficulty": 1
   },
   {
     "name": "Germany",
@@ -233,7 +252,8 @@
     "population": 83783942,
     "area": 357022,
     "category": "western",
-    "countryCode": "de"
+    "countryCode": "de",
+    "difficulty": 1
   },
 
   {
@@ -249,7 +269,8 @@
     "population": 1380004385,
     "area": 3287263,
     "category": "south_asia",
-    "countryCode": "in"
+    "countryCode": "in",
+    "difficulty": 1
   },
 
   {
@@ -269,9 +290,11 @@
     "landmarks": [
       {
         "name": "Leptis Magna",
-        "imagePath": "landmark/Libya/Leptis_Magna.jpg"
+        "imagePath": "landmark/Libya/Leptis_Magna.jpg",
+        "difficulty": 3
       }
-    ]
+    ],
+    "difficulty": 3
   },
 
   {
@@ -291,9 +314,11 @@
     "landmarks": [
       {
         "name": "Mount Everest",
-        "imagePath": "landmark/Nepal/mount_everest.jpg"
+        "imagePath": "landmark/Nepal/mount_everest.jpg",
+        "difficulty": 1
       }
-    ]
+    ],
+    "difficulty": 3
   },
 
   {
@@ -313,9 +338,11 @@
     "landmarks":[
       {
         "name": "Marina Bay Sand",
-        "imagePath": "landmark/Singapore/Marina_Bay_Sand.jpg"
+        "imagePath": "landmark/Singapore/Marina_Bay_Sand.jpg",
+        "difficulty": 1
       }
-    ]
+    ],
+    "difficulty": 1
   },
 
   {
@@ -335,9 +362,11 @@
     "landmarks":[
       {
         "name": "Sagrade Familia",
-        "imagePath": "landmark/Spain/Sagrade_Familia.jpg"
+        "imagePath": "landmark/Spain/Sagrade_Familia.jpg",
+        "difficulty": 1
       }
-    ]
+    ],
+    "difficulty": 1
   },
 
   {
@@ -357,9 +386,11 @@
     "landmarks":[
       {
         "name": "Wat Rong Khun",
-        "imagePath": "landmark/Thailand/white_temple.jpg"
+        "imagePath": "landmark/Thailand/white_temple.jpg",
+        "difficulty": 2
       }
-    ]
+    ],
+    "difficulty": 2
   },
 
   {
@@ -379,9 +410,11 @@
     "landmarks":[
       {
         "name": "Amphitheatre of El Jem",
-        "imagePath": "landmark/Tunisia/El_Djem.jpg"
+        "imagePath": "landmark/Tunisia/El_Djem.jpg",
+        "difficulty": 3
       }
-    ]
+    ],
+    "difficulty": 1
   },
 
   {
@@ -401,9 +434,11 @@
     "landmarks":[
       {
         "name": "Ha Long Bay",
-        "imagePath": "landmark/Vietnam/Ha_long.jpg"
+        "imagePath": "landmark/Vietnam/Ha_long.jpg",
+        "difficulty": 1
       }
-    ]
+    ],
+    "difficulty": 2
   },
 
   {
@@ -423,8 +458,10 @@
     "landmarks":[
       {
         "name": "Yosemite Valley",
-        "imagePath": "landmark/US/Yosemite.jpg"
+        "imagePath": "landmark/US/Yosemite.jpg",
+        "difficulty": 2
       }
-    ]
+    ],
+    "difficulty": 1
   }
 ]
