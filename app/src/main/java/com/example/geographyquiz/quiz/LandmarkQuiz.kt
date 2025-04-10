@@ -25,11 +25,11 @@ class LandmarkQuiz : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quiz_landmark) // Reusing the same layout as FlagQuiz
+        setContentView(R.layout.activity_quiz_img) // Reusing the same layout as FlagQuiz
 
         val sharedPref = getSharedPreferences("AppSettings", MODE_PRIVATE)
         currentLanguage = sharedPref.getString("app_language", "en") ?: "en"
-        landmarkImageView = findViewById(R.id.landmarkImageView) // Reusing the same ImageView
+        landmarkImageView = findViewById(R.id.flagImageView) // Reusing the same ImageView
         databaseHelper = CountryDatabase(this)
         loadLandmarkQuestion()
     }

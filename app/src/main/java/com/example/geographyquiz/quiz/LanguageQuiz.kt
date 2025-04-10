@@ -1,5 +1,6 @@
 package com.example.geographyquiz.quiz
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -19,7 +20,12 @@ class LanguageQuiz : AppCompatActivity() {
     private var totalQuestions = 0
     private var questionsRemaining = 0
     private lateinit var countries: List<Country>
-    private val usedCountries = mutableSetOf<String>()
+    private val usedQuestions = mutableSetOf<Pair<String, QuestionType>>()
+
+    enum class QuestionType {
+        LANGUAGE,
+        LANGUAGE_COUNT
+    }
 
     // UI Components
     private lateinit var questionText: TextView
@@ -36,7 +42,11 @@ class LanguageQuiz : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
-        // Initialize UI components
+        initializeUI()
+        initializeQuiz()
+    }
+
+    private fun initializeUI() {
         questionText = findViewById(R.id.questionText)
         option1Btn = findViewById(R.id.option1Button)
         option2Btn = findViewById(R.id.option2Button)
@@ -46,18 +56,16 @@ class LanguageQuiz : AppCompatActivity() {
         scoreText = findViewById(R.id.scoreText)
         remainingText = findViewById(R.id.remainingText)
         nextButton = findViewById(R.id.nextButton)
+    }
+
+    private fun initializeQuiz() {
+        score = 0
+        usedQuestions.clear()
 
         val sharedPref = getSharedPreferences("AppSettings", MODE_PRIVATE)
         currentLanguage = sharedPref.getString("app_language", "en") ?: "en"
         databaseHelper = CountryDatabase(this)
 
-        // Initialize quiz
-        initializeQuiz()
-    }
-
-    private fun initializeQuiz() {
-        score = 0
-        usedCountries.clear()
         countries = if (currentLanguage != "en") {
             databaseHelper.getTranslatedRandomCountries(10, currentLanguage)
         } else {
@@ -69,7 +77,7 @@ class LanguageQuiz : AppCompatActivity() {
             return
         }
 
-        totalQuestions = countries.size * 2 // 2 question types per country
+        totalQuestions = countries.size * QuestionType.values().size
         questionsRemaining = totalQuestions
         updateScoreAndRemaining()
 
@@ -84,23 +92,36 @@ class LanguageQuiz : AppCompatActivity() {
             return
         }
 
-        // Get a random country (can reuse countries for second question type)
-        val targetCountry = countries.random()
-
-        // Generate question based on whether we've used this country before
-        val questionData = if (!usedCountries.contains(targetCountry.name)) {
-            // First question type for this country
-            usedCountries.add(targetCountry.name)
-            generateLanguageQuestion(targetCountry, countries)
-        } else {
-            // Second question type for this country
-            generateLanguageCountQuestion(targetCountry)
+        // Get available questions (country + type combinations not yet used)
+        val availableQuestions = countries.flatMap { country ->
+            QuestionType.values()
+                .filter { type -> !usedQuestions.contains(country.name to type) }
+                .map { type -> country to type }
         }
 
+        if (availableQuestions.isEmpty()) {
+            showQuizCompleted()
+            return
+        }
+
+        // Select a random available question
+        val (targetCountry, questionType) = availableQuestions.random()
+        usedQuestions.add(targetCountry.name to questionType)
         questionsRemaining--
         updateScoreAndRemaining()
 
-        // Rest of your existing question display code...
+        // Generate the question data
+        val questionData = when (questionType) {
+            QuestionType.LANGUAGE -> generateLanguageQuestion(targetCountry, countries)
+            QuestionType.LANGUAGE_COUNT -> generateLanguageCountQuestion(targetCountry)
+        }
+
+        // Display the question and answers
+        displayQuestion(questionData)
+    }
+
+    private fun displayQuestion(questionData: QuestionData) {
+        // Ensure we have exactly 4 answers (pad with empty strings if needed)
         val paddedAnswers = if (questionData.answers.size < 4) {
             questionData.answers + List(4 - questionData.answers.size) { "" }
         } else {
@@ -134,6 +155,7 @@ class LanguageQuiz : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("StringFormatMatches")
     private fun updateScoreAndRemaining() {
         scoreText.text = getString(R.string.score_format, score, totalQuestions)
         remainingText.text = getString(R.string.remaining_format, questionsRemaining)
@@ -218,28 +240,47 @@ class LanguageQuiz : AppCompatActivity() {
 
     private fun generateLanguageCountQuestion(targetCountry: Country): QuestionData {
         val correctCount = targetCountry.languages.size
-        val countryName = getCountryDisplayName(targetCountry)
+        val possibleCounts = mutableListOf<Int>()
 
-        val counts = when {
-            correctCount == 0 -> listOf(0, 1, 2, 3)
-            correctCount == 1 -> listOf(1, 2, 3, 0)
-            else -> listOf(
+        // Generate plausible nearby counts
+        when {
+            correctCount == 1 -> possibleCounts.addAll(listOf(1, 2, 4, 3))
+            correctCount == 2 -> possibleCounts.addAll(listOf(2, 1, 3, 4))
+            else -> possibleCounts.addAll(listOf(
                 correctCount,
                 correctCount - 1,
                 correctCount + 1,
                 if (correctCount > 2) correctCount - 2 else correctCount + 2
-            )
-        }.distinct().shuffled().map { it.toString() }
+            ))
+        }
+
+        // Ensure all counts are positive and we have exactly 4 unique options
+        val uniqueCounts = possibleCounts
+            .filter { it >= (if (correctCount == 1)1 else 0) }
+            .distinct()
+            .take(4)
+            .toMutableList()
+
+        // If we somehow don't have enough, fill with reasonable numbers
+        while (uniqueCounts.size < 4) {
+            val nextNum = uniqueCounts.maxOrNull()?.plus(1) ?: 1
+            if (!uniqueCounts.contains(nextNum)) {
+                uniqueCounts.add(nextNum)
+            } else {
+                uniqueCounts.add((1..10).random())
+            }
+        }
+
+        val answers = uniqueCounts.shuffled().map { it.toString() }
 
         return QuestionData(
-            TranslationUtils.getTranslatedStringWithFormat(
-                this,
+            TranslationUtils.getTranslatedStringWithFormat(this,
                 R.string.languageCountQuestion,
                 currentLanguage,
-                countryName
+                if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name
             ),
             correctCount.toString(),
-            counts
+            answers
         )
     }
 

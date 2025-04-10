@@ -1,5 +1,6 @@
 package com.example.geographyquiz.quiz
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -153,6 +154,7 @@ class CityQuiz : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("StringFormatMatches")
     private fun updateScoreAndRemaining() {
         scoreText.text = getString(R.string.score_format, score, totalQuestions)
         remainingText.text = getString(R.string.remaining_format, questionsRemaining)
