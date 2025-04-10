@@ -5,17 +5,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.geographyquiz.databinding.FragmentHomeBinding
 
 import android.content.Intent
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.geographyquiz.ExplorerAdapter
-import com.example.geographyquiz.QuizActivity
+import com.example.geographyquiz.quiz.CityQuiz
 import com.example.geographyquiz.R
+import com.example.geographyquiz.quiz.FlagQuiz
+import com.example.geographyquiz.quiz.LandmarkQuiz
+import com.example.geographyquiz.quiz.LanguageQuiz
 
 class HomeFragment : Fragment() {
 
@@ -32,11 +32,20 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = ExplorerAdapter(getExplorerItems()) { item ->
             when (item.title) {
                 "Capital City" -> {
-                    val intent = Intent(requireContext(), QuizActivity::class.java)
+                    val intent = Intent(requireContext(), CityQuiz::class.java)
+                    startActivity(intent)
+                }
+                "Country Language" -> {
+                    val intent = Intent(requireContext(), LanguageQuiz::class.java)
                     startActivity(intent)
                 }
                 "Flag Quiz" -> {
-                    // Handle history category click
+                    val intent = Intent(requireContext(), FlagQuiz::class.java)
+                    startActivity(intent)
+                }
+                "Landmark" -> {
+                    val intent = Intent(requireContext(), LandmarkQuiz::class.java)
+                    startActivity(intent)
                 }
             }
         }
@@ -48,6 +57,8 @@ class HomeFragment : Fragment() {
         return listOf(
             ExplorerItem("Flag Quiz", R.drawable.ic_flag),
             ExplorerItem("Capital City", R.drawable.ic_city),
+            ExplorerItem("Country Currency", R.drawable.ic_exchange),
+            ExplorerItem("Country Language", R.drawable.ic_language),
             ExplorerItem("Country Shape", R.drawable.ic_shape),
             ExplorerItem("Landmark",R.drawable.ic_landmark )
 

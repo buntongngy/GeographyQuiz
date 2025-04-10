@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeographyQuiz</string>
+    <string name="home">Accueil</string>
+    <string name="setting">Paramètres</string>
+    <string name="languageQuestion">Quelle langue est parlée en \n%1$s ?</string>
+    <string name="languageCountQuestion">Combien de langues sont parlée en \n%1$s ?</string>
+
+    <string name="continent_question">Sur quel continent se trouve %1$s ?</string>
+    <string name="population_question">Est-ce que %1$s a une population plus grande que \n%2$s ?</string>
+    <string name="area_question">Lequel de ces pays a la plus grande superficie ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="correct">Correct! 🎉</string>
+    <string name="wrong">Faux! 😢</string>
+
+    <!-- City Question -->
+    <string name="capital_question">Quelle est la capitale de \n%1$s ?</string>
+    <string name="city_question">Quelle est la plus grande ville de \n%1$s?</string>
+    <string name="city_in_country_question">Laquelle de ces villes se trouve en \n%1$s?</string>
+
+    <!-- Flag Question -->
+    <string name="flag_question">Quel pays a ce drapeau</string>
+
+    <!-- Landmark Question -->
+    <string name="landmark_question">Dans quel pays se trouve ce monument ?</string>
+    <string name="notLandmark">Pas assez de monuments disponibles</string>
+
+
+    <!--Error Log -->
+    <string name="unkLang">Langue inconnue</string>
+    <string name="notEnoughCountry">Pas assez de pays dans la base de données</string>
+
+</resources>
