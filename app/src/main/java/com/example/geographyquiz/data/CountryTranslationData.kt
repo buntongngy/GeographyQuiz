@@ -1,5 +1,6 @@
 package com.example.geographyquiz.data
 
+//For Country Database class
 data class CountryTranslationData(
     val originalName: String,
     val translatedName: String,
@@ -12,3 +13,4 @@ data class CountryTranslationData(
     val translatedCurrency: String,
     val translatedLanguages: String
 )
+

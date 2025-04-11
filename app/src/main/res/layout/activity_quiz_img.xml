@@ -13,8 +13,6 @@
         <!-- Score and Remaining Counter -->
 
         <!-- Flag Image -->
-
-        <!-- Question Text -->
         <LinearLayout
                 android:id="@+id/scoreContainer"
                 android:layout_width="0dp"
@@ -23,8 +21,9 @@
                 android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="84dp"
-                app:layout_constraintHorizontal_bias="0.0">
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="24dp"
+                app:layout_constraintHorizontal_bias="0.0"> <!-- Reduced from 84dp to prevent overflow -->
 
             <TextView
                     android:id="@+id/scoreText"
@@ -50,7 +49,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/scoreContainer"
-                app:layout_constraintWidth_percent="0.7" app:layout_constraintHorizontal_bias="0.495"/>
+                app:layout_constraintWidth_percent="0.7"/>
+
+        <!-- Question Text -->
         <TextView
                 android:id="@+id/questionText"
                 android:layout_width="0dp"
@@ -77,31 +78,40 @@
                 android:columnOrderPreserved="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/questionText">
+                app:layout_constraintTop_toBottomOf="@id/questionText"
+                app:layout_constraintWidth_max="600dp"> <!-- Added max width constraint -->
 
             <Button
                     android:id="@+id/option1Button"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"/>
 
             <Button
                     android:id="@+id/option2Button"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"/>
 
             <Button
                     android:id="@+id/option3Button"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"/>
 
             <Button
                     android:id="@+id/option4Button"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"/>
         </GridLayout>
 
         <!-- Feedback Text -->

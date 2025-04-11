@@ -14,7 +14,9 @@
     "area": 652867,
     "category": "middle_eastern",
     "countryCode": "af",
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["Black", "Red", "Green"],
+    "flagEmblem": ["Stripe"]
   },
 
   {
@@ -38,7 +40,9 @@
         "difficulty": 2
       }
     ],
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["Red"],
+    "flagEmblem": ["Eagle"]
   },
 
   {
@@ -62,7 +66,9 @@
         "difficulty": 3
       }
     ],
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["White", "Green"],
+    "flagEmblem": ["Moon"]
   },
 
   {
@@ -79,24 +85,9 @@
     "area": 468,
     "category": "western",
     "countryCode": "ad",
-    "difficulty": 2
-  },
-
-  {
-    "name": "Andorra",
-    "capital": "Andorra la Vella",
-    "bigCity": "Andorra la Vella",
-    "secondCity": "Escaldes-Engordany",
-    "thirdCity": "Encamp",
-    "continent": "Europe",
-    "region": "Western Europe",
-    "languages": ["Catalan"],
-    "currency": "Euro",
-    "population": 77543,
-    "area": 468,
-    "category": "western",
-    "countryCode": "ad",
-    "difficulty": 3
+    "difficulty": 3,
+    "flagColors": ["Blue", "Yellow", "Red"],
+    "flagEmblem": ["Crest", "Stripe"]
   },
 
   {
@@ -113,7 +104,9 @@
     "area": 440,
     "category": "caribbean",
     "countryCode": "ag",
-    "difficulty": 3
+    "difficulty": 3,
+    "flagColors": ["Blue", "White", "Red", "Black"],
+    "flagEmblem": ["Sun"]
   },
 
   {
@@ -130,7 +123,9 @@
     "area": 1246700,
     "category": "african_portuguese",
     "countryCode": "ao",
-    "difficulty": 2
+    "difficulty": 3,
+    "flagColors": ["Red", "Black"],
+    "flagEmblem": ["Crest", "Stripe"]
   },
 
   {
@@ -147,7 +142,9 @@
     "area": 2780400,
     "category": "latin",
     "countryCode": "ar",
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["White", "Blue"],
+    "flagEmblem": ["Sun", "Stripe"]
   },
 
   {
@@ -164,7 +161,9 @@
     "area": 29734,
     "category": "eastern eu",
     "countryCode": "am",
-    "difficulty": 3
+    "difficulty": 3,
+    "flagColors": ["Yellow", "Blue", "Red"],
+    "flagEmblem": ["Stripe"]
   },
 
   {
@@ -181,7 +180,9 @@
     "area": 7692024,
     "category": "western",
     "countryCode": "au",
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["White", "Blue", "Red"],
+    "flagEmblem": ["British", "Star"]
   },
 
   {
@@ -198,7 +199,9 @@
     "area": 83883,
     "category": "Western",
     "countryCode": "at",
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["White", "Red"],
+    "flagEmblem": ["Stripe"]
   },
 
   {
@@ -215,7 +218,9 @@
     "area": 86600,
     "category": "eastern eu",
     "countryCode": "az",
-    "difficulty": 3
+    "difficulty": 3,
+    "flagColors": ["Blue", "Red", "Green"],
+    "flagEmblem": ["Moon", "Stripe"]
   },
 
   {
@@ -239,7 +244,9 @@
         "difficulty": 2
       }
     ],
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["Green", "Red"],
+    "flagEmblem": ["Circle"]
   },
 
   {
@@ -256,7 +263,9 @@
     "area": 30689,
     "category": "western",
     "countryCode": "be",
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["Black", "Red", "Yellow"],
+    "flagEmblem": ["Stripe"]
   },
 
   {
@@ -280,7 +289,9 @@
         "difficulty": 2
       }
     ],
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["Blue", "Red"],
+    "flagEmblem": ["Castle", "Stripe"]
   },
 
   {
@@ -304,7 +315,9 @@
         "difficulty": 1
       }
     ],
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["White", "Red"],
+    "flagEmblem": ["Stripe"]
   },
 
   {
@@ -321,7 +334,9 @@
     "area": 9596961,
     "category": "east_asian",
     "countryCode": "cn",
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["Yellow", "Red"],
+    "flagEmblem": ["Star"]
   },
 
   {
@@ -345,7 +360,9 @@
         "difficulty": 1
       }
     ],
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["White", "Red", "Black"],
+    "flagEmblem": ["Eagle", "Stripe"]
   },
 
   {
@@ -374,7 +391,9 @@
         "difficulty": 1
       }
     ],
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["White", "Red", "Blue"],
+    "flagEmblem": ["Stripe"]
   },
   {
     "name": "Germany",
@@ -390,7 +409,9 @@
     "area": 357022,
     "category": "western",
     "countryCode": "de",
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["Yellow", "Red", "Black"],
+    "flagEmblem": ["Stripe"]
   },
 
   {
@@ -407,7 +428,9 @@
     "area": 3287263,
     "category": "south_asia",
     "countryCode": "in",
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["Yellow", "Green", "White"],
+    "flagEmblem": ["Crest", "Stripe"]
   },
 
   {
@@ -431,7 +454,9 @@
         "difficulty": 3
       }
     ],
-    "difficulty": 3
+    "difficulty": 3,
+    "flagColors": ["Red", "Green", "Black"],
+    "flagEmblem": ["Moon", "Stripe"]
   },
 
   {
@@ -455,7 +480,9 @@
         "difficulty": 1
       }
     ],
-    "difficulty": 3
+    "difficulty": 3,
+    "flagColors": ["Red", "Blue", "White"],
+    "flagEmblem": ["Sun", "Moon"]
   },
 
   {
@@ -479,7 +506,9 @@
         "difficulty": 1
       }
     ],
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["Red", "White"],
+    "flagEmblem": ["Moon", "Stripe"]
   },
 
   {
@@ -503,7 +532,9 @@
         "difficulty": 1
       }
     ],
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["Red", "Yellow"],
+    "flagEmblem": ["Crest", "Stripe"]
   },
 
   {
@@ -527,7 +558,9 @@
         "difficulty": 2
       }
     ],
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["Red", "Blue", "White"],
+    "flagEmblem": ["Stripe"]
   },
 
   {
@@ -551,7 +584,9 @@
         "difficulty": 3
       }
     ],
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["Red", "White"],
+    "flagEmblem": ["Moon"]
   },
 
   {
@@ -575,7 +610,9 @@
         "difficulty": 1
       }
     ],
-    "difficulty": 2
+    "difficulty": 2,
+    "flagColors": ["Red"],
+    "flagEmblem": ["Star"]
   },
 
   {
@@ -599,6 +636,8 @@
         "difficulty": 2
       }
     ],
-    "difficulty": 1
+    "difficulty": 1,
+    "flagColors": ["Red", "White", "Blue"],
+    "flagEmblem": ["Star", "Stripe"]
   }
 ]

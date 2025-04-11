@@ -21,6 +21,8 @@ data class Country(
     val countryCode: String,
     val landmarks: List<Landmark> = emptyList(),
     val difficulty: Int,
+    val flagColors: List<String> = emptyList(),
+    val flagEmblem: List<String> = emptyList(),
     // Translation fields
     val translatedName: String = name,
     val translatedCapital: String = capital,
@@ -37,6 +39,8 @@ data class Country(
         fun fromCursor(cursor: Cursor): Country {
             val languagesString = cursor.getString(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_LANG))
             val languagesList = languagesString.split(",").map { it.trim() }
+            val colorsString = cursor.getStringOrNull(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_FLAG_COLORS)) ?: ""
+            val emblemsString = cursor.getStringOrNull(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_FLAG_EMBLEM)) ?: ""
 
             return Country(
                 id = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_ID)),
@@ -53,7 +57,9 @@ data class Country(
                 area = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_AREA)),
                 category = cursor.getString(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_CATEGORY)),
                 countryCode = cursor.getString(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_CODE)),
-                difficulty = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_DIFFICULTY))
+                difficulty = cursor.getInt(cursor.getColumnIndexOrThrow(CountryDatabase.COLUMN_DIFFICULTY)),
+                flagColors = colorsString.split(",").map {it.trim()}.filter { it.isNotEmpty() },
+                flagEmblem = emblemsString.split(",").map {it.trim()}.filter { it.isNotEmpty() }
             )
         }
 

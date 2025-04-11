@@ -2,6 +2,7 @@ package com.example.geographyquiz.data
 
 import com.example.geographyquiz.data.CountryDatabase.LandmarkData
 
+//For Country Database Class
 data class CountryData(
     val name: String,
     val capital: String,
@@ -18,4 +19,6 @@ data class CountryData(
     val countryCode: String,
     val landmarks: List<LandmarkData>? = null,
     val difficulty: Int,
+    val flagColors: List<String>?,
+    val flagEmblem: List<String>? = null,
 )

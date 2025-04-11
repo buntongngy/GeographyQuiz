@@ -39,6 +39,8 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
         const val COLUMN_CATEGORY = "category"
         const val COLUMN_CODE = "code"
         const val COLUMN_DIFFICULTY = "difficulty"
+        const val COLUMN_FLAG_COLORS = "flag_colors"
+        const val COLUMN_FLAG_EMBLEM = "flag_emblem"
 
         // Translation table
         const val TABLE_COUNTRY_TRANSLATION = "country_translation"
@@ -108,7 +110,9 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
                 $COLUMN_AREA INTEGER NOT NULL,
                 $COLUMN_CATEGORY TEXT NOT NULL,
                 $COLUMN_CODE TEXT NOT NULL,
-                $COLUMN_DIFFICULTY INTEGER NOT NULL
+                $COLUMN_DIFFICULTY INTEGER NOT NULL,
+                $COLUMN_FLAG_COLORS TEXT,
+                $COLUMN_FLAG_EMBLEM TEXT
             )
         """.trimIndent())
 
@@ -213,6 +217,8 @@ class CountryDatabase(context: Context) : SQLiteOpenHelper(
             put(COLUMN_CATEGORY, country.category)
             put(COLUMN_CODE, country.countryCode)
             put(COLUMN_DIFFICULTY, country.difficulty)
+            put(COLUMN_FLAG_COLORS, country.flagColors?.joinToString(",") ?: "")
+            put(COLUMN_FLAG_EMBLEM, country.flagEmblem?.joinToString(",") ?: "")
         }
         return db.insertWithOnConflict(TABLE_COUNTRIES, null, values, SQLiteDatabase.CONFLICT_REPLACE)
     }

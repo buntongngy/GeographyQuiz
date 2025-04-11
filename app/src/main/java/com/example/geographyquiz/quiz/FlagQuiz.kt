@@ -28,6 +28,7 @@ class FlagQuiz : AppCompatActivity() {
     private var questionsRemaining = 0
     private lateinit var countries: List<Country>
     private val usedCountries = mutableSetOf<String>()
+    private lateinit var currentCountry: Country
 
     // UI Components
     private lateinit var questionText: TextView
@@ -67,9 +68,9 @@ class FlagQuiz : AppCompatActivity() {
         score = 0
         usedCountries.clear()
         countries = if (currentLanguage != "en") {
-            databaseHelper.getTranslatedRandomCountries(20, currentLanguage)
+            databaseHelper.getTranslatedRandomCountries(28, currentLanguage)
         } else {
-            databaseHelper.getRandomCountries(20)
+            databaseHelper.getRandomCountries(28)
         }
 
         option1Btn.visibility = View.VISIBLE
@@ -99,44 +100,103 @@ class FlagQuiz : AppCompatActivity() {
             return
         }
 
-        // Get available countries that haven't been used yet
-        val availableCountries = countries.filter { !usedCountries.contains(it.name) }
+        // Reset used countries if we're running low
+        if (usedCountries.size >= countries.size - 3) {
+            usedCountries.clear()
+        }
+
+        // Get available countries with null checks
+        val availableCountries = countries.filter {
+            !usedCountries.contains(it.name) &&
+                    it.name.isNotBlank() &&
+                    it.countryCode.isNotBlank()
+        }
+
         if (availableCountries.isEmpty()) {
             showQuizCompleted()
             return
         }
 
-        val targetCountry = availableCountries.random()
-        usedCountries.add(targetCountry.name)
+        // Select current country
+        currentCountry = availableCountries.random()
+        usedCountries.add(currentCountry.name)
         questionsRemaining--
         updateScoreAndRemaining()
 
-        loadSvgFlag(targetCountry.countryCode)
+        // Load the flag image
+        loadSvgFlag(currentCountry.countryCode)
 
-        // Get 3 other random countries (excluding target country)
-        val otherCountries = countries
-            .filter { it.name != targetCountry.name }
-            .shuffled()
-            .take(3)
+        // Create answer options - BULLETPROOF VERSION
+        val answerOptions = mutableListOf<Country>().apply {
+            add(currentCountry) // Correct answer
 
-        val answerOptions = (listOf(targetCountry) + otherCountries).shuffled()
-        correctAnswerIndex = answerOptions.indexOf(targetCountry)
+            // Get all other available countries
+            val otherCountries = countries.filter {
+                it.name != currentCountry.name &&
+                        it.name.isNotBlank() &&
+                        it.countryCode.isNotBlank()
+            }
 
-        // Update UI
-        questionText.text = TranslationUtils.getTranslatedString(this, R.string.flag_question, currentLanguage)
-        option1Btn.text = if (currentLanguage != "en") answerOptions[0].translatedName else answerOptions[0].name
-        option2Btn.text = if (currentLanguage != "en") answerOptions[1].translatedName else answerOptions[1].name
-        option3Btn.text = if (currentLanguage != "en") answerOptions[2].translatedName else answerOptions[2].name
-        option4Btn.text = if (currentLanguage != "en") answerOptions[3].translatedName else answerOptions[3].name
+            // 1. First try to get 3 similar flags
+            val similarFlags = otherCountries.sortedByDescending { country ->
+                val colorMatches = currentCountry.flagColors.intersect(country.flagColors).size
+                val emblemMatches = currentCountry.flagEmblem.intersect(country.flagEmblem).size
+                (colorMatches * 10) + (emblemMatches * 15)
+            }.take(3)
 
+            addAll(similarFlags)
+
+            // 2. If still missing options, fill with random unique countries
+            if (size < 4) {
+                val remainingOptions = otherCountries
+                    .filter { it !in this }
+                    .shuffled()
+                    .take(4 - size)
+                addAll(remainingOptions)
+            }
+
+            // 3. Absolute last resort - if STILL not enough (should never happen)
+            while (size < 4) {
+                val randomCountry = countries.random()
+                if (randomCountry.name != currentCountry.name && randomCountry !in this) {
+                    add(randomCountry)
+                }
+            }
+        }.shuffled()
+
+        // Set correct answer index
+        correctAnswerIndex = answerOptions.indexOfFirst { it.name == currentCountry.name }
+
+        // Update UI - FORCE all 4 options to appear
+        questionText.text = getString(R.string.flag_question)
+        option1Btn.apply {
+            text = answerOptions[0].name.takeIf { it.isNotBlank() } ?: "Option 1"
+            visibility = View.VISIBLE
+            isEnabled = true
+        }
+        option2Btn.apply {
+            text = answerOptions[1].name.takeIf { it.isNotBlank() } ?: "Option 2"
+            visibility = View.VISIBLE
+            isEnabled = true
+        }
+        option3Btn.apply {
+            text = answerOptions[2].name.takeIf { it.isNotBlank() } ?: "Option 3"
+            visibility = View.VISIBLE
+            isEnabled = true
+        }
+        option4Btn.apply {
+            text = answerOptions[3].name.takeIf { it.isNotBlank() } ?: "Option 4"
+            visibility = View.VISIBLE
+            isEnabled = true
+        }
+
+        // Set click listeners
         option1Btn.setOnClickListener { checkAnswer(0) }
         option2Btn.setOnClickListener { checkAnswer(1) }
         option3Btn.setOnClickListener { checkAnswer(2) }
         option4Btn.setOnClickListener { checkAnswer(3) }
 
-        nextButton.setOnClickListener {
-            loadFlagQuestion()
-        }
+        nextButton.setOnClickListener { loadFlagQuestion() }
     }
 
     @SuppressLint("StringFormatMatches")
@@ -169,7 +229,14 @@ class FlagQuiz : AppCompatActivity() {
             updateScoreAndRemaining()
             TranslationUtils.getTranslatedString(this, R.string.correct, currentLanguage)
         } else {
-            TranslationUtils.getTranslatedString(this, R.string.wrong, currentLanguage)
+            val correctCountryName = if (currentLanguage != "en")
+                currentCountry.translatedName else currentCountry.name
+            TranslationUtils.getTranslatedStringWithFormat(
+                this,
+                R.string.wrong,
+                currentLanguage,
+                correctCountryName
+            )
         }
     }
 
