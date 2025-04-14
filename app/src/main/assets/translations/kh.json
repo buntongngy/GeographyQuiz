@@ -625,6 +625,76 @@
   },
 
   {
+    "originalName": "Democratic Republic of the Congo",
+    "translatedName": "សាធារណរដ្ឋប្រជាធិបតេយ្យកុងហ្គោ",
+    "translatedCapital": "គីនស្ហាសា",
+    "translatedCity1": "គីនស្ហាសា",
+    "translatedCity2": "លូប៊ុមបាស៊ី",
+    "translatedCity3": "អិមប៊ូហ្ស៊ី-ម៉ាយី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកកណ្តាល",
+    "translatedCurrency": "ហ្វ្រង់កុងហ្គោលេស",
+    "translatedLanguages": "បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Denmark",
+    "translatedName": "ដាណឺម៉ាក",
+    "translatedCapital": "កូពែនហាក",
+    "translatedCity1": "កូពែនហាក",
+    "translatedCity2": "អារហ្ស៊ូស",
+    "translatedCity3": "អូដេនសេ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "ក្រូណេដាណឺម៉ាក",
+    "translatedLanguages": "ដាណឺម៉ាក",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Djibouti",
+    "translatedName": "ជីប៊ូទី",
+    "translatedCapital": "ទីក្រុងជីប៊ូទី",
+    "translatedCity1": "ទីក្រុងជីប៊ូទី",
+    "translatedCity2": "អាលីសាប៊ីយ៉េ",
+    "translatedCity3": "ឌីឃីល",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ហ្វ្រង់ជីប៊ូទី",
+    "translatedLanguages": "អារ៉ាប់, បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Dominica",
+    "translatedName": "ដូមីនីកា",
+    "translatedCapital": "រូសូ",
+    "translatedCity1": "រូសូ",
+    "translatedCity2": "ព័រត៍ស្ម័ច",
+    "translatedCity3": "ម៉ារីហ្គោ",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លាការ៉ាអ៊ីបខាងកើត",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Dominican Republic",
+    "translatedName": "សាធារណរដ្ឋដូមីនីកែន",
+    "translatedCapital": "សង់តូដូមីងហ្គោ",
+    "translatedCity1": "សង់តូដូមីងហ្គោ",
+    "translatedCity2": "សង់ទីយ៉ាហ្គោដេឡូសកាបាល់យេរ៉ុស",
+    "translatedCity3": "សង់តូដូមីងហ្គោអូយេស្តេ",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ពេសូដូមីនីកែន",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Egypt",
     "translatedName": "អេហ្ស៊ីប",
     "translatedCapital": "កៃរ៉ូ",

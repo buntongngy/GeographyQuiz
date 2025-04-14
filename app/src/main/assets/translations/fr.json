@@ -625,6 +625,76 @@
   },
 
   {
+    "originalName": "Democratic Republic of the Congo",
+    "translatedName": "République démocratique du Congo",
+    "translatedCapital": "Kinshasa",
+    "translatedCity1": "Kinshasa",
+    "translatedCity2": "Lubumbashi",
+    "translatedCity3": "Mbuji-Mayi",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique centrale",
+    "translatedCurrency": "Franc congolais",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Denmark",
+    "translatedName": "Danemark",
+    "translatedCapital": "Copenhague",
+    "translatedCity1": "Copenhague",
+    "translatedCity2": "Aarhus",
+    "translatedCity3": "Odense",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Couronne danoise",
+    "translatedLanguages": "Danois",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Djibouti",
+    "translatedName": "Djibouti",
+    "translatedCapital": "Djibouti",
+    "translatedCity1": "Djibouti",
+    "translatedCity2": "Ali Sabieh",
+    "translatedCity3": "Dikhil",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Franc djiboutien",
+    "translatedLanguages": "Arabe, Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Dominica",
+    "translatedName": "Dominique",
+    "translatedCapital": "Roseau",
+    "translatedCity1": "Roseau",
+    "translatedCity2": "Portsmouth",
+    "translatedCity3": "Marigot",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar des Caraïbes orientales",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Dominican Republic",
+    "translatedName": "République dominicaine",
+    "translatedCapital": "Saint-Domingue",
+    "translatedCity1": "Saint-Domingue",
+    "translatedCity2": "Santiago de los Caballeros",
+    "translatedCity3": "Saint-Domingue Ouest",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Peso dominicain",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Egypt",
     "translatedName": "Égypte",
     "translatedCapital": "Le Caire",
