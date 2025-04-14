@@ -8,6 +8,8 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import kotlin.math.abs
+import kotlin.math.max
 import androidx.appcompat.app.AppCompatActivity
 import com.caverock.androidsvg.SVG
 import com.example.geographyquiz.R
@@ -44,7 +46,7 @@ class FlagQuiz : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_img)
-
+        supportActionBar?.hide()
         // Initialize UI components
         questionText = findViewById(R.id.questionText)
         flagImageView = findViewById(R.id.flagImageView)
@@ -126,7 +128,7 @@ class FlagQuiz : AppCompatActivity() {
         // Load the flag image
         loadSvgFlag(currentCountry.countryCode)
 
-        // Create answer options - BULLETPROOF VERSION
+        // Create answer options with weighted probabilities
         val answerOptions = mutableListOf<Country>().apply {
             add(currentCountry) // Correct answer
 
@@ -137,16 +139,79 @@ class FlagQuiz : AppCompatActivity() {
                         it.countryCode.isNotBlank()
             }
 
-            // 1. First try to get 3 similar flags
-            val similarFlags = otherCountries.sortedByDescending { country ->
+            // Categorize countries based on similarity to current country
+            val categorizedCountries = otherCountries.map { country ->
+                var similarityScore = 0
+
+                // 1. Flag similarity (highest weight)
                 val colorMatches = currentCountry.flagColors.intersect(country.flagColors).size
                 val emblemMatches = currentCountry.flagEmblem.intersect(country.flagEmblem).size
-                (colorMatches * 10) + (emblemMatches * 15)
-            }.take(3)
+                similarityScore += (colorMatches * 20) + (emblemMatches * 30)
 
-            addAll(similarFlags)
+                // 2. Geographic proximity (medium weight)
+                if (country.continent == currentCountry.continent) similarityScore += 15
+                if (country.region == currentCountry.region) similarityScore += 20
+                if (country.category == currentCountry.category) similarityScore += 25
 
-            // 2. If still missing options, fill with random unique countries
+                // Categorize based on score
+                when {
+                    similarityScore >= 70 -> CountryWithScore(country, similarityScore, Category.HIGH)
+                    similarityScore >= 40 -> CountryWithScore(country, similarityScore, Category.MEDIUM)
+                    else -> CountryWithScore(country, similarityScore, Category.LOW)
+                }
+            }
+
+            // Group by category
+            val highScoreCountries = categorizedCountries.filter { it.category == Category.HIGH }
+            val mediumScoreCountries = categorizedCountries.filter { it.category == Category.MEDIUM }
+            val lowScoreCountries = categorizedCountries.filter { it.category == Category.LOW }
+
+            Log.d("FlagQuiz", "High similarity options: ${highScoreCountries.size}")
+            Log.d("FlagQuiz", "Medium similarity options: ${mediumScoreCountries.size}")
+            Log.d("FlagQuiz", "Low similarity options: ${lowScoreCountries.size}")
+
+            // Select 3 distractors with weighted probabilities
+            val selectedDistractors = mutableSetOf<Country>()
+            val random = Random()
+
+            while (selectedDistractors.size < 3 && selectedDistractors.size < otherCountries.size) {
+                val rand = random.nextDouble() // Random value between 0.0 and 1.0
+
+                when {
+                    // 80% chance to pick from high similarity
+                    rand < 0.8 && highScoreCountries.isNotEmpty() -> {
+                        val country = highScoreCountries.random().country
+                        if (!selectedDistractors.contains(country)) {
+                            selectedDistractors.add(country)
+                        }
+                    }
+                    // 50% chance (of remaining 20%) = 10% total chance for medium
+                    rand < 0.9 && mediumScoreCountries.isNotEmpty() -> {
+                        val country = mediumScoreCountries.random().country
+                        if (!selectedDistractors.contains(country)) {
+                            selectedDistractors.add(country)
+                        }
+                    }
+                    // 20% chance (of remaining 10%) = 2% total chance for low
+                    rand < 1.0 && lowScoreCountries.isNotEmpty() -> {
+                        val country = lowScoreCountries.random().country
+                        if (!selectedDistractors.contains(country)) {
+                            selectedDistractors.add(country)
+                        }
+                    }
+                    // Fallback to random selection if categories are empty
+                    else -> {
+                        val remaining = otherCountries.filter { it !in selectedDistractors }
+                        if (remaining.isNotEmpty()) {
+                            selectedDistractors.add(remaining.random())
+                        }
+                    }
+                }
+            }
+
+            addAll(selectedDistractors)
+
+            // If we still don't have enough options, fill with random
             if (size < 4) {
                 val remainingOptions = otherCountries
                     .filter { it !in this }
@@ -154,40 +219,22 @@ class FlagQuiz : AppCompatActivity() {
                     .take(4 - size)
                 addAll(remainingOptions)
             }
-
-            // 3. Absolute last resort - if STILL not enough (should never happen)
-            while (size < 4) {
-                val randomCountry = countries.random()
-                if (randomCountry.name != currentCountry.name && randomCountry !in this) {
-                    add(randomCountry)
-                }
-            }
         }.shuffled()
 
         // Set correct answer index
         correctAnswerIndex = answerOptions.indexOfFirst { it.name == currentCountry.name }
 
-        // Update UI - FORCE all 4 options to appear
+        // Update UI
         questionText.text = getString(R.string.flag_question)
-        option1Btn.apply {
-            text = answerOptions[0].name.takeIf { it.isNotBlank() } ?: "Option 1"
-            visibility = View.VISIBLE
-            isEnabled = true
-        }
-        option2Btn.apply {
-            text = answerOptions[1].name.takeIf { it.isNotBlank() } ?: "Option 2"
-            visibility = View.VISIBLE
-            isEnabled = true
-        }
-        option3Btn.apply {
-            text = answerOptions[2].name.takeIf { it.isNotBlank() } ?: "Option 3"
-            visibility = View.VISIBLE
-            isEnabled = true
-        }
-        option4Btn.apply {
-            text = answerOptions[3].name.takeIf { it.isNotBlank() } ?: "Option 4"
-            visibility = View.VISIBLE
-            isEnabled = true
+        option1Btn.text = answerOptions[0].name
+        option2Btn.text = answerOptions[1].name
+        option3Btn.text = answerOptions[2].name
+        option4Btn.text = answerOptions[3].name
+
+        // Reset button states
+        listOf(option1Btn, option2Btn, option3Btn, option4Btn).forEach {
+            it.isEnabled = true
+            it.visibility = View.VISIBLE
         }
 
         // Set click listeners
@@ -198,6 +245,10 @@ class FlagQuiz : AppCompatActivity() {
 
         nextButton.setOnClickListener { loadFlagQuestion() }
     }
+
+    // Supporting classes
+    private enum class Category { HIGH, MEDIUM, LOW }
+    private data class CountryWithScore(val country: Country, val score: Int, val category: Category)
 
     @SuppressLint("StringFormatMatches")
     private fun updateScoreAndRemaining() {
@@ -272,4 +323,6 @@ class FlagQuiz : AppCompatActivity() {
         databaseHelper.close()
         super.onDestroy()
     }
+
+    private data class WeightedCountry(val country: Country, val weight: Int)
 }

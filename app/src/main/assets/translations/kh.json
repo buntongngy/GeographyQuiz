@@ -161,6 +161,33 @@
     "translatedLandmarks": []
   },
 
+  {
+    "originalName": "Bahamas",
+    "translatedName": "បាហាម៉ាស់",
+    "translatedCapital": "ណាសូ",
+    "translatedCity1": "ណាសូ",
+    "translatedCity2": "លូកាយ៉ា",
+    "translatedCity3": "ហ្វ្រីផ័រ",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លារបាហាម៉ាស់",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bahrain",
+    "translatedName": "បារ៉ែន",
+    "translatedCapital": "ម៉ាណាម៉ា",
+    "translatedCity1": "ម៉ាណាម៉ា",
+    "translatedCity2": "រីហ្វា",
+    "translatedCity3": "មូហារ៉ាក់",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ឌីណាបារ៉ែន",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
 
   {
     "originalName": "Bangladesh",
@@ -180,6 +207,35 @@
       }
     ]
   },
+
+  {
+    "originalName": "Barbados",
+    "translatedName": "បារបាដូស",
+    "translatedCapital": "ប្រ៊ីដឹតថោន",
+    "translatedCity1": "ប្រ៊ីដឹតថោន",
+    "translatedCity2": "ស្ពែតថោន",
+    "translatedCity3": "អយស្ទីន",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លាបារបាដូស",
+    "translatedLanguages": "ភាសាអង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Belarus",
+    "translatedName": "បេឡារុស",
+    "translatedCapital": "មីនស្ក៍",
+    "translatedCity1": "មីនស្ក៍",
+    "translatedCity2": "ហ្គោមែល",
+    "translatedCity3": "ហ្គ្រត់ណូ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងកើត",
+    "translatedCurrency": "រូបល្បីឡារុស",
+    "translatedLanguages": "បេឡារុស, រុស្ស៊ី",
+    "landmarks": []
+  },
+
   {
     "originalName": "Belgium",
     "translatedName": "បែលហ្ស៊ិក",
@@ -193,6 +249,161 @@
     "translatedLanguages": "ហូឡង់, បារាំង, អាល្លឺម៉ង់",
     "landmarks": []
   },
+
+  {
+    "originalName": "Belize",
+    "translatedName": "បេលីហ្ស",
+    "translatedCapital": "បែលម៉ូផាន",
+    "translatedCity1": "ទីក្រុងបេលីហ្ស",
+    "translatedCity2": "សានអ៊ីហ្គណាស៊ីអូ",
+    "translatedCity3": "បែលម៉ូផាន",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "អាមេរិកកណ្តាល",
+    "translatedCurrency": "ដុល្លាបេលីហ្ស",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Benin",
+    "translatedName": "បេណាំង",
+    "translatedCapital": "ព័រតូ-ណូវ៉ូ",
+    "translatedCity1": "កូតូណូ",
+    "translatedCity2": "ព័រតូ-ណូវ៉ូ",
+    "translatedCity3": "ប៉ារ៉ាគូ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកខាងលិច",
+    "translatedLanguages": "ភាសាបារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bhutan",
+    "translatedName": "ប៊ូតាន",
+    "translatedCapital": "ធីមភូ",
+    "translatedCity1": "ធីមភូ",
+    "translatedCity2": "ភូនឆូលីង",
+    "translatedCity3": "ភូណាខា",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងត្បូង",
+    "translatedCurrency": "ង៊ុលត្រឹម",
+    "translatedLanguages": "ដ្យុងខា",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bolivia",
+    "translatedName": "បូលីវី",
+    "translatedCapital": "ស៊ូគ្រេ",
+    "translatedCity1": "សាន់តា គ្រុហ្ស ដេ ឡា ស៊ីអេរ៉ា",
+    "translatedCity2": "ឡាប៉ាហ្ស",
+    "translatedCity3": "អែលអាល់តូ",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "អាមេរិកខាងត្បូងកណ្តាល",
+    "translatedCurrency": "បូលីវីយ៉ាណូ",
+    "translatedLanguages": "អេស្ប៉ាញ, កេឈួ, អាយម៉ារ៉ា, ហ្គូរ៉ានី, ភាសាជនជាតិដើម",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bosnia and Herzegovina",
+    "translatedName": "បូស្ន៉ី និងហឺហ្សែហ្គូវីណា",
+    "translatedCapital": "សារ៉ាយេវ៉ូ",
+    "translatedCity1": "សារ៉ាយេវ៉ូ",
+    "translatedCity2": "បានយ៉ាលូកា",
+    "translatedCity3": "ទុយហ្ស្លា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "ម៉ាកខុនវេទិរ៍បល",
+    "translatedLanguages": "បូស្ន៉ី, ក្រូអាត, ស៊ែប",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Botswana",
+    "translatedName": "បុតស្វាណា",
+    "translatedCapital": "ហ្គាបូរូន",
+    "translatedCity1": "ហ្គាបូរូន",
+    "translatedCity2": "ហ្វ្រែនស៊ីស៍ថោន",
+    "translatedCity3": "ម៉ូលេព៉ូឡូ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងត្បូង",
+    "translatedCurrency": "ភូឡា",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Brazil",
+    "translatedName": "ប្រេស៊ីល",
+    "translatedCapital": "ប្រាស៊ីលីយ៉ា",
+    "translatedCity1": "សៅផៅឡូ",
+    "translatedCity2": "រីអូដឺហ្សាណេរ៉ូ",
+    "translatedCity3": "ប្រាស៊ីលីយ៉ា",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "កូនខាងត្បូង",
+    "translatedCurrency": "រ៉េអាល់",
+    "translatedLanguages": "ព័រទុយហ្គាល់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Brunei",
+    "translatedName": "ប្រ៊ុយណេ",
+    "translatedCapital": "បាន់ដាសេរីបេហ្គាវ៉ាន់",
+    "translatedCity1": "បាន់ដាសេរីបេហ្គាវ៉ាន់",
+    "translatedCity2": "កូឡាបេឡៃត",
+    "translatedCity3": "សេរីយ៉ា",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
+    "translatedCurrency": "ដុល្លាប្រ៊ុយណេ",
+    "translatedLanguages": "ម៉ាឡេ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bulgaria",
+    "translatedName": "ប៊ុលហ្គារី",
+    "translatedCapital": "សូហ្វៀ",
+    "translatedCity1": "សូហ្វៀ",
+    "translatedCity2": "ភ្លុវឌីវ",
+    "translatedCity3": "វ៉ារណា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "លេវ",
+    "translatedLanguages": "ប៊ុលហ្គារី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Burkina Faso",
+    "translatedName": "ប៊ូគីណាហ្វាសូ",
+    "translatedCapital": "អូអាហ្គាឌូហ្គូ",
+    "translatedCity1": "អូអាហ្គាឌូហ្គូ",
+    "translatedCity2": "បូបូ-ឌីយូឡាសូ",
+    "translatedCity3": "អូអាហ៊ីហ្គូយ៉ា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកខាងលិច",
+    "translatedLanguages": "ម៉ូរ៉េ, ប៊ីសា, ឌីយូឡា, ភាសាពួល",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Burundi",
+    "translatedName": "ប៊ូរុនឌី",
+    "translatedCapital": "ហ្គីតេហ្គា",
+    "translatedCity1": "ប៊ូហ្សាំប៊ូរ៉ា",
+    "translatedCity2": "ម៊ុយីងហ្គា",
+    "translatedCity3": "រូយីហ្គី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ហ្វ្រង់ប៊ូរុនឌី",
+    "translatedLanguages": "គីរុនឌី, បារាំង, អង់គ្លេស, ស្វាហ៊ីលី",
+    "landmarks": []
+  },
+
   {
     "originalName": "Cambodia",
     "translatedName": "កម្ពុជា",
@@ -211,6 +422,21 @@
       }
     ]
   },
+
+  {
+    "originalName": "Cameroon",
+    "translatedName": "កាមេរូន",
+    "translatedCapital": "យ៉ាអ៊ូនដេ",
+    "translatedCity1": "ដួអាឡា",
+    "translatedCity2": "យ៉ាអ៊ូនដេ",
+    "translatedCity3": "បាម៉េនដា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកកណ្តាល",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកកណ្តាល",
+    "translatedLanguages": "អង់គ្លេស, បារាំង",
+    "landmarks": []
+  },
+
   {
     "originalName": "Canada",
     "translatedName": "កាណាដា",
@@ -229,6 +455,63 @@
       }
     ]
   },
+
+  {
+    "originalName": "Cape Verde",
+    "translatedName": "កៃបវែរ",
+    "translatedCapital": "ព្រៃយ៉ា",
+    "translatedCity1": "ព្រៃយ៉ា",
+    "translatedCity2": "មីនដេឡូ",
+    "translatedCity3": "អេស្ប៉ាហ្គោស",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "អេស្គូដូកៃបវែរ",
+    "translatedLanguages": "ព័រទុយហ្គាល់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Central African Republic",
+    "translatedName": "សាធារណរដ្ឋអាហ្វ្រិកកណ្តាល",
+    "translatedCapital": "បង់ហ្គី",
+    "translatedCity1": "បង់ហ្គី",
+    "translatedCity2": "ប៊ីមបូ",
+    "translatedCity3": "ប៊ែរប៊ែររ៉ាទី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកកណ្តាល",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកកណ្តាល",
+    "translatedLanguages": "បារាំង, ភាសាសានហ្គោ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Chad",
+    "translatedName": "ឆាដ",
+    "translatedCapital": "អិនឌ្យាម៉េណា",
+    "translatedCity1": "អិនឌ្យាម៉េណា",
+    "translatedCity2": "ម៉ៅនឌូ",
+    "translatedCity3": "សារ៉ែ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកកណ្តាល",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកកណ្តាល",
+    "translatedLanguages": "បារាំង, អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Chile",
+    "translatedName": "ស៊ីលី",
+    "translatedCapital": "សង់ទីយ៉ាហ្គោ",
+    "translatedCity1": "សង់ទីយ៉ាហ្គោ",
+    "translatedCity2": "ពួនតេអាល់តូ",
+    "translatedCity3": "ម៉ាយពូ",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "កូនខាងត្បូង",
+    "translatedCurrency": "ពេសូស៊ីលី",
+    "translatedLanguages": "ភេស្ប៉ាញ",
+    "landmarks": []
+  },
+
   {
     "originalName": "China",
     "translatedName": "ចិន",
@@ -242,6 +525,105 @@
     "translatedLanguages": "ម៉ាន់ដារីន, កាតាំង, អ៊ូ, មីន",
     "landmarks": []
   },
+
+  {
+    "originalName": "Colombia",
+    "translatedName": "កូឡុំប៊ី",
+    "translatedCapital": "បូហ្គោតា",
+    "translatedCity1": "បូហ្គោតា",
+    "translatedCity2": "មេដេលីន",
+    "translatedCity3": "កាលី",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "អាមេរិកខាងត្បូងភាគខាងជើង",
+    "translatedCurrency": "ពេសូកូឡុំប៊ី",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Comoros",
+    "translatedName": "កូម័រ",
+    "translatedCapital": "ម៉ូរ៉ូនី",
+    "translatedCity1": "ម៉ូរ៉ូនី",
+    "translatedCity2": "មុតសាមូឌូ",
+    "translatedCity3": "ហ្វុំបូនី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ហ្វ្រង់កូម័រ",
+    "translatedLanguages": "កូម័រ, បារាំង, អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Costa Rica",
+    "translatedName": "កូស្តារីកា",
+    "translatedCapital": "សាន់ហូសេ",
+    "translatedCity1": "សាន់ហូសេ",
+    "translatedCity2": "ព័រតូលីម៉ុន",
+    "translatedCity3": "អាឡាហ្គេឡា",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "អាមេរិកកណ្តាល",
+    "translatedCurrency": "គុយរូនកូស្តារីកា",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Croatia",
+    "translatedName": "ក្រូអាស៊ី",
+    "translatedCapital": "ហ្សាហ្គ្រេប",
+    "translatedCity1": "ហ្សាហ្គ្រេប",
+    "translatedCity2": "ស្ព្លីត",
+    "translatedCity3": "រីយ៉េកា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ភាសាក្រូអាត",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Cuba",
+    "translatedName": "គុយបា",
+    "translatedCapital": "ហាវ៉ាណា",
+    "translatedCity1": "ហាវ៉ាណា",
+    "translatedCity2": "សង់ទីយ៉ាហ្គោឌឺគុយបា",
+    "translatedCity3": "កាម៉ាហ្គែយ",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ពេសូគុយបា",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Cyprus",
+    "translatedName": "ស៊ីប",
+    "translatedCapital": "នីកូស៊ី",
+    "translatedCity1": "នីកូស៊ី",
+    "translatedCity2": "លីម៉ាសុល",
+    "translatedCity3": "ឡាណាកា",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មេឌីទែរ៉ាណេខាងកើត",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ក្រិក, តួកគី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Czech Republic",
+    "translatedName": "សាធារណរដ្ឋឆេក",
+    "translatedCapital": "ភ្រាគ",
+    "translatedCity1": "ភ្រាគ",
+    "translatedCity2": "អូស្ត្រាវ៉ា",
+    "translatedCity3": "ប៊្រុណូ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបកណ្តាល",
+    "translatedCurrency": "កូរុណាឆេក",
+    "translatedLanguages": "ឆេក",
+    "landmarks": []
+  },
+
   {
     "originalName": "Egypt",
     "translatedName": "អេហ្ស៊ីប",

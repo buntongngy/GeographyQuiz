@@ -161,7 +161,33 @@
     "translatedLandmarks": []
   },
 
+  {
+    "originalName": "Bahamas",
+    "translatedName": "Bahamas",
+    "translatedCapital": "Nassau",
+    "translatedCity1": "Nassau",
+    "translatedCity2": "Lucaya",
+    "translatedCity3": "Freeport",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar bahaméen",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
 
+  {
+    "originalName": "Bahrain",
+    "translatedName": "Bahreïn",
+    "translatedCapital": "Manama",
+    "translatedCity1": "Manama",
+    "translatedCity2": "Riffa",
+    "translatedCity3": "Muharraq",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Dinar bahreïni",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
 
   {
     "originalName": "Bangladesh",
@@ -181,6 +207,35 @@
       }
     ]
   },
+
+  {
+    "originalName": "Barbados",
+    "translatedName": "Barbade",
+    "translatedCapital": "Bridgetown",
+    "translatedCity1": "Bridgetown",
+    "translatedCity2": "Speightstown",
+    "translatedCity3": "Oistins",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar barbadien",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Belarus",
+    "translatedName": "Biélorussie",
+    "translatedCapital": "Minsk",
+    "translatedCity1": "Minsk",
+    "translatedCity2": "Gomel",
+    "translatedCity3": "Grodno",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Est",
+    "translatedCurrency": "Rouble biélorusse",
+    "translatedLanguages": "Biélorusse, Russe",
+    "landmarks": []
+  },
+
   {
     "originalName": "Belgium",
     "translatedName": "Belgique",
@@ -194,6 +249,161 @@
     "translatedLanguages": "Néerlandais, Français, Allemand",
     "landmarks" : []
   },
+
+  {
+    "originalName": "Belize",
+    "translatedName": "Belize",
+    "translatedCapital": "Belmopan",
+    "translatedCity1": "Belize City",
+    "translatedCity2": "San Ignacio",
+    "translatedCity3": "Belmopan",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique centrale",
+    "translatedCurrency": "Dollar bélizien",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Benin",
+    "translatedName": "Bénin",
+    "translatedCapital": "Porto-Novo",
+    "translatedCity1": "Cotonou",
+    "translatedCity2": "Porto-Novo",
+    "translatedCity3": "Parakou",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc CFA ouest-africain",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bhutan",
+    "translatedName": "Bhoutan",
+    "translatedCapital": "Thimphou",
+    "translatedCity1": "Thimphou",
+    "translatedCity2": "Phuntsholing",
+    "translatedCity3": "Punakha",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud",
+    "translatedCurrency": "Ngultrum",
+    "translatedLanguages": "Dzongkha",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bolivia",
+    "translatedName": "Bolivie",
+    "translatedCapital": "Sucre",
+    "translatedCity1": "Santa Cruz de la Sierra",
+    "translatedCity2": "La Paz",
+    "translatedCity3": "El Alto",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Amérique du Sud centrale",
+    "translatedCurrency": "Boliviano",
+    "translatedLanguages": "Espagnol, Quechua, Aymara, Guarani, Langues indigènes",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bosnia and Herzegovina",
+    "translatedName": "Bosnie-Herzégovine",
+    "translatedCapital": "Sarajevo",
+    "translatedCity1": "Sarajevo",
+    "translatedCity2": "Banja Luka",
+    "translatedCity3": "Tuzla",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Mark convertible",
+    "translatedLanguages": "Bosnien, Croate, Serbe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Botswana",
+    "translatedName": "Botswana",
+    "translatedCapital": "Gaborone",
+    "translatedCity1": "Gaborone",
+    "translatedCity2": "Francistown",
+    "translatedCity3": "Molepolole",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique australe",
+    "translatedCurrency": "Pula",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Brazil",
+    "translatedName": "Brésil",
+    "translatedCapital": "Brasilia",
+    "translatedCity1": "São Paulo",
+    "translatedCity2": "Rio de Janeiro",
+    "translatedCity3": "Brasília",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Cône Sud",
+    "translatedCurrency": "Réal brésilien",
+    "translatedLanguages": "Portugais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Brunei",
+    "translatedName": "Brunei",
+    "translatedCapital": "Bandar Seri Begawan",
+    "translatedCity1": "Bandar Seri Begawan",
+    "translatedCity2": "Kuala Belait",
+    "translatedCity3": "Seria",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Dollar de Brunei",
+    "translatedLanguages": "Malais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Bulgaria",
+    "translatedName": "Bulgarie",
+    "translatedCapital": "Sofia",
+    "translatedCity1": "Sofia",
+    "translatedCity2": "Plovdiv",
+    "translatedCity3": "Varna",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Lev",
+    "translatedLanguages": "Bulgare",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Burkina Faso",
+    "translatedName": "Burkina Faso",
+    "translatedCapital": "Ouagadougou",
+    "translatedCity1": "Ouagadougou",
+    "translatedCity2": "Bobo-Dioulasso",
+    "translatedCity3": "Ouahigouya",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc CFA ouest-africain",
+    "translatedLanguages": "Moré, Bissa, Dioula, Peul",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Burundi",
+    "translatedName": "Burundi",
+    "translatedCapital": "Gitega",
+    "translatedCity1": "Bujumbura",
+    "translatedCity2": "Muyinga",
+    "translatedCity3": "Ruyigi",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Franc burundais",
+    "translatedLanguages": "Kirundi, Français, Anglais, Swahili",
+    "landmarks": []
+  },
+
   {
     "originalName": "Cambodia",
     "translatedName": "Cambodge",
@@ -212,6 +422,21 @@
       }
     ]
   },
+
+  {
+    "originalName": "Cameroon",
+    "translatedName": "Cameroun",
+    "translatedCapital": "Yaoundé",
+    "translatedCity1": "Douala",
+    "translatedCity2": "Yaoundé",
+    "translatedCity3": "Bamenda",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique centrale",
+    "translatedCurrency": "Franc CFA d'Afrique centrale",
+    "translatedLanguages": "Anglais, Français",
+    "landmarks": []
+  },
+
   {
     "originalName": "Canada",
     "translatedName": "Canada",
@@ -230,6 +455,63 @@
       }
     ]
   },
+
+  {
+    "originalName": "Cape Verde",
+    "translatedName": "Cap-Vert",
+    "translatedCapital": "Praia",
+    "translatedCity1": "Praia",
+    "translatedCity2": "Mindelo",
+    "translatedCity3": "Espargos",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Escudo cap-verdien",
+    "translatedLanguages": "Portugais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Central African Republic",
+    "translatedName": "République centrafricaine",
+    "translatedCapital": "Bangui",
+    "translatedCity1": "Bangui",
+    "translatedCity2": "Bimbo",
+    "translatedCity3": "Berbérati",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique centrale",
+    "translatedCurrency": "Franc CFA d'Afrique centrale",
+    "translatedLanguages": "Français, Sango",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Chad",
+    "translatedName": "Tchad",
+    "translatedCapital": "N'Djamena",
+    "translatedCity1": "N'Djamena",
+    "translatedCity2": "Moundou",
+    "translatedCity3": "Sarh",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique centrale",
+    "translatedCurrency": "Franc CFA d'Afrique centrale",
+    "translatedLanguages": "Français, Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Chile",
+    "translatedName": "Chili",
+    "translatedCapital": "Santiago",
+    "translatedCity1": "Santiago",
+    "translatedCity2": "Puente Alto",
+    "translatedCity3": "Maipú",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Cône Sud",
+    "translatedCurrency": "Peso chilien",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
   {
     "originalName": "China",
     "translatedName": "Chine",
@@ -243,6 +525,105 @@
     "translatedLanguages": "Mandarin, Cantonais, Wu, Min",
     "landmarks": []
   },
+
+  {
+    "originalName": "Colombia",
+    "translatedName": "Colombie",
+    "translatedCapital": "Bogotá",
+    "translatedCity1": "Bogotá",
+    "translatedCity2": "Medellín",
+    "translatedCity3": "Cali",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Amérique du Sud septentrionale",
+    "translatedCurrency": "Peso colombien",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Comoros",
+    "translatedName": "Comores",
+    "translatedCapital": "Moroni",
+    "translatedCity1": "Moroni",
+    "translatedCity2": "Mutsamudu",
+    "translatedCity3": "Fomboni",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Franc comorien",
+    "translatedLanguages": "Comorien, Français, Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Costa Rica",
+    "translatedName": "Costa Rica",
+    "translatedCapital": "San José",
+    "translatedCity1": "San José",
+    "translatedCity2": "Puerto Limón",
+    "translatedCity3": "Alajuela",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique centrale",
+    "translatedCurrency": "Colón costaricien",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Croatia",
+    "translatedName": "Croatie",
+    "translatedCapital": "Zagreb",
+    "translatedCity1": "Zagreb",
+    "translatedCity2": "Split",
+    "translatedCity3": "Rijeka",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Croate",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Cuba",
+    "translatedName": "Cuba",
+    "translatedCapital": "La Havane",
+    "translatedCity1": "La Havane",
+    "translatedCity2": "Santiago de Cuba",
+    "translatedCity3": "Camagüey",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Peso cubain",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Cyprus",
+    "translatedName": "Chypre",
+    "translatedCapital": "Nicosie",
+    "translatedCity1": "Nicosie",
+    "translatedCity2": "Limassol",
+    "translatedCity3": "Larnaca",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Méditerranée orientale",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Grec, Turc",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Czech Republic",
+    "translatedName": "République tchèque",
+    "translatedCapital": "Prague",
+    "translatedCity1": "Prague",
+    "translatedCity2": "Ostrava",
+    "translatedCity3": "Brno",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe centrale",
+    "translatedCurrency": "Couronne tchèque",
+    "translatedLanguages": "Tchèque",
+    "landmarks": []
+  },
+
   {
     "originalName": "Egypt",
     "translatedName": "Égypte",
