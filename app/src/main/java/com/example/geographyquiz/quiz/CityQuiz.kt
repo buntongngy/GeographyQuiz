@@ -10,7 +10,6 @@ import com.example.geographyquiz.R
 import com.example.geographyquiz.data.Country
 import com.example.geographyquiz.data.CountryDatabase
 import com.example.geographyquiz.utils.TranslationUtils
-import java.util.*
 import kotlin.random.Random
 
 class CityQuiz : AppCompatActivity() {
@@ -120,28 +119,21 @@ class CityQuiz : AppCompatActivity() {
             QuestionType.CITY_IN_COUNTRY -> generateCityInCountryQuestion(country)
         }
 
-        // Ensure we have exactly 4 answers (pad with empty strings if needed)
-        val paddedAnswers = if (allAnswers.size < 4) {
-            allAnswers + List(4 - allAnswers.size) { "" }
-        } else {
-            allAnswers.take(4)
-        }
-
         questionText.text = question
-        option1Btn.text = paddedAnswers[0].ifEmpty { getString(R.string.unknownAns) }
-        option2Btn.text = paddedAnswers[1].ifEmpty { getString(R.string.unknownAns) }
-        option3Btn.text = paddedAnswers[2].ifEmpty { getString(R.string.unknownAns) }
-        option4Btn.text = paddedAnswers[3].ifEmpty { getString(R.string.unknownAns) }
+        option1Btn.text = allAnswers[0]
+        option2Btn.text = allAnswers[1]
+        option3Btn.text = allAnswers[2]
+        option4Btn.text = allAnswers[3]
 
-        // Hide buttons with empty answers
-        option1Btn.visibility = if (paddedAnswers[0].isNotEmpty()) View.VISIBLE else View.GONE
-        option2Btn.visibility = if (paddedAnswers[1].isNotEmpty()) View.VISIBLE else View.GONE
-        option3Btn.visibility = if (paddedAnswers[2].isNotEmpty()) View.VISIBLE else View.GONE
-        option4Btn.visibility = if (paddedAnswers[3].isNotEmpty()) View.VISIBLE else View.GONE
+        // Make sure all buttons are visible
+        option1Btn.visibility = View.VISIBLE
+        option2Btn.visibility = View.VISIBLE
+        option3Btn.visibility = View.VISIBLE
+        option4Btn.visibility = View.VISIBLE
 
-        correctAnswerIndex = paddedAnswers.indexOf(correctAnswer) + 1
-        if (correctAnswerIndex == 0) { // Correct answer not found in options
-            correctAnswerIndex = 1 // Default to first option
+        correctAnswerIndex = allAnswers.indexOf(correctAnswer) + 1
+        if (correctAnswerIndex == 0) { // Shouldn't happen as correct answer is always included
+            correctAnswerIndex = 1
         }
 
         option1Btn.setOnClickListener { checkAnswer(1) }
@@ -162,49 +154,60 @@ class CityQuiz : AppCompatActivity() {
 
     private fun getSimilarCountries(targetCountry: Country): List<Country> {
         return countries.filter { otherCountry ->
+            otherCountry.name != targetCountry.name
+        }.sortedByDescending { otherCountry ->
             when {
-                otherCountry.name == targetCountry.name -> false
-                otherCountry.category == targetCountry.category -> true
-                otherCountry.region == targetCountry.region -> true
-                otherCountry.continent == targetCountry.continent -> true
-                else -> false
+                otherCountry.category == targetCountry.category -> 3
+                otherCountry.region == targetCountry.region -> 2
+                otherCountry.continent == targetCountry.continent -> 1
+                else -> 0
             }
         }
+    }
+
+    private fun getCitiesFromCountry(country: Country): List<String> {
+        return listOfNotNull(
+            if (currentLanguage != "en") country.translatedCapital else country.capital,
+            if (currentLanguage != "en") country.translatedBigCity else country.bigCity,
+            if (currentLanguage != "en") country.translatedSecondCity else country.secondCity,
+            if (currentLanguage != "en") country.translatedThirdCity else country.thirdCity
+        ).filter { it.isNotBlank() }.distinct()
     }
 
     private fun generateBiggestCityQuestion(
         targetCountry: Country
     ): Triple<String, String, List<String>> {
         val correctAnswer = if (currentLanguage != "en") targetCountry.translatedBigCity else targetCountry.bigCity
+        val targetCities = getCitiesFromCountry(targetCountry)
         val similarCountries = getSimilarCountries(targetCountry)
-
-        // Get other cities from the same country
-        val sameCountryCities = listOfNotNull(
-            if (currentLanguage != "en") targetCountry.translatedCapital else targetCountry.capital,
-            if (currentLanguage != "en") targetCountry.translatedSecondCity else targetCountry.secondCity,
-            if (currentLanguage != "en") targetCountry.translatedThirdCity else targetCountry.thirdCity
-        ).filter { it.isNotBlank() && it != correctAnswer }.distinct()
 
         // Create answer options
         val answerOptions = mutableListOf<String>().apply {
             add(correctAnswer) // Always include correct answer
 
-            // Include other cities from same country if available
-            if (sameCountryCities.isNotEmpty()) {
-                add(sameCountryCities.random())
-                if (sameCountryCities.size > 1) {
-                    sameCountryCities.filterNot { it in this }.randomOrNull()?.let { add(it) }
-                }
+            // Get other cities from same country (excluding correct answer)
+            val sameCountryOtherCities = targetCities.filter { it != correctAnswer }
+
+            // Second option - 80% chance of being from same country
+            if (sameCountryOtherCities.isNotEmpty() && Random.nextFloat() < 0.8f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCityFromSimilarCountries(similarCountries, this))
             }
 
-            // Fill remaining slots with cities from similar countries
-            val similarOptions = similarCountries
-                .map { if (currentLanguage != "en") it.translatedBigCity else it.bigCity }
-                .filter { it.isNotBlank() && it !in this }
-                .distinct()
-                .shuffled()
+            // Third option - 50% chance of being from same country
+            if (sameCountryOtherCities.isNotEmpty() && Random.nextFloat() < 0.5f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCityFromSimilarCountries(similarCountries, this))
+            }
 
-            addAll(similarOptions.take(4 - this.size))
+            // Fourth option - 20% chance of being from same country (if we have enough cities)
+            if (sameCountryOtherCities.size >= 3 && Random.nextFloat() < 0.2f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCityFromSimilarCountries(similarCountries, this))
+            }
         }
 
         return Triple(
@@ -223,35 +226,36 @@ class CityQuiz : AppCompatActivity() {
         targetCountry: Country
     ): Triple<String, String, List<String>> {
         val correctAnswer = if (currentLanguage != "en") targetCountry.translatedCapital else targetCountry.capital
+        val targetCities = getCitiesFromCountry(targetCountry)
         val similarCountries = getSimilarCountries(targetCountry)
-
-        // Get other cities from the same country
-        val sameCountryCities = listOfNotNull(
-            if (currentLanguage != "en") targetCountry.translatedBigCity else targetCountry.bigCity,
-            if (currentLanguage != "en") targetCountry.translatedSecondCity else targetCountry.secondCity,
-            if (currentLanguage != "en") targetCountry.translatedThirdCity else targetCountry.thirdCity
-        ).filter { it.isNotBlank() && it != correctAnswer }.distinct()
 
         // Create answer options
         val answerOptions = mutableListOf<String>().apply {
             add(correctAnswer) // Always include correct answer
 
-            // Include other cities from same country if available
-            if (sameCountryCities.isNotEmpty()) {
-                add(sameCountryCities.random())
-                if (sameCountryCities.size > 1) {
-                    sameCountryCities.filterNot { it in this }.randomOrNull()?.let { add(it) }
-                }
+            // Get other cities from same country (excluding correct answer)
+            val sameCountryOtherCities = targetCities.filter { it != correctAnswer }
+
+            // Second option - 80% chance of being from same country
+            if (sameCountryOtherCities.isNotEmpty() && Random.nextFloat() < 0.8f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCapitalFromSimilarCountries(similarCountries, this))
             }
 
-            // Fill remaining slots with capitals from similar countries
-            val similarOptions = similarCountries
-                .map { if (currentLanguage != "en") it.translatedCapital else it.capital }
-                .filter { it.isNotBlank() && it !in this }
-                .distinct()
-                .shuffled()
+            // Third option - 50% chance of being from same country
+            if (sameCountryOtherCities.isNotEmpty() && Random.nextFloat() < 0.5f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCapitalFromSimilarCountries(similarCountries, this))
+            }
 
-            addAll(similarOptions.take(4 - this.size))
+            // Fourth option - 20% chance of being from same country (if we have enough cities)
+            if (sameCountryOtherCities.size >= 3 && Random.nextFloat() < 0.2f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCapitalFromSimilarCountries(similarCountries, this))
+            }
         }
 
         return Triple(
@@ -269,31 +273,38 @@ class CityQuiz : AppCompatActivity() {
     private fun generateCityInCountryQuestion(
         targetCountry: Country
     ): Triple<String, String, List<String>> {
+        val targetCities = getCitiesFromCountry(targetCountry)
+        val correctCity = targetCities.random()
         val similarCountries = getSimilarCountries(targetCountry)
 
-        val targetCities = listOfNotNull(
-            if (currentLanguage != "en") targetCountry.translatedCapital else targetCountry.capital,
-            if (currentLanguage != "en") targetCountry.translatedBigCity else targetCountry.bigCity,
-            if (currentLanguage != "en") targetCountry.translatedSecondCity else targetCountry.secondCity,
-            if (currentLanguage != "en") targetCountry.translatedThirdCity else targetCountry.thirdCity
-        ).filter { it.isNotBlank() }.distinct()
+        // Create answer options
+        val answerOptions = mutableListOf<String>().apply {
+            add(correctCity) // Always include correct answer
 
-        val correctCity = targetCities.random()
+            // Get other cities from same country (excluding correct answer)
+            val sameCountryOtherCities = targetCities.filter { it != correctCity }
 
-        // Get cities from similar countries
-        val similarOptions = similarCountries
-            .flatMap { country ->
-                listOfNotNull(
-                    if (currentLanguage != "en") country.translatedCapital else country.capital,
-                    if (currentLanguage != "en") country.translatedBigCity else country.bigCity,
-                    if (currentLanguage != "en") country.translatedSecondCity else country.secondCity,
-                    if (currentLanguage != "en") country.translatedThirdCity else country.thirdCity
-                )
+            // Second option - 80% chance of being from same country
+            if (sameCountryOtherCities.isNotEmpty() && Random.nextFloat() < 0.8f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCityFromSimilarCountries(similarCountries, this))
             }
-            .filter { it.isNotBlank() && !targetCities.contains(it) }
-            .distinct()
-            .shuffled()
-            .take(3)
+
+            // Third option - 50% chance of being from same country
+            if (sameCountryOtherCities.isNotEmpty() && Random.nextFloat() < 0.5f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCityFromSimilarCountries(similarCountries, this))
+            }
+
+            // Fourth option - 20% chance of being from same country (if we have enough cities)
+            if (sameCountryOtherCities.size >= 3 && Random.nextFloat() < 0.2f) {
+                add(sameCountryOtherCities.random())
+            } else {
+                add(getRandomCityFromSimilarCountries(similarCountries, this))
+            }
+        }
 
         return Triple(
             TranslationUtils.getTranslatedStringWithFormat(
@@ -303,8 +314,48 @@ class CityQuiz : AppCompatActivity() {
                 if (currentLanguage != "en") targetCountry.translatedName else targetCountry.name
             ),
             correctCity,
-            (listOf(correctCity) + similarOptions).shuffled()
+            answerOptions.shuffled()
         )
+    }
+
+    private fun getRandomCityFromSimilarCountries(
+        similarCountries: List<Country>,
+        exclude: List<String>
+    ): String {
+        // Try to get cities from similar countries (prioritizing more similar ones)
+        val candidates = similarCountries.flatMap { country ->
+            getCitiesFromCountry(country).filter { it !in exclude }
+        }.distinct()
+
+        return if (candidates.isNotEmpty()) {
+            candidates.random()
+        } else {
+            // Fallback to any city not in exclude list
+            countries.flatMap { getCitiesFromCountry(it) }
+                .filter { it !in exclude }
+                .randomOrNull() ?: "Unknown"
+        }
+    }
+
+    private fun getRandomCapitalFromSimilarCountries(
+        similarCountries: List<Country>,
+        exclude: List<String>
+    ): String {
+        // Try to get capitals from similar countries (prioritizing more similar ones)
+        val candidates = similarCountries.mapNotNull { country ->
+            (if (currentLanguage != "en") country.translatedCapital else country.capital)
+                .takeIf { it.isNotBlank() && it !in exclude }
+        }.distinct()
+
+        return if (candidates.isNotEmpty()) {
+            candidates.random()
+        } else {
+            // Fallback to any capital not in exclude list
+            countries.mapNotNull {
+                (if (currentLanguage != "en") it.translatedCapital else it.capital)
+                    .takeIf { it.isNotBlank() && it !in exclude }
+            }.randomOrNull() ?: "Unknown"
+        }
     }
 
     private fun showNotEnoughCountriesError() {
