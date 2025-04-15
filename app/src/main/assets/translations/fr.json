@@ -695,6 +695,34 @@
   },
 
   {
+    "originalName": "East Timor",
+    "translatedName": "Timor oriental",
+    "translatedCapital": "Dili",
+    "translatedCity1": "Dili",
+    "translatedCity2": "Maliana",
+    "translatedCity3": "Suai",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Dollar américain",
+    "translatedLanguages": "Portugais, Tétoum",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Ecuador",
+    "translatedName": "Équateur",
+    "translatedCapital": "Quito",
+    "translatedCity1": "Guayaquil",
+    "translatedCity2": "Quito",
+    "translatedCity3": "Cuenca",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Nord-Ouest de l'Amérique du Sud",
+    "translatedCurrency": "Dollar américain",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Egypt",
     "translatedName": "Égypte",
     "translatedCapital": "Le Caire",
@@ -712,6 +740,133 @@
       }
     ]
   },
+
+  {
+    "originalName": "El Salvador",
+    "translatedName": "Salvador",
+    "translatedCapital": "San Salvador",
+    "translatedCity1": "San Salvador",
+    "translatedCity2": "Soyapango",
+    "translatedCity3": "Santa Ana",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique centrale",
+    "translatedCurrency": "Dollar américain",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "England",
+    "translatedName": "Angleterre",
+    "translatedCapital": "Londres",
+    "translatedCity1": "Londres",
+    "translatedCity2": "Birmingham",
+    "translatedCity3": "Manchester",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Livre sterling",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Equatorial Guinea",
+    "translatedName": "République de Guinée équatoriale",
+    "translatedCapital": "Malabo",
+    "translatedCity1": "Bata",
+    "translatedCity2": "Malabo",
+    "translatedCity3": "Ebebiyin",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique centrale",
+    "translatedCurrency": "Franc CFA d'Afrique centrale",
+    "translatedLanguages": "Espagnol, Français, Portugais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Eritrea",
+    "translatedName": "Érythrée",
+    "translatedCapital": "Asmara",
+    "translatedCity1": "Asmara",
+    "translatedCity2": "Keren",
+    "translatedCity3": "Teseney",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Nakfa",
+    "translatedLanguages": "Tigrigna, Arabe, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Estonia",
+    "translatedName": "Estonie",
+    "translatedCapital": "Tallinn",
+    "translatedCity1": "Tallinn",
+    "translatedCity2": "Tartu",
+    "translatedCity3": "Narva",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Estonien",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Eswatini",
+    "translatedName": "Eswatini",
+    "translatedCapital": "Mbabane",
+    "translatedCity1": "Manzini",
+    "translatedCity2": "Mbabane",
+    "translatedCity3": "Big Bend",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique australe",
+    "translatedCurrency": "Lilangeni swazi",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Ethiopia",
+    "translatedName": "Éthiopie",
+    "translatedCapital": "Addis-Abeba",
+    "translatedCity1": "Addis-Abeba",
+    "translatedCity2": "Dire Daoua",
+    "translatedCity3": "Mekele",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Birr",
+    "translatedLanguages": "Afar, Amharique, Oromo, Somali, Tigrigna, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Fiji",
+    "translatedName": "Fidji",
+    "translatedCapital": "Suva",
+    "translatedCity1": "Suva",
+    "translatedCity2": "Lautoka",
+    "translatedCity3": "Nadi",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Mélanésie",
+    "translatedCurrency": "Dollar fidjien",
+    "translatedLanguages": "Fidjien, Hindi fidjien, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Finland",
+    "translatedName": "Finlande",
+    "translatedCapital": "Helsinki",
+    "translatedCity1": "Helsinki",
+    "translatedCity2": "Espoo",
+    "translatedCity3": "Tampere",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Finnois, Suédois",
+    "landmarks": []
+  },
+
   {
     "originalName": "France",
     "translatedName": "France",

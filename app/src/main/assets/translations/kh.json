@@ -695,6 +695,34 @@
   },
 
   {
+    "originalName": "East Timor",
+    "translatedName": "ទីម័រខាងកើត",
+    "translatedCapital": "ឌីលី",
+    "translatedCity1": "ឌីលី",
+    "translatedCity2": "ម៉ាលីយ៉ាណា",
+    "translatedCity3": "ស៊ួយ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
+    "translatedCurrency": "ដុល្លាអាមេរិក",
+    "translatedLanguages": "ព័រទុយហ្គាល់, តេតុំ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Ecuador",
+    "translatedName": "អេក្វាឌ័រ",
+    "translatedCapital": "គីតូ",
+    "translatedCity1": "ហ្គ្វាយ៉ាគីល",
+    "translatedCity2": "គីតូ",
+    "translatedCity3": "គូអែនកា",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "ភាគឦសាននៃអាមេរិកខាងត្បូង",
+    "translatedCurrency": "ដុល្លាអាមេរិក",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Egypt",
     "translatedName": "អេហ្ស៊ីប",
     "translatedCapital": "កៃរ៉ូ",
@@ -712,6 +740,133 @@
       }
     ]
   },
+
+  {
+    "originalName": "El Salvador",
+    "translatedName": "អែលសាល់វ៉ាឌ័រ",
+    "translatedCapital": "សាន់សាល់វ៉ាឌ័រ",
+    "translatedCity1": "សាន់សាល់វ៉ាឌ័រ",
+    "translatedCity2": "សូយ៉ាប៉ាងហ្គោ",
+    "translatedCity3": "សាន់តាអាណា",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "អាមេរិកកណ្តាល",
+    "translatedCurrency": "ដុល្លារអាមេរិក",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "England",
+    "translatedName": "អង់គ្លេស",
+    "translatedCapital": "ឡុងដ៍",
+    "translatedCity1": "ឡុងដ៍",
+    "translatedCity2": "បឺមីងហ្គេម",
+    "translatedCity3": "ម៉ាន់ឈេស្ទឺ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "ផោនស្ទែរលីង",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Equatorial Guinea",
+    "translatedName": "ហ្គីណេអេក្វាទ័រ",
+    "translatedCapital": "ម៉ាឡាប៉ូ",
+    "translatedCity1": "បាតា",
+    "translatedCity2": "ម៉ាឡាប៉ូ",
+    "translatedCity3": "អេបេប៊ីយ៉ីន",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកកណ្តាល",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកកណ្តាល",
+    "translatedLanguages": "អេស្ប៉ាញ, បារាំង, ព័រទុយហ្គាល់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Eritrea",
+    "translatedName": "អេរីត្រេ",
+    "translatedCapital": "អាស្មារ៉ា",
+    "translatedCity1": "អាស្មារ៉ា",
+    "translatedCity2": "គេរ៉េន",
+    "translatedCity3": "តេសេណេ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ណាកហ្វា",
+    "translatedLanguages": "ទីគ្រីញា, អារ៉ាប់, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Estonia",
+    "translatedName": "អេស្តូនី",
+    "translatedCapital": "តាលីន",
+    "translatedCity1": "តាលីន",
+    "translatedCity2": "តាតូ",
+    "translatedCity3": "ណាវ៉ា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "អេស្តូនី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Eswatini",
+    "translatedName": "អេស្វាទីនី",
+    "translatedCapital": "ម្បាបានេ",
+    "translatedCity1": "ម៉ាន់ហ្ស៊ីនី",
+    "translatedCity2": "ម្បាបានេ",
+    "translatedCity3": "ប៊ីហ្គប៊ិនដ៍",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងត្បូង",
+    "translatedCurrency": "លីឡាងហ្គេនី ស្វាស៊ី",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Ethiopia",
+    "translatedName": "អេត្យូពី",
+    "translatedCapital": "អាឌីសអាបាបា",
+    "translatedCity1": "អាឌីសអាបាបា",
+    "translatedCity2": "ឌីរេដាវ៉ា",
+    "translatedCity3": "មេកើល",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ប៊ីរ",
+    "translatedLanguages": "អាហ្វារ, អាមហារីច, អូរ៉ូម៉ូ, សូម៉ាលី, ទីគ្រីញា, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Fiji",
+    "translatedName": "ហ្វីហ្ស៊ី",
+    "translatedCapital": "ស៊ូវ៉ា",
+    "translatedCity1": "ស៊ូវ៉ា",
+    "translatedCity2": "ឡូតូកា",
+    "translatedCity3": "ណាឌី",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មេឡានេស៊ី",
+    "translatedCurrency": "ដុល្លាហ្វីហ្ស៊ី",
+    "translatedLanguages": "ហ្វីហ្ស៊ី, ហិណ្ឌីហ្វីហ្ស៊ី, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Finland",
+    "translatedName": "ហ្វាំងឡង់",
+    "translatedCapital": "ហេលស៊ីនគី",
+    "translatedCity1": "ហេលស៊ីនគី",
+    "translatedCity2": "អេស្ប៉ូ",
+    "translatedCity3": "តាមពែរ៉េ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ហ្វាំងឡង់, ស៊ុយអែត",
+    "landmarks": []
+  },
+
   {
     "originalName": "France",
     "translatedName": "បារាំង",
