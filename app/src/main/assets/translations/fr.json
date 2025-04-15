@@ -889,6 +889,49 @@
       }
     ]
   },
+
+  {
+    "originalName": "Gabon",
+    "translatedName": "Gabon",
+    "translatedCapital": "Libreville",
+    "translatedCity1": "Libreville",
+    "translatedCity2": "Port-Gentil",
+    "translatedCity3": "Franceville",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique centrale",
+    "translatedCurrency": "Franc CFA d'Afrique centrale",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Gambia",
+    "translatedName": "Gambie",
+    "translatedCapital": "Banjul",
+    "translatedCity1": "Serekunda",
+    "translatedCity2": "Brikama",
+    "translatedCity3": "Bakau",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Dalasi",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Georgia",
+    "translatedName": "Géorgie",
+    "translatedCapital": "Tbilissi",
+    "translatedCity1": "Tbilissi",
+    "translatedCity2": "Koutaïssi",
+    "translatedCity3": "Batumi",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Caucase du Sud",
+    "translatedCurrency": "Lari géorgien",
+    "translatedLanguages": "Géorgien, Abkhaze",
+    "landmarks": []
+  },
+
   {
     "originalName": "Germany",
     "translatedName": "Allemagne",
@@ -902,6 +945,105 @@
     "translatedLanguages": "Allemand",
     "landmarks": []
   },
+
+  {
+    "originalName": "Ghana",
+    "translatedName": "Ghana",
+    "translatedCapital": "Accra",
+    "translatedCity1": "Accra",
+    "translatedCity2": "Kumasi",
+    "translatedCity3": "Sekondi-Takoradi",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Cedi ghanéen",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Greece",
+    "translatedName": "Grèce",
+    "translatedCapital": "Athènes",
+    "translatedCity1": "Athènes",
+    "translatedCity2": "Thessalonique",
+    "translatedCity3": "Patras",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Grec",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Grenada",
+    "translatedName": "Grenade",
+    "translatedCapital": "Saint-Georges",
+    "translatedCity1": "Saint-Georges",
+    "translatedCity2": "Gouyave",
+    "translatedCity3": "Grenville",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar des Caraïbes orientales",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Guatemala",
+    "translatedName": "Guatemala",
+    "translatedCapital": "Guatemala Ciudad",
+    "translatedCity1": "Guatemala Ciudad",
+    "translatedCity2": "Villa Nueva",
+    "translatedCity3": "Mixco",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique centrale",
+    "translatedCurrency": "Quetzal",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Guinea",
+    "translatedName": "Guinée",
+    "translatedCapital": "Conakry",
+    "translatedCity1": "Conakry",
+    "translatedCity2": "Nzérékoré",
+    "translatedCity3": "Guéckédou",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc guinéen",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Guinea-Bissau",
+    "translatedName": "Guinée-Bissau",
+    "translatedCapital": "Bissau",
+    "translatedCity1": "Bissau",
+    "translatedCity2": "Bafatá",
+    "translatedCity3": "Gabú",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc CFA ouest-africain",
+    "translatedLanguages": "Portugais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Guyana",
+    "translatedName": "Guyana",
+    "translatedCapital": "Georgetown",
+    "translatedCity1": "Georgetown",
+    "translatedCity2": "Linden",
+    "translatedCity3": "New Amsterdam",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Nord de l'Amérique du Sud",
+    "translatedCurrency": "Dollar guyanien",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
   {
     "originalName": "India",
     "translatedName": "Inde",

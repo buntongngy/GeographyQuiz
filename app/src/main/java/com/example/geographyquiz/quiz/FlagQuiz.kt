@@ -70,9 +70,9 @@ class FlagQuiz : AppCompatActivity() {
         score = 0
         usedCountries.clear()
         countries = if (currentLanguage != "en") {
-            databaseHelper.getTranslatedRandomCountries(28, currentLanguage)
+            databaseHelper.getTranslatedRandomCountries(85, currentLanguage)
         } else {
-            databaseHelper.getRandomCountries(28)
+            databaseHelper.getRandomCountries(85)
         }
 
         option1Btn.visibility = View.VISIBLE

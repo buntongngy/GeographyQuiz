@@ -1,5 +1,4 @@
 [
-
   {
     "name": "Afghanistan",
     "capital": "Kabul",
@@ -1213,6 +1212,64 @@
     "flagColors": ["White", "Red", "Blue"],
     "flagEmblem": ["Stripe"]
   },
+
+  {
+    "name": "Gabon",
+    "capital": "Libreville",
+    "bigCity": "Libreville",
+    "secondCity": "Port-Gentil",
+    "thirdCity": "Franceville",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "languages": ["French"],
+    "currency": "Central African CFA franc",
+    "population": 2341179,
+    "area": 267667,
+    "category": "africa",
+    "countryCode": "ga",
+    "difficulty": 3,
+    "flagColors": ["Yellow", "Blue", "Green"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Gambia",
+    "capital": "Banjul",
+    "bigCity": "Serekunda",
+    "secondCity": "Brikama",
+    "thirdCity": "Bakau",
+    "continent": "Africa",
+    "region": "West Africa",
+    "languages": ["English"],
+    "currency": "Dalasi",
+    "population": 2051363,
+    "area": 11295,
+    "category": "africa",
+    "countryCode": "gm",
+    "difficulty": 3,
+    "flagColors": ["Red", "White", "Blue", "Green"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Georgia",
+    "capital": "Tbilisi",
+    "bigCity": "Tbilisi",
+    "secondCity": "Kutaisi",
+    "thirdCity": "Batumi",
+    "continent": "Asia",
+    "region": "South Caucasus",
+    "languages": ["Georgien", "Abkhaz"],
+    "currency": "Georgian lari",
+    "population": 3688647,
+    "area": 69700,
+    "category": "eastern eu",
+    "countryCode": "ge",
+    "difficulty": 2,
+    "flagColors": ["Red", "White"],
+    "flagEmblem": ["Stripe", "British"]
+  },
+
   {
     "name": "Germany",
     "capital": "Berlin",
@@ -1229,6 +1286,140 @@
     "countryCode": "de",
     "difficulty": 1,
     "flagColors": ["Yellow", "Red", "Black"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Ghana",
+    "capital": "Accra",
+    "bigCity": "Accra",
+    "secondCity": "Kumasi",
+    "thirdCity": "Sekondi-Takoradi",
+    "continent": "Africa",
+    "region": "West Africa",
+    "languages": ["English"],
+    "currency": "Ghana cedi",
+    "population": 31072940,
+    "area": 239567,
+    "category": "africa",
+    "countryCode": "gh",
+    "difficulty": 2,
+    "flagColors": ["Yellow", "Red", "Green"],
+    "flagEmblem": ["Stripe", "Star"]
+  },
+
+  {
+    "name": "Greece",
+    "capital": "Athens",
+    "bigCity": "Athens",
+    "secondCity": "Thessaloniki",
+    "thirdCity": "Patras",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "languages": ["Greek"],
+    "currency": "Euro",
+    "population": 10445365,
+    "area": 50949,
+    "category": "western",
+    "countryCode": "gr",
+    "difficulty": 1,
+    "flagColors": ["White", "Blue"],
+    "flagEmblem": ["Stripe"]
+  },
+
+
+  {
+    "name": "Grenada",
+    "capital": "St. George's",
+    "bigCity": "St. George's",
+    "secondCity": "Gouyave",
+    "thirdCity": "Grenville",
+    "continent": "North America",
+    "region": "Caribbean",
+    "languages": ["English"],
+    "currency": "East Caribbean Dollar",
+    "population": 124610,
+    "area": 349,
+    "category": "caribbean",
+    "countryCode": "gd",
+    "difficulty": 3,
+    "flagColors": ["Red", "Yellow", "Green"],
+    "flagEmblem": ["Star"]
+  },
+
+  {
+    "name": "Guatemala",
+    "capital": "Guatemala City",
+    "bigCity": "Guatemala City",
+    "secondCity": "Villa Nueva",
+    "thirdCity": "Mixco",
+    "continent": "North America",
+    "region": "Central American",
+    "languages": ["Spanish"],
+    "currency": "Quetzal",
+    "population": 11237196,
+    "area": 108889,
+    "category": "caribbean",
+    "countryCode": "gt",
+    "difficulty": 3,
+    "flagColors": ["Blue", "White"],
+    "flagEmblem": ["Stripe", "Crest"]
+  },
+
+  {
+    "name": "Guinea",
+    "capital": "Conakry",
+    "bigCity": "Conakry",
+    "secondCity": "Nzérékoré",
+    "thirdCity": "Guéckédou",
+    "continent": "Africa",
+    "region": "West Africa",
+    "languages": ["French"],
+    "currency": "Guinean franc",
+    "population": 10057975,
+    "area": 245857,
+    "category": "africa",
+    "countryCode": "gn",
+    "difficulty": 3,
+    "flagColors": ["Red", "Yellow", "Green"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Guinea-Bissau",
+    "capital": "Bissau",
+    "bigCity": "Bissau",
+    "secondCity": "Bafatá",
+    "thirdCity": "Gabú",
+    "continent": "Africa",
+    "region": "West Africa",
+    "languages": ["Portuguese"],
+    "currency": "West African CFA franc",
+    "population": 1647000,
+    "area": 36125,
+    "category": "africa",
+    "countryCode": "gw",
+    "difficulty": 3,
+    "flagColors": ["Red", "Yellow", "Green"],
+    "flagEmblem": ["Stripe", "Star"]
+  },
+
+  {
+    "name": "Guyana",
+    "capital": "Georgetown",
+    "bigCity": "Georgetown",
+    "secondCity": "Linden",
+    "thirdCity": "New Amsterdam",
+    "continent": "South America",
+    "region": "Northern South America",
+    "languages": ["English"],
+    "currency": "Guyanese dollar",
+    "population": 752940,
+    "area": 214970,
+    "category": "latin",
+    "countryCode": "gy",
+    "difficulty": 3,
+    "flagColors": ["Red", "Yellow", "Green", "Black", "White"],
     "flagEmblem": ["Stripe"]
   },
 

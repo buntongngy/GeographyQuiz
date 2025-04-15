@@ -69,9 +69,9 @@ class CityQuiz : AppCompatActivity() {
         score = 0
         usedCountryQuestions.clear()
         countries = if (currentLanguage != "en") {
-            databaseHelper.getTranslatedRandomCountries(10, currentLanguage)
+            databaseHelper.getTranslatedRandomCountries(85, currentLanguage)
         } else {
-            databaseHelper.getRandomCountries(10)
+            databaseHelper.getRandomCountries(85)
         }
 
         if (countries.size < 4) {

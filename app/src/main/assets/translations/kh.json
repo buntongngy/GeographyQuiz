@@ -890,6 +890,49 @@
 
     ]
   },
+
+  {
+    "originalName": "Gabon",
+    "translatedName": "ហ្គាបុង",
+    "translatedCapital": "លីប្រើវីល",
+    "translatedCity1": "លីប្រើវីល",
+    "translatedCity2": "ព័រហ្សង់ទីល",
+    "translatedCity3": "ហ្វ្រ័នស៍វីល",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកកណ្តាល",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកកណ្តាល",
+    "translatedLanguages": "បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Gambia",
+    "translatedName": "ហ្គាំប៊ី",
+    "translatedCapital": "បាន់ជូល",
+    "translatedCity1": "សេរីគុនដា",
+    "translatedCity2": "ប្រីកាម៉ា",
+    "translatedCity3": "បាកៅ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ដាឡាស៊ី",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Georgia",
+    "translatedName": "ហ្សកហ្ស៊ី",
+    "translatedCapital": "ធីប៊ីលីស៊ី",
+    "translatedCity1": "ធីប៊ីលីស៊ី",
+    "translatedCity2": "គូតៃស៊ី",
+    "translatedCity3": "បាទូមី",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "កូកាស៊ីសខាងត្បូង",
+    "translatedCurrency": "ឡារីហ្សកហ្ស៊ី",
+    "translatedLanguages": "ហ្សកហ្ស៊ី, អាប់ខាហ្ស៊ី",
+    "landmarks": []
+  },
+
   {
     "originalName": "Germany",
     "translatedName": "អាល្លឺម៉ង់",
@@ -903,6 +946,105 @@
     "translatedLanguages": "អាល្លឺម៉ង់",
     "landmarks": []
   },
+
+  {
+    "originalName": "Ghana",
+    "translatedName": "ហ្គាណា",
+    "translatedCapital": "អាក្រា",
+    "translatedCity1": "អាក្រា",
+    "translatedCity2": "គូម៉ាស៊ី",
+    "translatedCity3": "សេខុនឌី-តាកូរ៉ាឌី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ស៊ីឌីហ្គាណា",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Greece",
+    "translatedName": "ក្រិក",
+    "translatedCapital": "អាតែន",
+    "translatedCity1": "អាតែន",
+    "translatedCity2": "សាឡូនីគី",
+    "translatedCity3": "ប៉ាតរ៉ាស",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ក្រិក",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Grenada",
+    "translatedName": "ហ្គ្រើណាដា",
+    "translatedCapital": "សាំងចចរិដ",
+    "translatedCity1": "សាំងចចរិដ",
+    "translatedCity2": "ហ្គៅយ៉ាវ",
+    "translatedCity3": "ហ្គ្រើនវីល",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លាការ៉ាអ៊ីបខាងកើត",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Guatemala",
+    "translatedName": "ហ្គាតេម៉ាឡា",
+    "translatedCapital": "ទីក្រុងហ្គាតេម៉ាឡា",
+    "translatedCity1": "ទីក្រុងហ្គាតេម៉ាឡា",
+    "translatedCity2": "វីយ៉ានូវ៉ា",
+    "translatedCity3": "មីស្កូ",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "អាមេរិកកណ្តាល",
+    "translatedCurrency": "ខេតសាល់",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Guinea",
+    "translatedName": "ហ្គីណេ",
+    "translatedCapital": "កូណាគ្រី",
+    "translatedCity1": "កូណាគ្រី",
+    "translatedCity2": "ណឺរេកូរ៉េ",
+    "translatedCity3": "ហ្គេកេឌូ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្វ្រង់ហ្គីណេ",
+    "translatedLanguages": "បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Guinea-Bissau",
+    "translatedName": "ហ្គីណេ-ប៊ីសូ",
+    "translatedCapital": "ប៊ីសូ",
+    "translatedCity1": "ប៊ីសូ",
+    "translatedCity2": "បាហ្វាតា",
+    "translatedCity3": "ហ្គាប៊ូ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកខាងលិច",
+    "translatedLanguages": "ព័រទុយហ្គាល់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Guyana",
+    "translatedName": "ហ្គីយ៉ាណា",
+    "translatedCapital": "ចចអរតោន",
+    "translatedCity1": "ចចអរតោន",
+    "translatedCity2": "លីនដែន",
+    "translatedCity3": "ញូអំស្ទ័រដំ",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "អាមេរិកខាងត្បូងភាគខាងជើង",
+    "translatedCurrency": "ដុល្លារហ្គីយ៉ាណា",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
   {
     "originalName": "India",
     "translatedName": "ឥណ្ឌា",
