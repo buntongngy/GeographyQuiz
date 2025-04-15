@@ -1046,6 +1046,48 @@
   },
 
   {
+    "originalName": "Haiti",
+    "translatedName": "ហៃទី",
+    "translatedCapital": "ព័រតូព្រែន",
+    "translatedCity1": "ព័រតូព្រែន",
+    "translatedCity2": "ការហ្វួរ",
+    "translatedCity3": "ដែលម៉ាស",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ហ្គោដ",
+    "translatedLanguages": "បារាំង, ក្រេអុលហៃទី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Honduras",
+    "translatedName": "ហុងឌូរ៉ាស",
+    "translatedCapital": "តេហ្គោស៊ីហ្គាល់ប៉ា",
+    "translatedCity1": "តេហ្គោស៊ីហ្គាល់ប៉ា",
+    "translatedCity2": "សាន់ពេឌ្រូស៊ូឡា",
+    "translatedCity3": "ជូឡូម៉ា",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "អាមេរិកកណ្តាល",
+    "translatedCurrency": "លេមពីរ៉ា",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Hungary",
+    "translatedName": "ហុងគ្រី",
+    "translatedCapital": "ប៊ូដាប៉េស្ត",
+    "translatedCity1": "ប៊ូដាប៉េស្ត",
+    "translatedCity2": "ដេប្រេសេន",
+    "translatedCity3": "មីស្គូល",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបកណ្តាល",
+    "translatedCurrency": "ហ្វូរីន",
+    "translatedLanguages": "ភាសាហុងគ្រី",
+    "landmarks": []
+  },
+
+  {
     "originalName": "India",
     "translatedName": "ឥណ្ឌា",
     "translatedCapital": "ញូដេលី",

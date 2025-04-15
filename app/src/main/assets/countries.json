@@ -1424,6 +1424,63 @@
   },
 
   {
+    "name": "Haiti",
+    "capital": "Port-au-Prince",
+    "bigCity": "Port-au-Prince",
+    "secondCity": "Carrefour",
+    "thirdCity": "Delmas",
+    "continent": "North America",
+    "region": "Caribbean",
+    "languages": ["French", "Haitian Creole"],
+    "currency": "Gourde",
+    "population": 11470261,
+    "area": 27750,
+    "category": "caribbean",
+    "countryCode": "ht",
+    "difficulty": 2,
+    "flagColors": ["Red", "Blue"],
+    "flagEmblem": ["Stripe", "Crest"]
+  },
+
+  {
+    "name": "Honduras",
+    "capital": "Tegucigalpa",
+    "bigCity": "Tegucigalpa",
+    "secondCity": "San Pedro Sula",
+    "thirdCity": "Choloma",
+    "continent": "North America",
+    "region": "Central America",
+    "languages": ["Spanish"],
+    "currency": "Lempira",
+    "population": 9571352,
+    "area": 112492,
+    "category": "caribbean",
+    "countryCode": "hn",
+    "difficulty": 3,
+    "flagColors": ["White", "Blue"],
+    "flagEmblem": ["Stripe", "Star"]
+  },
+
+  {
+    "name": "Hungary",
+    "capital": "Budapest",
+    "bigCity": "Budapest",
+    "secondCity": "Debrecen",
+    "thirdCity": "Miskolc",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "languages": ["Hungarian"],
+    "currency": "Forint",
+    "population": 9584627,
+    "area": 93030,
+    "category": "slavic",
+    "countryCode": "hu",
+    "difficulty": 2,
+    "flagColors": ["White", "Green", "Red"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
     "name": "India",
     "capital": "New Delhi",
     "bigCity": "Mumbai",

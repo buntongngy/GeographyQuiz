@@ -1045,6 +1045,48 @@
   },
 
   {
+    "originalName": "Haiti",
+    "translatedName": "Haïti",
+    "translatedCapital": "Port-au-Prince",
+    "translatedCity1": "Port-au-Prince",
+    "translatedCity2": "Carrefour",
+    "translatedCity3": "Delmas",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Gourde",
+    "translatedLanguages": "Français, Créole haïtien",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Honduras",
+    "translatedName": "Honduras",
+    "translatedCapital": "Tegucigalpa",
+    "translatedCity1": "Tegucigalpa",
+    "translatedCity2": "San Pedro Sula",
+    "translatedCity3": "Choloma",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique centrale",
+    "translatedCurrency": "Lempira",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Hungary",
+    "translatedName": "Hongrie",
+    "translatedCapital": "Budapest",
+    "translatedCity1": "Budapest",
+    "translatedCity2": "Debrecen",
+    "translatedCity3": "Miskolc",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe centrale",
+    "translatedCurrency": "Forint",
+    "translatedLanguages": "Hongrois",
+    "landmarks": []
+  },
+
+  {
     "originalName": "India",
     "translatedName": "Inde",
     "translatedCapital": "New Delhi",
