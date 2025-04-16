@@ -1256,6 +1256,76 @@
   },
 
   {
+    "originalName": "Kazakhstan",
+    "translatedName": "កាហ្សាក់ស្ថាន",
+    "translatedCapital": "អាស្តាណា",
+    "translatedCity1": "អាល់ម៉ាទី",
+    "translatedCity2": "អាស្តាណា",
+    "translatedCity3": "ស៊ីមខេន",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីកណ្តាល",
+    "translatedCurrency": "តេងហ្គេ",
+    "translatedLanguages": "កាហ្សាក់, រុស្ស៊ី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Kenya",
+    "translatedName": "កេនយ៉ា",
+    "translatedCapital": "ណៃរ៉ូប៊ី",
+    "translatedCity1": "ណៃរ៉ូប៊ី",
+    "translatedCity2": "ម៉ុំបាសា",
+    "translatedCity3": "ណាគូរូ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ស៊ីលីងកេនយ៉ា",
+    "translatedLanguages": "ស្វាហ៊ីលី, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Kiribati",
+    "translatedName": "គិរីបាទី",
+    "translatedCapital": "តារាវ៉ា",
+    "translatedCity1": "តារាវ៉ា",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មីក្រូណេស៊ី",
+    "translatedCurrency": "ដុល្លារអូស្ត្រាលី",
+    "translatedLanguages": "អង់គ្លេស, ហ្គីលបឺត",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Kuwait",
+    "translatedName": "គុយវ៉ែត",
+    "translatedCapital": "ទីក្រុងគុយវ៉ែត",
+    "translatedCity1": "ទីក្រុងគុយវ៉ែត",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ឌីណាគុយវ៉ែត",
+    "translatedLanguages": "ភាសាអារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Kyrgyzstan",
+    "translatedName": "កៀហ្ស៊ីស្ថាន",
+    "translatedCapital": "ប៊ីស្កេក",
+    "translatedCity1": "ប៊ីស្កេក",
+    "translatedCity2": "អូស",
+    "translatedCity3": "ជាឡាល់-អាបាដ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីកណ្តាល",
+    "translatedCurrency": "សុំកៀហ្ស៊ីស្ថាន",
+    "translatedLanguages": "កៀហ្ស៊ី, រុស្ស៊ី",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Libya",
     "translatedName": "លីប៊ី",
     "translatedCapital": "ទ្រីបូលី",

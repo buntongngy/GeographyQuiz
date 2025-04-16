@@ -143,7 +143,7 @@
     "countryCode": "ar",
     "difficulty": 2,
     "flagColors": ["White", "Blue"],
-    "flagEmblem": ["Sun", "Stripe"]
+    "flagEmblem": ["Circle", "Stripe"]
   },
 
   {
@@ -1706,6 +1706,102 @@
     "difficulty": 3,
     "flagColors": ["White", "Red", "Black", "Green"],
     "flagEmblem": ["Star", "Stripe"]
+  },
+
+
+  {
+    "name": "Kazakhstan",
+    "capital": "Astana",
+    "bigCity": "Almaty",
+    "secondCity": "Astana",
+    "thirdCity": "Shymkent",
+    "continent": "Asia",
+    "region": "Central Asia",
+    "languages": ["Kazakh", "Russian"],
+    "currency": "Tenge",
+    "population": 20286084,
+    "area": 2724900,
+    "category": "slavic",
+    "countryCode": "kz",
+    "difficulty": 2,
+    "flagColors": ["Yellow", "Blue"],
+    "flagEmblem": ["Circle"]
+  },
+
+  {
+    "name": "Kenya",
+    "capital": "Nairobi",
+    "bigCity": "Nairobi",
+    "secondCity": "Mombasa",
+    "thirdCity": "Nakuru",
+    "continent": "Africa",
+    "region": "East Africa",
+    "languages": ["Swahili", "English"],
+    "currency": "Kenyan shilling",
+    "population": 52428290,
+    "area": 580367,
+    "category": "africa",
+    "countryCode": "ke",
+    "difficulty": 2,
+    "flagColors": ["Black", "Red", "Green"],
+    "flagEmblem": ["Stripe", "Crest"]
+  },
+
+  {
+    "name": "Kiribati",
+    "capital": "Tarawa",
+    "bigCity": "Tarawa",
+    "secondCity": "",
+    "thirdCity": "",
+    "continent": "Oceania",
+    "region": "Micronesia",
+    "languages": ["English", "Gilbertese"],
+    "currency": "Australian dollar",
+    "population": 121388,
+    "area": 811,
+    "category": "pacific",
+    "countryCode": "ki",
+    "difficulty": 3,
+    "flagColors": ["Yellow", "Red", "Blue", "White"],
+    "flagEmblem": ["Circle", "Stripe"]
+  },
+
+  {
+    "name": "Kuwait",
+    "capital": "Kuwait City",
+    "bigCity": "Kuwait City",
+    "secondCity": "",
+    "thirdCity": "",
+    "continent": "Asia",
+    "region": "Middle East",
+    "languages": ["Arabic"],
+    "currency": "Kuwaiti dinar",
+    "population": 4985716,
+    "area": 17818,
+    "category": "middle_east",
+    "countryCode": "kw",
+    "difficulty": 3,
+    "flagColors": ["Green", "Red", "Black", "White"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Kyrgyzstan",
+    "capital": "Bishkek",
+    "bigCity": "Bishkek",
+    "secondCity": "Osh",
+    "thirdCity": "Jalal-Abad",
+    "continent": "Asia",
+    "region": "Central Asia",
+    "languages": ["Kyrgyz", "Russian"],
+    "currency": "Kyrgyzstani som",
+    "population": 7161900,
+    "area": 200105,
+    "category": "slavic",
+    "countryCode": "kg",
+    "difficulty": 3,
+    "flagColors": ["Yellow", "Red"],
+    "flagEmblem": ["Circle"]
   },
 
   {

@@ -1255,6 +1255,76 @@
   },
 
   {
+    "originalName": "Kazakhstan",
+    "translatedName": "Kazakhstan",
+    "translatedCapital": "Astana",
+    "translatedCity1": "Almaty",
+    "translatedCity2": "Astana",
+    "translatedCity3": "Chimkent",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie centrale",
+    "translatedCurrency": "Tenge",
+    "translatedLanguages": "Kazakh, Russe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Kenya",
+    "translatedName": "Kenya",
+    "translatedCapital": "Nairobi",
+    "translatedCity1": "Nairobi",
+    "translatedCity2": "Mombasa",
+    "translatedCity3": "Nakuru",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Shilling kényan",
+    "translatedLanguages": "Swahili, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Kiribati",
+    "translatedName": "Kiribati",
+    "translatedCapital": "Tarawa",
+    "translatedCity1": "Tarawa",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Micronésie",
+    "translatedCurrency": "Dollar australien",
+    "translatedLanguages": "Anglais, Gilbertin",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Kuwait",
+    "translatedName": "Koweït",
+    "translatedCapital": "Koweït",
+    "translatedCity1": "Koweït",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Dinar koweïtien",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Kyrgyzstan",
+    "translatedName": "Kirghizistan",
+    "translatedCapital": "Bichkek",
+    "translatedCity1": "Bichkek",
+    "translatedCity2": "Och",
+    "translatedCity3": "Jalal-Abad",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie centrale",
+    "translatedCurrency": "Som kirghize",
+    "translatedLanguages": "Kirghize, Russe",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Libya",
     "translatedName": "Libye",
     "translatedCapital": "Tripoli",
