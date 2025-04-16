@@ -11,7 +11,7 @@
     "currency": "Afghani",
     "population": 40218234,
     "area": 652867,
-    "category": "middle_eastern",
+    "category": "middle_east",
     "countryCode": "af",
     "difficulty": 2,
     "flagColors": ["Black", "Red", "Green"],
@@ -253,7 +253,7 @@
     "currency": "Bahraini dinar",
     "population": 1463265,
     "area": 787,
-    "category": "arab",
+    "category": "middle_east",
     "countryCode": "bh",
     "difficulty": 3,
     "flagColors": ["White", "Red"],
@@ -887,7 +887,7 @@
     "countryCode": "dk",
     "difficulty": 2,
     "flagColors": ["White", "Red"],
-    "flagEmblem": ["Stripe"]
+    "flagEmblem": ["Cross"]
   },
 
   {
@@ -925,7 +925,7 @@
     "countryCode": "dm",
     "difficulty": 3,
     "flagColors": ["Black", "White", "Green", "Yellow"],
-    "flagEmblem": ["Stripe", "Circle"]
+    "flagEmblem": ["Cross", "Circle"]
   },
 
   {
@@ -944,7 +944,7 @@
     "countryCode": "do",
     "difficulty": 3,
     "flagColors": ["Blue", "White", "Red"],
-    "flagEmblem": ["Stripe", "Crest"]
+    "flagEmblem": ["Cross", "Crest"]
   },
 
   {
@@ -1046,7 +1046,7 @@
     "countryCode": "gb-eng",
     "difficulty": 1,
     "flagColors": ["Red", "White"],
-    "flagEmblem": ["British", "Stripe"]
+    "flagEmblem": ["British", "Cross"]
   },
 
   {
@@ -1179,7 +1179,7 @@
     "countryCode": "fl",
     "difficulty": 2,
     "flagColors": ["Blue", "White"],
-    "flagEmblem": ["Stripe"]
+    "flagEmblem": ["Cross"]
   },
 
   {
@@ -1324,7 +1324,7 @@
     "countryCode": "gr",
     "difficulty": 1,
     "flagColors": ["White", "Blue"],
-    "flagEmblem": ["Stripe"]
+    "flagEmblem": ["Stripe", "Cross"]
   },
 
 
@@ -1481,6 +1481,25 @@
   },
 
   {
+    "name": "Iceland",
+    "capital": "Reykjavik",
+    "bigCity": "Reykjavik",
+      "secondCity": "Kópavogur",
+    "thirdCity": "Hafnarfjörður",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "languages": ["Icelandic"],
+    "currency": "Icelandic króna",
+    "population": 389444,
+    "area": 103125,
+    "category": "nordic",
+    "countryCode": "is",
+    "difficulty": 2,
+    "flagColors": ["White", "Blue", "Red"],
+    "flagEmblem": ["Cross"]
+  },
+
+  {
     "name": "India",
     "capital": "New Delhi",
     "bigCity": "Mumbai",
@@ -1497,6 +1516,196 @@
     "difficulty": 1,
     "flagColors": ["Yellow", "Green", "White"],
     "flagEmblem": ["Crest", "Stripe"]
+  },
+
+  {
+    "name": "Indonesia",
+    "capital": "Jakarta",
+    "bigCity": "Jakarta",
+    "secondCity": "Surabaya",
+    "thirdCity": "Bekasi",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "languages": ["Indonesian"],
+    "currency": "Indonesian Rupiah",
+    "population": 284973643,
+    "area": 1904569,
+    "category": "east_asia",
+    "countryCode": "id",
+    "difficulty": 2,
+    "flagColors": ["Red", "White"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Iran",
+    "capital": "Tehran",
+    "bigCity": "Tehran",
+    "secondCity": "Mashhad",
+    "thirdCity": "Isfahan",
+    "continent": "Asia",
+    "region": "Middle East",
+    "languages": ["Persian"],
+    "currency": "Iranian Rial",
+    "population": 85961000,
+    "area": 1648195,
+    "category": "middle_east",
+    "countryCode": "ir",
+    "difficulty": 1,
+    "flagColors": ["Red", "White", "Green"],
+    "flagEmblem": ["Stripe", "Crest"]
+  },
+
+  {
+    "name": "Iraq",
+    "capital": "Baghdad",
+    "bigCity": "Baghdad",
+    "secondCity": "Erbil",
+    "thirdCity": "Mosul",
+    "continent": "Asia",
+    "region": "Middle East",
+    "languages": ["Arabic", "Kurdish"],
+    "currency": "Iraqi dinar",
+    "population": 47020774,
+    "area": 438317,
+    "category": "middle_east",
+    "countryCode": "iq",
+    "difficulty": 1,
+    "flagColors": ["Red", "White", "Black"],
+    "flagEmblem": ["Stripe", "Crest"]
+  },
+
+  {
+    "name": "Ireland",
+    "capital": "Dublin",
+    "bigCity": "Dublin",
+    "secondCity": "Cork",
+    "thirdCity": "Limerick",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "languages": ["Irish", "English"],
+    "currency": "Euro",
+    "population": 5380300,
+    "area": 70273,
+    "category": "western",
+    "countryCode": "ie",
+    "difficulty": 1,
+    "flagColors": ["Yellow", "White", "Green"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Israel",
+    "capital": "Jerusalem",
+    "bigCity": "Jerusalem",
+    "secondCity": "Tel Aviv-Yafo",
+    "thirdCity": "Haifa",
+    "continent": "Asia",
+    "region": "Middle East",
+    "languages": ["Hebrew"],
+    "currency": "New shekel",
+    "population": 10009800,
+    "area": 22072,
+    "category": "middle_east",
+    "countryCode": "il",
+    "difficulty": 1,
+    "flagColors": ["Blue", "White"],
+    "flagEmblem": ["Stripe", "Star"]
+  },
+
+  {
+    "name": "Italy",
+    "capital": "Rome",
+    "bigCity": "Rome",
+    "secondCity": "Milan",
+    "thirdCity": "Naples",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "languages": ["Italian"],
+    "currency": "Euro",
+    "population": 58947905,
+    "area": 301340,
+    "category": "western",
+    "countryCode": "it",
+    "difficulty": 1,
+    "flagColors": ["Red", "White", "Green"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Ivory Coast",
+    "capital": "Yamoussoukro",
+    "bigCity": "Abidjan",
+    "secondCity": "Bouaké",
+    "thirdCity": "Yamoussoukro",
+    "continent": "Africa",
+    "region": "West Africa",
+    "languages": ["French"],
+    "currency": "West African CFA franc",
+    "population": 31500000,
+    "area": 322462,
+    "category": "africa",
+    "countryCode": "cl",
+    "difficulty": 1,
+    "flagColors": ["Yellow", "White", "Green"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Jamaica",
+    "capital": "Kingston",
+    "bigCity": "Kingston",
+    "secondCity": "Portmore",
+    "thirdCity": "Spanish Town",
+    "continent": "North America",
+    "region": "Caribbean",
+    "languages": ["English"],
+    "currency": "Jamaican dollar",
+    "population": 2824913,
+    "area": 10991,
+    "category": "caribbean",
+    "countryCode": "jm",
+    "difficulty": 2,
+    "flagColors": ["Yellow", "Black", "Green"],
+    "flagEmblem": ["Cross"]
+  },
+
+  {
+    "name": "Japan",
+    "capital": "Tokyo",
+    "bigCity": "Tokyo",
+    "secondCity": "Yokohama",
+    "thirdCity": "Osaka",
+    "continent": "Asia",
+    "region": "East Asia",
+    "languages": ["Japanese"],
+    "currency": "Yen",
+    "population": 123440000,
+    "area": 377975,
+    "category": "east_asia",
+    "countryCode": "jp",
+    "difficulty": 1,
+    "flagColors": ["White", "Red"],
+    "flagEmblem": ["Circle"]
+  },
+
+  {
+    "name": "Jordan",
+    "capital": "Amman",
+    "bigCity": "Amman",
+    "secondCity": "Zarqa",
+    "thirdCity": "Irbid",
+    "continent": "Asia",
+    "region": "Middle East",
+    "languages": ["Arabic"],
+    "currency": "Jordanian dinar",
+    "population": 11484805,
+    "area": 89342,
+    "category": "middle_east",
+    "countryCode": "jo",
+    "difficulty": 3,
+    "flagColors": ["White", "Red", "Black", "Green"],
+    "flagEmblem": ["Star", "Stripe"]
   },
 
   {

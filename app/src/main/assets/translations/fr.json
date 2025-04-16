@@ -1087,6 +1087,20 @@
   },
 
   {
+    "originalName": "Iceland",
+    "translatedName": "Islande",
+    "translatedCapital": "Reykjavik",
+    "translatedCity1": "Reykjavik",
+    "translatedCity2": "Kópavogur",
+    "translatedCity3": "Hafnarfjörður",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Couronne islandaise",
+    "translatedLanguages": "Islandais",
+    "landmarks": []
+  },
+
+  {
     "originalName": "India",
     "translatedName": "Inde",
     "translatedCapital": "New Delhi",
@@ -1099,6 +1113,147 @@
     "translatedLanguages": "Hindi, Anglais, Bengali, Telugu, Marathi",
     "landmarks": []
   },
+
+  {
+    "originalName": "Indonesia",
+    "translatedName": "Indonésie",
+    "translatedCapital": "Jakarta",
+    "translatedCity1": "Jakarta",
+    "translatedCity2": "Surabaya",
+    "translatedCity3": "Bekasi",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Roupie indonésienne",
+    "translatedLanguages": "Indonésien",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Iran",
+    "translatedName": "Iran",
+    "translatedCapital": "Téhéran",
+    "translatedCity1": "Téhéran",
+    "translatedCity2": "Mashhad",
+    "translatedCity3": "Ispahan",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Rial iranien",
+    "translatedLanguages": "Persan",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Iraq",
+    "translatedName": "Irak",
+    "translatedCapital": "Bagdad",
+    "translatedCity1": "Bagdad",
+    "translatedCity2": "Erbil",
+    "translatedCity3": "Mossoul",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Dinar irakien",
+    "translatedLanguages": "Arabe, Kurde",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Ireland",
+    "translatedName": "Irlande",
+    "translatedCapital": "Dublin",
+    "translatedCity1": "Dublin",
+    "translatedCity2": "Cork",
+    "translatedCity3": "Limerick",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Irlandais, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Israel",
+    "translatedName": "Israël",
+    "translatedCapital": "Jérusalem",
+    "translatedCity1": "Jérusalem",
+    "translatedCity2": "Tel Aviv-Jaffa",
+    "translatedCity3": "Haïfa",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Nouveau shekel",
+    "translatedLanguages": "Hébreu",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Italy",
+    "translatedName": "Italie",
+    "translatedCapital": "Rome",
+    "translatedCity1": "Rome",
+    "translatedCity2": "Milan",
+    "translatedCity3": "Naples",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Italien",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Ivory Coast",
+    "translatedName": "Côte d'Ivoire",
+    "translatedCapital": "Yamoussoukro",
+    "translatedCity1": "Abidjan",
+    "translatedCity2": "Bouaké",
+    "translatedCity3": "Yamoussoukro",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc CFA ouest-africain",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Jamaica",
+    "translatedName": "Jamaïque",
+    "translatedCapital": "Kingston",
+    "translatedCity1": "Kingston",
+    "translatedCity2": "Portmore",
+    "translatedCity3": "Spanish Town",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar jamaïcain",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Japan",
+    "translatedName": "Japon",
+    "translatedCapital": "Tokyo",
+    "translatedCity1": "Tokyo",
+    "translatedCity2": "Yokohama",
+    "translatedCity3": "Osaka",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie de l'Est",
+    "translatedCurrency": "Yen",
+    "translatedLanguages": "Japonais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Jordan",
+    "translatedName": "Jordanie",
+    "translatedCapital": "Amman",
+    "translatedCity1": "Amman",
+    "translatedCity2": "Zarqa",
+    "translatedCity3": "Irbid",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Dinar jordanien",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
   {
     "originalName": "Libya",
     "translatedName": "Libye",

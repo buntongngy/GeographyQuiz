@@ -1083,7 +1083,21 @@
     "translatedContinent": "អឺរ៉ុប",
     "translatedRegion": "អឺរ៉ុបកណ្តាល",
     "translatedCurrency": "ហ្វូរីន",
-    "translatedLanguages": "ភាសាហុងគ្រី",
+    "translatedLanguages": "ហុងគ្រី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Iceland",
+    "translatedName": "អ៊ីស្លង់",
+    "translatedCapital": "រ៉េយ៉្យាវីក",
+    "translatedCity1": "រ៉េយ៉្យាវីក",
+    "translatedCity2": "គូបាវូហ្គឺរ",
+    "translatedCity3": "ហាហ្វណាហ្វ្យ័រធឺរ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "ក្រូណាអ៊ីស្លង់",
+    "translatedLanguages": "អ៊ីស្លង់",
     "landmarks": []
   },
 
@@ -1100,6 +1114,147 @@
     "translatedLanguages": "ហិណ្ឌី, អង់គ្លេស, បេនហ្គាលី, តេលុគុ, មរាឋី",
     "landmarks": []
   },
+
+  {
+    "originalName": "Indonesia",
+    "translatedName": "ឥណ្ឌូនេស៊ី",
+    "translatedCapital": "ចាកាតា",
+    "translatedCity1": "ចាកាតា",
+    "translatedCity2": "ស៊ូរ៉ាបាយ៉ា",
+    "translatedCity3": "បេកាស៊ី",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
+    "translatedCurrency": "រ៉ៀបឥណ្ឌូនេស៊ី",
+    "translatedLanguages": "ឥណ្ឌូនេស៊ី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Iran",
+    "translatedName": "អ៊ីរ៉ង់",
+    "translatedCapital": "តេអេរ៉ង់",
+    "translatedCity1": "តេអេរ៉ង់",
+    "translatedCity2": "ម៉ាស្ហាដ",
+    "translatedCity3": "អ៊ីស្ហាហាន",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "រៀលអ៊ីរ៉ង់",
+    "translatedLanguages": "ភាសាពែរ្ស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Iraq",
+    "translatedName": "អ៊ីរ៉ាក់",
+    "translatedCapital": "បាកដាដ",
+    "translatedCity1": "បាកដាដ",
+    "translatedCity2": "អ៊ែរប៊ីល",
+    "translatedCity3": "ម៉ូស៊ុល",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ឌីណាអ៊ីរ៉ាក់",
+    "translatedLanguages": "អារ៉ាប់, ឃឺដ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Ireland",
+    "translatedName": "អៀរឡង់",
+    "translatedCapital": "ដូបលីន",
+    "translatedCity1": "ដូបលីន",
+    "translatedCity2": "ខក",
+    "translatedCity3": "លីមេរិច",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ភាសាអៀរឡង់, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Israel",
+    "translatedName": "អ៊ីស្រាអែល",
+    "translatedCapital": "យេរូសាឡឹម",
+    "translatedCity1": "យេរូសាឡឹម",
+    "translatedCity2": "តែលអាវីវ-យ៉ាហ្វោ",
+    "translatedCity3": "ហៃហ្វា",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ស៊ីគែលថ្មី",
+    "translatedLanguages": "ហេព្រើរ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Italy",
+    "translatedName": "អ៊ីតាលី",
+    "translatedCapital": "រ៉ូម",
+    "translatedCity1": "រ៉ូម",
+    "translatedCity2": "មីឡាន",
+    "translatedCity3": "ណាប៉ូលី",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "អ៊ីតាលី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Ivory Coast",
+    "translatedName": "កូតឌីវ័រ",
+    "translatedCapital": "យ៉ាម៉ូស៊ូក្រូ",
+    "translatedCity1": "អាប៊ីដ្យាន់",
+    "translatedCity2": "ប៊ូអាគេ",
+    "translatedCity3": "យ៉ាម៉ូស៊ូក្រូ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកខាងលិច",
+    "translatedLanguages": "បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Jamaica",
+    "translatedName": "ហ្សាម៉ាអ៊ីក",
+    "translatedCapital": "ឃីងស្តុន",
+    "translatedCity1": "ឃីងស្តុន",
+    "translatedCity2": "ព័រម៉រ",
+    "translatedCity3": "ស្ប៉ានីស្ហ៍ តោន",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លារហ្សាម៉ាអ៊ីក",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Japan",
+    "translatedName": "ជប៉ុន",
+    "translatedCapital": "តូក្យូ",
+    "translatedCity1": "តូក្យូ",
+    "translatedCity2": "យ៉ុកូហាម៉ា",
+    "translatedCity3": "អូសាកា",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងកើត",
+    "translatedCurrency": "យ៉េន",
+    "translatedLanguages": "ជប៉ុន",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Jordan",
+    "translatedName": "ហ្ស៊កដានី",
+    "translatedCapital": "អាម៉ាន់",
+    "translatedCity1": "អាម៉ាន់",
+    "translatedCity2": "ហ្សាកា",
+    "translatedCity3": "អ៊ឺប៊ីដ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ឌីណាហ្ស៊កដានី",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
   {
     "originalName": "Libya",
     "translatedName": "លីប៊ី",
