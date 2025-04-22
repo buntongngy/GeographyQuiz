@@ -1326,6 +1326,76 @@
   },
 
   {
+    "originalName": "Laos",
+    "translatedName": "ឡាវ",
+    "translatedCapital": "វៀងច័ន្ទ",
+    "translatedCity1": "វៀងច័ន្ទ",
+    "translatedCity2": "ស្វាយណាកែត",
+    "translatedCity3": "បាក់សែ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
+    "translatedCurrency": "គីប",
+    "translatedLanguages": "ឡាវ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Latvia",
+    "translatedName": "ឡាតវីយ៉ា",
+    "translatedCapital": "រីហ្គា",
+    "translatedCity1": "រីហ្គា",
+    "translatedCity2": "ដូហ្គាវភីលស៍",
+    "translatedCity3": "លីអេភ៉ាយ៉ា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ឡាតវីយ៉ា",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Lebanon",
+    "translatedName": "លីបង់",
+    "translatedCapital": "ប៊ែរូត",
+    "translatedCity1": "ប៊ែរូត",
+    "translatedCity2": "ត្រីប៉ូលី",
+    "translatedCity3": "ស៊ីដាន",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ផោនលីបង់",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Lesotho",
+    "translatedName": "លើសូតូ",
+    "translatedCapital": "ម៉ាសេរូ",
+    "translatedCity1": "ម៉ាសេរូ",
+    "translatedCity2": "តេយ៉ាតេយ៉ានេង",
+    "translatedCity3": "ម៉ាហ្វេតាង",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងត្បូង",
+    "translatedCurrency": "លូទីលើសូតូ",
+    "translatedLanguages": "សេសូតូ, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Liberia",
+    "translatedName": "លីបេរីយ៉ា",
+    "translatedCapital": "ម៉ុនរ៉ូវីយ៉ា",
+    "translatedCity1": "ម៉ុនរ៉ូវីយ៉ា",
+    "translatedCity2": "ហ្គបាងហ្គា",
+    "translatedCity3": "កាកាតា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ដុល្លារលីបេរីយ៉ា",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Libya",
     "translatedName": "លីប៊ី",
     "translatedCapital": "ទ្រីបូលី",
@@ -1344,6 +1414,49 @@
 
     ]
   },
+
+  {
+    "originalName": "Liechtenstein",
+    "translatedName": "លិចទេនស្តាញ",
+    "translatedCapital": "វ៉ាឌូហ្ស",
+    "translatedCity1": "ស្ឈាន",
+    "translatedCity2": "វ៉ាឌូហ្ស",
+    "translatedCity3": "ត្រីសែន",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងលិច",
+    "translatedCurrency": "ហ្រ្វង់ស្វីស",
+    "translatedLanguages": "អាល្លឺម៉ង់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Lithuania",
+    "translatedName": "លីទុយអានី",
+    "translatedCapital": "វីលនីយ៉ូស",
+    "translatedCity1": "វីលនីយ៉ូស",
+    "translatedCity2": "កូណាស",
+    "translatedCity3": "ខ្លៃប៉េដា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "លីទុយអានី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Luxembourg",
+    "translatedName": "លុចសំបួ",
+    "translatedCapital": "លុចសំបួ",
+    "translatedCity1": "លុចសំបួ",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងលិច",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "លុចសំបួ",
+    "landmarks": []
+  },
+
   {
     "originalName": "Nepal",
     "translatedName": "នេប៉ាល់",

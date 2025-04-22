@@ -1325,6 +1325,76 @@
   },
 
   {
+    "originalName": "Laos",
+    "translatedName": "Laos",
+    "translatedCapital": "Vientiane",
+    "translatedCity1": "Vientiane",
+    "translatedCity2": "Savannakhet",
+    "translatedCity3": "Paksé",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Kip",
+    "translatedLanguages": "Lao",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Latvia",
+    "translatedName": "Lettonie",
+    "translatedCapital": "Riga",
+    "translatedCity1": "Riga",
+    "translatedCity2": "Daugavpils",
+    "translatedCity3": "Liepāja",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Letton",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Lebanon",
+    "translatedName": "Liban",
+    "translatedCapital": "Beyrouth",
+    "translatedCity1": "Beyrouth",
+    "translatedCity2": "Tripoli",
+    "translatedCity3": "Saïda",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Livre libanaise",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Lesotho",
+    "translatedName": "Lesotho",
+    "translatedCapital": "Maseru",
+    "translatedCity1": "Maseru",
+    "translatedCity2": "Teyateyaneng",
+    "translatedCity3": "Mafetang",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique australe",
+    "translatedCurrency": "Loti lesothan",
+    "translatedLanguages": "Sotho du Sud, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Liberia",
+    "translatedName": "Libéria",
+    "translatedCapital": "Monrovia",
+    "translatedCity1": "Monrovia",
+    "translatedCity2": "Gbarnga",
+    "translatedCity3": "Kakata",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Dollar libérien",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Libya",
     "translatedName": "Libye",
     "translatedCapital": "Tripoli",
@@ -1342,6 +1412,49 @@
       }
     ]
   },
+
+  {
+    "originalName": "Liechtenstein",
+    "translatedName": "Liechtenstein",
+    "translatedCapital": "Vaduz",
+    "translatedCity1": "Schaan",
+    "translatedCity2": "Vaduz",
+    "translatedCity3": "Triesen",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Ouest",
+    "translatedCurrency": "Franc suisse",
+    "translatedLanguages": "Allemand",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Lithuania",
+    "translatedName": "Lituanie",
+    "translatedCapital": "Vilnius",
+    "translatedCity1": "Vilnius",
+    "translatedCity2": "Kaunas",
+    "translatedCity3": "Klaipėda",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Lituanien",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Luxembourg",
+    "translatedName": "Luxembourg",
+    "translatedCapital": "Luxembourg",
+    "translatedCity1": "Luxembourg",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Ouest",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Luxembourgeois",
+    "landmarks": []
+  },
+
   {
     "originalName": "Nepal",
     "translatedName": "Népal",
