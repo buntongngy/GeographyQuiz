@@ -1456,6 +1456,258 @@
   },
 
   {
+    "originalName": "Madagascar",
+    "translatedName": "Madagascar",
+    "translatedCapital": "Antananarivo",
+    "translatedCity1": "Antananarivo",
+    "translatedCity2": "Toamasina",
+    "translatedCity3": "Antsirabe",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Ariary",
+    "translatedLanguages": "Malgache, Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Malawi",
+    "translatedName": "Malawi",
+    "translatedCapital": "Lilongwe",
+    "translatedCity1": "Lilongwe",
+    "translatedCity2": "Blantyre",
+    "translatedCity3": "Zomba",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Kwacha malawien",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Malaysia",
+    "translatedName": "Malaisie",
+    "translatedCapital": "Kuala Lumpur",
+    "translatedCity1": "Kuala Lumpur",
+    "translatedCity2": "Kajang",
+    "translatedCity3": "Seberang Perai",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Ringgit malaisien",
+    "translatedLanguages": "Malais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Maldives",
+    "translatedName": "Maldives",
+    "translatedCapital": "Malé",
+    "translatedCity1": "Malé",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud",
+    "translatedCurrency": "Rufiyaa maldivien",
+    "translatedLanguages": "Divehi",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mali",
+    "translatedName": "Mali",
+    "translatedCapital": "Bamako",
+    "translatedCity1": "Bamako",
+    "translatedCity2": "Sikasso",
+    "translatedCity3": "Kalabancoro",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc CFA ouest-africain",
+    "translatedLanguages": "Bambara, Bobo, Bozo, Dogon, Peul, Arabe, Kassonké, Mainké, Minyanka, Sénoufo, Songhaï, Soninké, Tamasheq",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Malta",
+    "translatedName": "Malte",
+    "translatedCapital": "La Valette",
+    "translatedCity1": "La Valette",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Maltais, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Marshall Islands",
+    "translatedName": "Îles Marshall",
+    "translatedCapital": "Majuro",
+    "translatedCity1": "Majuro",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Micronésie",
+    "translatedCurrency": "Dollar américain",
+    "translatedLanguages": "Marshallais, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mauritania",
+    "translatedName": "Mauritanie",
+    "translatedCapital": "Nouakchott",
+    "translatedCity1": "Nouakchott",
+    "translatedCity2": "Nouadhibou",
+    "translatedCity3": "Néma",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Ouguiya",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mauritius",
+    "translatedName": "Maurice",
+    "translatedCapital": "Port-Louis",
+    "translatedCity1": "Port-Louis",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Roupie mauricienne",
+    "translatedLanguages": "Anglais, Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mexico",
+    "translatedName": "Mexique",
+    "translatedCapital": "Mexico",
+    "translatedCity1": "Mexico",
+    "translatedCity2": "Tijuana",
+    "translatedCity3": "Ecatepec",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique du Nord",
+    "translatedCurrency": "Peso mexicain",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Micronesia",
+    "translatedName": "Micronésie",
+    "translatedCapital": "Palikir",
+    "translatedCity1": "Weno",
+    "translatedCity2": "Tofol",
+    "translatedCity3": "Colonia",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Micronésie",
+    "translatedCurrency": "Dollar américain",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Moldova",
+    "translatedName": "Moldavie",
+    "translatedCapital": "Chișinău",
+    "translatedCity1": "Chișinău",
+    "translatedCity2": "Tiraspol",
+    "translatedCity3": "Bălți",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Est",
+    "translatedCurrency": "Leu moldave",
+    "translatedLanguages": "Roumain",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Monaco",
+    "translatedName": "Monaco",
+    "translatedCapital": "Monaco-Ville",
+    "translatedCity1": "Monaco-Ville",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mongolia",
+    "translatedName": "Mongolie",
+    "translatedCapital": "Oulan-Bator",
+    "translatedCity1": "Oulan-Bator",
+    "translatedCity2": "Erdenet",
+    "translatedCity3": "Darkhan",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie de l'Est",
+    "translatedCurrency": "Tugrik",
+    "translatedLanguages": "Mongol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Montenegro",
+    "translatedName": "Monténégro",
+    "translatedCapital": "Podgorica",
+    "translatedCity1": "Podgorica",
+    "translatedCity2": "Nikšić",
+    "translatedCity3": "Budva",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Monténégrin",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Morocco",
+    "translatedName": "Maroc",
+    "translatedCapital": "Rabat",
+    "translatedCity1": "Casablanca",
+    "translatedCity2": "Tanger",
+    "translatedCity3": "Fès",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique du Nord",
+    "translatedCurrency": "Dirham marocain",
+    "translatedLanguages": "Arabe, Amazigh",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mozambique",
+    "translatedName": "Mozambique",
+    "translatedCapital": "Maputo",
+    "translatedCity1": "Maputo",
+    "translatedCity2": "Matola",
+    "translatedCity3": "Nampula",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Metical",
+    "translatedLanguages": "Portugais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Myanmar",
+    "translatedName": "Birmanie",
+    "translatedCapital": "Naypyidaw",
+    "translatedCity1": "Yangon",
+    "translatedCity2": "Mandalay",
+    "translatedCity3": "Naypyidaw",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Kyat",
+    "translatedLanguages": "Birman",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Nepal",
     "translatedName": "Népal",
     "translatedCapital": "Katmandou",

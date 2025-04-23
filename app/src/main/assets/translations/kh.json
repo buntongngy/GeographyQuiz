@@ -1458,6 +1458,258 @@
   },
 
   {
+    "originalName": "Madagascar",
+    "translatedName": "ម៉ាដាហ្គាស្ការ",
+    "translatedCapital": "អង់តាណាណារីវ៉ូ",
+    "translatedCity1": "អង់តាណាណារីវ៉ូ",
+    "translatedCity2": "តូអាម៉ាស៊ីណា",
+    "translatedCity3": "អង់ស៊ីរ៉ាបេ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "អារីយ៉ារី",
+    "translatedLanguages": "ម៉ាឡាហ្គាស៊ី, បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Malawi",
+    "translatedName": "ម៉ាឡាវី",
+    "translatedCapital": "លីឡុងវេ",
+    "translatedCity1": "លីឡុងវេ",
+    "translatedCity2": "ប្លង់ទាយរ៉េ",
+    "translatedCity3": "ហ្សំបា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ក្វាចាម៉ាឡាវី",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Malaysia",
+    "translatedName": "ម៉ាឡេស៊ី",
+    "translatedCapital": "កូឡាឡាំពួរ",
+    "translatedCity1": "កូឡាឡាំពួរ",
+    "translatedCity2": "កាចាង",
+    "translatedCity3": "សេប៊េរ៉ាង ប៉េរ៉ាយ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
+    "translatedCurrency": "រីងហ្គីតម៉ាឡេស៊ី",
+    "translatedLanguages": "ម៉ាឡេ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Maldives",
+    "translatedName": "ម៉ាល់ឌីវ",
+    "translatedCapital": "ម៉ាឡេ",
+    "translatedCity1": "ម៉ាឡេ",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងត្បូង",
+    "translatedCurrency": "រូហ្វីយ៉ា",
+    "translatedLanguages": "ឌីវ៉េហី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mali",
+    "translatedName": "ម៉ាលី",
+    "translatedCapital": "បាម៉ាកូ",
+    "translatedCity1": "បាម៉ាកូ",
+    "translatedCity2": "ស៊ីកាសូ",
+    "translatedCity3": "កាឡាបាន់កូរ៉ូ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកខាងលិច",
+    "translatedLanguages": "បាមបារា, បូបូ, បូហ្សូ, ដូហ្គុន, ភាសាហ្វូឡា, អារ៉ាប់, កាសសុងគេ, ម៉ៃនគេ, មីញ៉ានកា, សេនូហ្វូ, សុងហ្គៃ, សូនីនគេ, តាម៉ាស៊េក",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Malta",
+    "translatedName": "ម៉ាល់តា",
+    "translatedCapital": "វ៉ាឡេតា",
+    "translatedCity1": "វ៉ាឡេតា",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ម៉ាល់តេស, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Marshall Islands",
+    "translatedName": "កោះម៉ាស់ស្ហល",
+    "translatedCapital": "ម៉ាហ្សូរ៉ូ",
+    "translatedCity1": "ម៉ាហ្សូរ៉ូ",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មីក្រូណេស៊ី",
+    "translatedCurrency": "ដុល្លារអាមេរិក",
+    "translatedLanguages": "ម៉ាស់ស្ហល, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mauritania",
+    "translatedName": "ម៉ូរីតានី",
+    "translatedCapital": "នួអាកឆុត",
+    "translatedCity1": "នួអាកឆុត",
+    "translatedCity2": "នួអាឌីប៊ូ",
+    "translatedCity3": "ណេម៉ា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "អ៊ូហ្គីយ៉ា",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mauritius",
+    "translatedName": "ម៉ូរីស",
+    "translatedCapital": "ព័រលូអ៊ី",
+    "translatedCity1": "ព័រលូអ៊ី",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "រ៉ូពីម៉ូរីស",
+    "translatedLanguages": "អង់គ្លេស, បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mexico",
+    "translatedName": "ម៉ិកស៊ិក",
+    "translatedCapital": "ម៉ិកស៊ិកស៊ីទី",
+    "translatedCity1": "ម៉ិកស៊ិកស៊ីទី",
+    "translatedCity2": "ទីហ្ស៊ូអាណា",
+    "translatedCity3": "អេកាតេហ្យេក",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "អាមេរិកខាងជើង",
+    "translatedCurrency": "ពេសូម៉ិកស៊ិក",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Micronesia",
+    "translatedName": "មីក្រូណេស៊ី",
+    "translatedCapital": "ប៉ាលីគីរ",
+    "translatedCity1": "វេណូ",
+    "translatedCity2": "តូហ្វល",
+    "translatedCity3": "កូឡូនៀ",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មីក្រូណេស៊ី",
+    "translatedCurrency": "ដុល្លារអាមេរិក",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Moldova",
+    "translatedName": "ម៉ុលដាវី",
+    "translatedCapital": "គីស៊ីណូ",
+    "translatedCity1": "គីស៊ីណូ",
+    "translatedCity2": "ទីរ៉ាស្ពូល",
+    "translatedCity3": "បែល្ធី",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងកើត",
+    "translatedCurrency": "លីម៉ុលដាវី",
+    "translatedLanguages": "រូម៉ានី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Monaco",
+    "translatedName": "ម៉ូណាកូ",
+    "translatedCapital": "ម៉ូណាកូ-វីល",
+    "translatedCity1": "ម៉ូណាកូ-វីល",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mongolia",
+    "translatedName": "ម៉ុងហ្គោលី",
+    "translatedCapital": "អ៊ូឡង់បាទ័រ",
+    "translatedCity1": "អ៊ូឡង់បាទ័រ",
+    "translatedCity2": "អ៊ែរដេណែត",
+    "translatedCity3": "ដារខាន",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងកើត",
+    "translatedCurrency": "ទឹករីក",
+    "translatedLanguages": "ម៉ុងហ្គោលី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Montenegro",
+    "translatedName": "ម៉ុងតេណេហ្គ្រោ",
+    "translatedCapital": "ពោដហ្គោរីកា",
+    "translatedCity1": "ពោដហ្គោរីកា",
+    "translatedCity2": "នីកស៊ីច",
+    "translatedCity3": "ប៊ូដវ៉ា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ម៉ុងតេណេហ្គ្រីន",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Morocco",
+    "translatedName": "ម៉ារ៉ុក",
+    "translatedCapital": "រ៉ាបាត",
+    "translatedCity1": "កាសាប្លង់កា",
+    "translatedCity2": "តង់ហ្សេរ",
+    "translatedCity3": "ហ្វេស",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងជើង",
+    "translatedCurrency": "ឌីដ្រាមម៉ារ៉ុក",
+    "translatedLanguages": "អារ៉ាប់, តាម៉ាហ្ស៊ីត",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Mozambique",
+    "translatedName": "ម៉ូសំប៊ិក",
+    "translatedCapital": "ម៉ាពូតូ",
+    "translatedCity1": "ម៉ាពូតូ",
+    "translatedCity2": "ម៉ាតូឡា",
+    "translatedCity3": "ណំពូឡា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ម៉េទីខាល",
+    "translatedLanguages": "ព័រទុយហ្គាល់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Myanmar",
+    "translatedName": "មីយ៉ាន់ម៉ា",
+    "translatedCapital": "ណៃពីដៅ",
+    "translatedCity1": "យ៉ាងកុង",
+    "translatedCity2": "ម៉ាន់ដាឡេ",
+    "translatedCity3": "ណៃពីដៅ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
+    "translatedCurrency": "គីយ៉ាត់",
+    "translatedLanguages": "ភូមា",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Nepal",
     "translatedName": "នេប៉ាល់",
     "translatedCapital": "កាត់ម៉ាន់ឌូ",
