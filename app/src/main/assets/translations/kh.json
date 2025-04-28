@@ -1710,6 +1710,34 @@
   },
 
   {
+    "originalName": "Namibia",
+    "translatedName": "ណាមីប៊ី",
+    "translatedCapital": "វីនហ៊ូក",
+    "translatedCity1": "វីនហ៊ូក",
+    "translatedCity2": "វ៉ាល់វីសបេ",
+    "translatedCity3": "ស្វាកុបម៉ុន",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងត្បូង",
+    "translatedCurrency": "ដុល្លារណាមីប៊ី",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Nauru",
+    "translatedName": "ណូរូ",
+    "translatedCapital": "យ៉ារ៉េន",
+    "translatedCity1": "ដេនីហ្គោម៉ូឌូ",
+    "translatedCity2": "យ៉ារ៉េន",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មីក្រូណេស៊ី",
+    "translatedCurrency": "ដុល្លារអូស្ត្រាលី",
+    "translatedLanguages": "អង់គ្លេស, ណូរូអាន",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Nepal",
     "translatedName": "នេប៉ាល់",
     "translatedCapital": "កាត់ម៉ាន់ឌូ",
@@ -1727,6 +1755,133 @@
       }
     ]
   },
+
+  {
+    "originalName": "Netherlands",
+    "translatedName": "ហុល្លង់",
+    "translatedCapital": "អំស្ទែរដាម",
+    "translatedCity1": "អំស្ទែរដាម",
+    "translatedCity2": "រត់ធឺដាម",
+    "translatedCity3": "ឡាហាយ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងលិច",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ហុល្លង់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "New Zealand",
+    "translatedName": "នូវែលសេឡង់",
+    "translatedCapital": "វេលីងតោន",
+    "translatedCity1": "អូក្លែន",
+    "translatedCity2": "គ្រីសឈឺឈ",
+    "translatedCity3": "វេលីងតោន",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "អូស្ត្រាឡាស៊ី",
+    "translatedCurrency": "ដុល្លារនូវែលសេឡង់",
+    "translatedLanguages": "អង់គ្លេស, ភាសាម៉ោរី, ភាសាសញ្ញានូវែលសេឡង់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Nicaragua",
+    "translatedName": "នីការ៉ាហ្គា",
+    "translatedCapital": "ម៉ាណាហ្គូអា",
+    "translatedCity1": "ម៉ាណាហ្គូអា",
+    "translatedCity2": "លេអុន",
+    "translatedCity3": "ម៉ាសាយ៉ា",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "អាមេរិកកណ្តាល",
+    "translatedCurrency": "គ័រដូបា",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Niger",
+    "translatedName": "នីហ្សេរ",
+    "translatedCapital": "នីយាមេ",
+    "translatedCity1": "នីយាមេ",
+    "translatedCity2": "ហ្ស៊ីនដេរ",
+    "translatedCity3": "ម៉ារ៉ាឌី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកខាងលិច",
+    "translatedLanguages": "ហូសា",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Nigeria",
+    "translatedName": "នីហ្សេរីយ៉ា",
+    "translatedCapital": "អាប៊ូចា",
+    "translatedCity1": "ឡាហ្គោស",
+    "translatedCity2": "កាណូ",
+    "translatedCity3": "អ៊ីបាដាន់",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ណាយរ៉ា",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "North Korea",
+    "translatedName": "កូរ៉េខាងជើង",
+    "translatedCapital": "ព្យុងយ៉ាង",
+    "translatedCity1": "ព្យុងយ៉ាង",
+    "translatedCity2": "ហាមហ៊ីង",
+    "translatedCity3": "ឈុងជីន",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងកើត",
+    "translatedCurrency": "វ៉ុនកូរ៉េខាងជើង",
+    "translatedLanguages": "កូរ៉េ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "North Macedonia",
+    "translatedName": "ម៉ាសេដូនាខាងជើង",
+    "translatedCapital": "ស្គុបយេ",
+    "translatedCity1": "ស្គុបយេ",
+    "translatedCity2": "គូម៉ាណូវ៉ូ",
+    "translatedCity3": "ប៊ីតូឡា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "ដេណារម៉ាសេដូនា",
+    "translatedLanguages": "ម៉ាសេដូនា, អាល់បានី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Norway",
+    "translatedName": "ន័រវែស",
+    "translatedCapital": "អូស្លូ",
+    "translatedCity1": "អូស្លូ",
+    "translatedCity2": "ប៊ែរហ្គេន",
+    "translatedCity3": "ត្រុងហែម",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "ក្រូណេន័រវែស",
+    "translatedLanguages": "ន័រវែស, សាមី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Oman",
+    "translatedName": "អូម៉ង់",
+    "translatedCapital": "ម៉ាស្កាត",
+    "translatedCity1": "ម៉ាស្កាត",
+    "translatedCity2": "ស៊ីប",
+    "translatedCity3": "បៅស្ហារ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងលិច",
+    "translatedCurrency": "រៀលអូម៉ង់",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
   {
     "originalName": "Singapore",
     "translatedName": "សិង្ហបុរី",

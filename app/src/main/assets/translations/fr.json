@@ -1708,6 +1708,34 @@
   },
 
   {
+    "originalName": "Namibia",
+    "translatedName": "Namibie",
+    "translatedCapital": "Windhoek",
+    "translatedCity1": "Windhoek",
+    "translatedCity2": "Walvis Bay",
+    "translatedCity3": "Swakopmund",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique australe",
+    "translatedCurrency": "Dollar namibien",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Nauru",
+    "translatedName": "Nauru",
+    "translatedCapital": "Yaren",
+    "translatedCity1": "Denigomodu",
+    "translatedCity2": "Yaren",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Micronésie",
+    "translatedCurrency": "Dollar australien",
+    "translatedLanguages": "Anglais, Nauruan",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Nepal",
     "translatedName": "Népal",
     "translatedCapital": "Katmandou",
@@ -1725,6 +1753,133 @@
       }
     ]
   },
+
+  {
+    "originalName": "Netherlands",
+    "translatedName": "Pays-Bas",
+    "translatedCapital": "Amsterdam",
+    "translatedCity1": "Amsterdam",
+    "translatedCity2": "Rotterdam",
+    "translatedCity3": "La Haye",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Ouest",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Néerlandais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "New Zealand",
+    "translatedName": "Nouvelle-Zélande",
+    "translatedCapital": "Wellington",
+    "translatedCity1": "Auckland",
+    "translatedCity2": "Christchurch",
+    "translatedCity3": "Wellington",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Australasie",
+    "translatedCurrency": "Dollar néo-zélandais",
+    "translatedLanguages": "Anglais, Maori, Langue des signes néo-zélandaise",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Nicaragua",
+    "translatedName": "Nicaragua",
+    "translatedCapital": "Managua",
+    "translatedCity1": "Managua",
+    "translatedCity2": "León",
+    "translatedCity3": "Masaya",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique centrale",
+    "translatedCurrency": "Córdoba",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Niger",
+    "translatedName": "Niger",
+    "translatedCapital": "Niamey",
+    "translatedCity1": "Niamey",
+    "translatedCity2": "Zinder",
+    "translatedCity3": "Maradi",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc CFA ouest-africain",
+    "translatedLanguages": "Haoussa",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Nigeria",
+    "translatedName": "Nigéria",
+    "translatedCapital": "Abuja",
+    "translatedCity1": "Lagos",
+    "translatedCity2": "Kano",
+    "translatedCity3": "Ibadan",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Naira",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "North Korea",
+    "translatedName": "Corée du Nord",
+    "translatedCapital": "Pyongyang",
+    "translatedCity1": "Pyongyang",
+    "translatedCity2": "Hamhung",
+    "translatedCity3": "Chongjin",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie de l'Est",
+    "translatedCurrency": "Won nord-coréen",
+    "translatedLanguages": "Coréen",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "North Macedonia",
+    "translatedName": "Macédoine du Nord",
+    "translatedCapital": "Skopje",
+    "translatedCity1": "Skopje",
+    "translatedCity2": "Kumanovo",
+    "translatedCity3": "Bitola",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Denar macédonien",
+    "translatedLanguages": "Macédonien, Albanais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Norway",
+    "translatedName": "Norvège",
+    "translatedCapital": "Oslo",
+    "translatedCity1": "Oslo",
+    "translatedCity2": "Bergen",
+    "translatedCity3": "Trondheim",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Couronne norvégienne",
+    "translatedLanguages": "Norvégien, Same",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Oman",
+    "translatedName": "Oman",
+    "translatedCapital": "Mascate",
+    "translatedCity1": "Mascate",
+    "translatedCity2": "Seeb",
+    "translatedCity3": "Bawshar",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie de l'Ouest",
+    "translatedCurrency": "Rial omanais",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
   {
     "originalName": "Singapore",
     "translatedName": "Singapour",
