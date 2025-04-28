@@ -2035,6 +2035,62 @@
   },
 
   {
+    "originalName": "Republic of the Congo",
+    "translatedName": "République du Congo",
+    "translatedCapital": "Brazzaville",
+    "translatedCity1": "Brazzaville",
+    "translatedCity2": "Pointe-Noire",
+    "translatedCity3": "Dolisie",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique centrale",
+    "translatedCurrency": "Franc CFA d'Afrique centrale",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Romania",
+    "translatedName": "Roumanie",
+    "translatedCapital": "Bucarest",
+    "translatedCity1": "Bucarest",
+    "translatedCity2": "Constanța",
+    "translatedCity3": "Cluj-Napoca",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Est",
+    "translatedCurrency": "Leu roumain",
+    "translatedLanguages": "Roumain",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Russia",
+    "translatedName": "Russie",
+    "translatedCapital": "Moscou",
+    "translatedCity1": "Moscou",
+    "translatedCity2": "Saint-Pétersbourg",
+    "translatedCity3": "Novossibirsk",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Est",
+    "translatedCurrency": "Rouble russe",
+    "translatedLanguages": "Russe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Rwanda",
+    "translatedName": "Rwanda",
+    "translatedCapital": "Kigali",
+    "translatedCity1": "Kigali",
+    "translatedCity2": "Butare",
+    "translatedCity3": "Gitarama",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Franc rwandais",
+    "translatedLanguages": "Kinyarwanda, Anglais, Français, Swahili",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Singapore",
     "translatedName": "Singapour",
     "translatedCapital": "Singapour",

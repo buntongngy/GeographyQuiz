@@ -2037,6 +2037,62 @@
   },
 
   {
+    "originalName": "Republic of the Congo",
+    "translatedName": "សាធារណរដ្ឋកុងហ្គោ",
+    "translatedCapital": "ប្រាហ្សាវីល",
+    "translatedCity1": "ប្រាហ្សាវីល",
+    "translatedCity2": "ព័រតូ-ណយ៉ារ",
+    "translatedCity3": "ដូលីស៊ី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកកណ្តាល",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកកណ្តាល",
+    "translatedLanguages": "បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Romania",
+    "translatedName": "រូម៉ានី",
+    "translatedCapital": "ប៊ូខារ៉េស្ត",
+    "translatedCity1": "ប៊ូខារ៉េស្ត",
+    "translatedCity2": "ខុងស្តង់សា",
+    "translatedCity3": "ឃ្លូហ្ស-ណាប៉ូកា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងកើត",
+    "translatedCurrency": "លីរូម៉ានី",
+    "translatedLanguages": "រូម៉ានី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Russia",
+    "translatedName": "រុស្ស៊ី",
+    "translatedCapital": "ម៉ូស្គូ",
+    "translatedCity1": "ម៉ូស្គូ",
+    "translatedCity2": "សាំងប៉េទែរបួរ្គ",
+    "translatedCity3": "ណូវ៉ូស៊ីប៊ីស្ក",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងកើត",
+    "translatedCurrency": "រូបល៍រុស្ស៊ី",
+    "translatedLanguages": "រុស្ស៊ី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Rwanda",
+    "translatedName": "រវ៉ាន់ដា",
+    "translatedCapital": "គីហ្គាលី",
+    "translatedCity1": "គីហ្គាលី",
+    "translatedCity2": "ប៊ូតារ៉េ",
+    "translatedCity3": "ហ្គីតារ៉ាម៉ា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ហ្វ្រង់រវ៉ាន់ដា",
+    "translatedLanguages": "គីន្យាវ៉ាន់ដា, អង់គ្លេស, បារាំង, ស្វាហ៊ីលី",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Singapore",
     "translatedName": "សិង្ហបុរី",
     "translatedCapital": "សិង្ហបុរី",

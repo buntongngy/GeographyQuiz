@@ -2753,6 +2753,83 @@
   },
 
   {
+    "name": "Republic of the Congo",
+    "capital": "Brazzaville",
+    "bigCity": "Brazzaville",
+    "secondCity": "Pointe-Noire",
+    "thirdCity": "Dolisie",
+    "continent": "Africa",
+    "region": "Central Africa",
+    "languages": ["French"],
+    "currency": "Central African CFA franc",
+    "population": 6228784,
+    "area": 342000,
+    "category": "africa",
+    "countryCode": "cg",
+    "difficulty": 3,
+    "flagColors": ["Green","Red", "Yellow"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Romania",
+    "capital": "Bucharest",
+    "bigCity": "Bucharest",
+    "secondCity": "Constanta",
+    "thirdCity": "Cluj-Napoca",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "languages": ["Romanian"],
+    "currency": "Romanian leu",
+    "population": 19064409,
+    "area": 238397,
+    "category": "eastern eu",
+    "countryCode": "ro",
+    "difficulty": 2,
+    "flagColors": ["Blue","Red", "Yellow"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Russia",
+    "capital": "Moscow",
+    "bigCity": "Moscow",
+    "secondCity": "Saint Petersburg",
+    "thirdCity": "Novosibirsk",
+    "continent": "Europe",
+    "region": "Eastern Europe",
+    "languages": ["Russian"],
+    "currency": "Romanian leu",
+    "population": 146028325,
+    "area": 17098246,
+    "category": "slavic",
+    "countryCode": "ru",
+    "difficulty": 1,
+    "flagColors": ["Blue","Red", "White"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
+    "name": "Rwanda",
+    "capital": "Kigali",
+    "bigCity": "Kigali",
+    "secondCity": "Butare",
+    "thirdCity": "Gitarama",
+    "continent": "Africa",
+    "region": "East Africa",
+    "languages": ["Kinyarwanda", "English", "French", "Swahili"],
+    "currency": "Rwandan franc",
+    "population": 13623302,
+    "area": 26798,
+    "category": "africa",
+    "countryCode": "rw",
+    "difficulty": 3,
+    "flagColors": ["Blue","Yellow", "Green"],
+    "flagEmblem": ["Stripe", "Circle"]
+  },
+
+
+  {
     "name": "",
     "capital": "Port Moresby",
     "bigCity": "Port Moresby",
