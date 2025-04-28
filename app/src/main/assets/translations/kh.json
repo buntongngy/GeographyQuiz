@@ -1883,6 +1883,160 @@
   },
 
   {
+    "originalName": "Pakistan",
+    "translatedName": "ប៉ាគីស្ថាន",
+    "translatedCapital": "អ៊ីស្លាម៉ាបាដ",
+    "translatedCity1": "ការ៉ាឈី",
+    "translatedCity2": "ឡាហ័រ",
+    "translatedCity3": "ហ្វៃស៊ីឡាបាដ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងត្បូង",
+    "translatedCurrency": "រ៉ូពីប៉ាគីស្ថាន",
+    "translatedLanguages": "អ៊ូរឌូ, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Palau",
+    "translatedName": "ប៉ាឡូ",
+    "translatedCapital": "ណេហ្គេរុលមុដ",
+    "translatedCity1": "កូរ៉រ",
+    "translatedCity2": "ណេហ្គេរុលមុដ",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មីក្រូណេស៊ី",
+    "translatedCurrency": "ដុល្លារអាមេរិក",
+    "translatedLanguages": "ភាសាប៉ាឡូ, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Palestine",
+    "translatedName": "ប៉ាលេស្ទីន",
+    "translatedCapital": "យេរូសាឡឹម",
+    "translatedCity1": "ក្រុងហ្គាហ្សា",
+    "translatedCity2": "ហេប្រុន",
+    "translatedCity3": "ណាប្លូស",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ឌីណាហ្ស៊ករដាដានី",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Panama",
+    "translatedName": "ប៉ាណាម៉ា",
+    "translatedCapital": "ទីក្រុងប៉ាណាម៉ា",
+    "translatedCity1": "ទីក្រុងប៉ាណាម៉ា",
+    "translatedCity2": "សាន់មីហ្គេលីតូ",
+    "translatedCity3": "តូគុមែន",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "អាមេរិកកណ្តាល",
+    "translatedCurrency": "ដុល្លារអាមេរិក",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Papua New Guinea",
+    "translatedName": "ប៉ាពូអានូវែលហ្គីណេ",
+    "translatedCapital": "ព័រម៉ូសប៊ី",
+    "translatedCity1": "ព័រម៉ូសប៊ី",
+    "translatedCity2": "ឡាអេ",
+    "translatedCity3": "អារ៉ាវ៉ា",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មេឡានេស៊ី",
+    "translatedCurrency": "គីណា",
+    "translatedLanguages": "ភាសាអង់គ្លេស, ហ៊ីរីម៉ូទូ, តុកពីស៊ីន, ភាសាសញ្ញាប៉ាពូអានូវែលហ្គីណេ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Paraguay",
+    "translatedName": "ប៉ារ៉ាហ្គាយ",
+    "translatedCapital": "អាសុនស្យុន",
+    "translatedCity1": "អាសុនស្យុន",
+    "translatedCity2": "ស៊ីអ៊ូដាដ់ដែលអេស្តេ",
+    "translatedCity3": "លុយគេ",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "អាមេរិកខាងត្បូងកណ្តាល",
+    "translatedCurrency": "ហ្គូរ៉ានី",
+    "translatedLanguages": "អេស្ប៉ាញ, ហ្គូរ៉ានី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Peru",
+    "translatedName": "ប៉េរូ",
+    "translatedCapital": "លីម៉ា",
+    "translatedCity1": "លីម៉ា",
+    "translatedCity2": "អារ៉េគីប៉ា",
+    "translatedCity3": "ធ្រ៊ូហ៊ីល្យ៉ូ",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "អាមេរិកខាងត្បូងភាគខាងលិច",
+    "translatedCurrency": "ស៊ុលប៉េរូ",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Philippines",
+    "translatedName": "ហ្វ៊ីលីពីន",
+    "translatedCapital": "ម៉ានីឡា",
+    "translatedCity1": "ក្រុងខ្យេហ្សាន",
+    "translatedCity2": "ម៉ានីឡា",
+    "translatedCity3": "កាឡូកាន",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
+    "translatedCurrency": "ពេសូហ្វ៊ីលីពីន",
+    "translatedLanguages": "អង់គ្លេស, ហ្វ៊ីលីពីន",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Poland",
+    "translatedName": "ប៉ូឡូញ",
+    "translatedCapital": "វ៉ាសសាវ៉ា",
+    "translatedCity1": "វ៉ាសសាវ៉ា",
+    "translatedCity2": "ក្រាគូវ",
+    "translatedCity3": "ឡូដ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបកណ្តាល",
+    "translatedCurrency": "ហ្ស្លូទី",
+    "translatedLanguages": "ប៉ូឡូញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Portugal",
+    "translatedName": "ព័រទុយហ្គាល់",
+    "translatedCapital": "លីសបោន",
+    "translatedCity1": "លីសបោន",
+    "translatedCity2": "ព័រតូ",
+    "translatedCity3": "វីឡាណូវ៉ាដេហ្គាយ៉ា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ព័រទុយហ្គាល់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Qatar",
+    "translatedName": "កាតារ",
+    "translatedCapital": "ដូហា",
+    "translatedCity1": "ដូហា",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "រៀលកាតារ",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Singapore",
     "translatedName": "សិង្ហបុរី",
     "translatedCapital": "សិង្ហបុរី",

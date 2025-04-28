@@ -1881,6 +1881,160 @@
   },
 
   {
+    "originalName": "Pakistan",
+    "translatedName": "Pakistan",
+    "translatedCapital": "Islamabad",
+    "translatedCity1": "Karachi",
+    "translatedCity2": "Lahore",
+    "translatedCity3": "Faisalabad",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud",
+    "translatedCurrency": "Roupie pakistanaise",
+    "translatedLanguages": "Ourdou, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Palau",
+    "translatedName": "Palaos",
+    "translatedCapital": "Ngerulmud",
+    "translatedCity1": "Koror",
+    "translatedCity2": "Ngerulmud",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Micronésie",
+    "translatedCurrency": "Dollar américain",
+    "translatedLanguages": "Paluan, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Palestine",
+    "translatedName": "Palestine",
+    "translatedCapital": "Jérusalem",
+    "translatedCity1": "Gaza",
+    "translatedCity2": "Hébron",
+    "translatedCity3": "Naplouse",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Dinar jordanien",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Panama",
+    "translatedName": "Panama",
+    "translatedCapital": "Panama",
+    "translatedCity1": "Panama",
+    "translatedCity2": "San Miguelito",
+    "translatedCity3": "Tocumen",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Amérique centrale",
+    "translatedCurrency": "Dollar américain",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Papua New Guinea",
+    "translatedName": "Papouasie-Nouvelle-Guinée",
+    "translatedCapital": "Port Moresby",
+    "translatedCity1": "Port Moresby",
+    "translatedCity2": "Lae",
+    "translatedCity3": "Arawa",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Mélanésie",
+    "translatedCurrency": "Kina",
+    "translatedLanguages": "Anglais, Hiri Motu, Tok Pisin, Langue des signes de Papouasie-Nouvelle-Guinée",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Paraguay",
+    "translatedName": "Paraguay",
+    "translatedCapital": "Asunción",
+    "translatedCity1": "Asunción",
+    "translatedCity2": "Ciudad del Este",
+    "translatedCity3": "Luque",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Amérique du Sud centrale",
+    "translatedCurrency": "Guaraní",
+    "translatedLanguages": "Espagnol, Guarani",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Peru",
+    "translatedName": "Pérou",
+    "translatedCapital": "Lima",
+    "translatedCity1": "Lima",
+    "translatedCity2": "Arequipa",
+    "translatedCity3": "Trujillo",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Amérique du Sud occidentale",
+    "translatedCurrency": "Sol péruvien",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Philippines",
+    "translatedName": "Philippines",
+    "translatedCapital": "Manille",
+    "translatedCity1": "Quezon City",
+    "translatedCity2": "Manille",
+    "translatedCity3": "Caloocan",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Peso philippin",
+    "translatedLanguages": "Anglais, Filipino",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Poland",
+    "translatedName": "Pologne",
+    "translatedCapital": "Varsovie",
+    "translatedCity1": "Varsovie",
+    "translatedCity2": "Cracovie",
+    "translatedCity3": "Łódź",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe centrale",
+    "translatedCurrency": "Złoty",
+    "translatedLanguages": "Polonais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Portugal",
+    "translatedName": "Portugal",
+    "translatedCapital": "Lisbonne",
+    "translatedCity1": "Lisbonne",
+    "translatedCity2": "Porto",
+    "translatedCity3": "Vila Nova de Gaia",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Portugais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Qatar",
+    "translatedName": "Qatar",
+    "translatedCapital": "Doha",
+    "translatedCity1": "Doha",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Riyal qatari",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Singapore",
     "translatedName": "Singapour",
     "translatedCapital": "Singapour",
