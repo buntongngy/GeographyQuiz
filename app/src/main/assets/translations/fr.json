@@ -2276,6 +2276,21 @@
       }
     ]
   },
+
+  {
+    "originalName": "Slovakia",
+    "translatedName": "Slovaquie",
+    "translatedCapital": "Bratislava",
+    "translatedCity1": "Bratislava",
+    "translatedCity2": "Košice",
+    "translatedCity3": "Žilina",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe centrale",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Slovaque",
+    "landmarks": []
+  },
+
   {
     "originalName": "Spain",
     "translatedName": "Espagne",

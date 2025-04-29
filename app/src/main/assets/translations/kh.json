@@ -2278,6 +2278,21 @@
       }
     ]
   },
+
+  {
+    "originalName": "Slovakia",
+    "translatedName": "ស្លូវ៉ាគី",
+    "translatedCapital": "ប្រាទីស្លាវ៉ា",
+    "translatedCity1": "ប្រាទីស្លាវ៉ា",
+    "translatedCity2": "កូស៊ីសេ",
+    "translatedCity3": "ហ្ស៊ីលីណា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបកណ្តាល",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ភាសាស្លូវ៉ាគី",
+    "landmarks": []
+  },
+
   {
     "originalName": "Spain",
     "translatedName": "អេស្ប៉ាញ",

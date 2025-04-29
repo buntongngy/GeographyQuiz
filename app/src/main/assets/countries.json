@@ -3102,6 +3102,25 @@
   },
 
   {
+    "name": "Slovakia",
+    "capital": "Bratislava",
+    "bigCity": "Bratislava",
+    "secondCity": "Košice",
+    "thirdCity": "Žilina",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "languages": ["slovak"],
+    "currency": "Euro",
+    "population": 5419451,
+    "area": 49035,
+    "category": "western",
+    "countryCode": "sk",
+    "difficulty": 2,
+    "flagColors": ["Blue","White", "Red"],
+    "flagEmblem": ["Stripe", "Crest"]
+  },
+
+  {
     "name": "Spain",
     "capital": "Madrid",
     "bigCity": "Madrid",
