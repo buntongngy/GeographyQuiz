@@ -2091,6 +2091,160 @@
   },
 
   {
+    "originalName": "Saint Kitts and Nevis",
+    "translatedName": "Saint-Christophe-et-Niévès",
+    "translatedCapital": "Basseterre",
+    "translatedCity1": "Basseterre",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar des Caraïbes orientales",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Saint Lucia",
+    "translatedName": "Sainte-Lucie",
+    "translatedCapital": "Castries",
+    "translatedCity1": "Castries",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar des Caraïbes orientales",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Saint Vincent and the Grenadines",
+    "translatedName": "Saint-Vincent-et-les-Grenadines",
+    "translatedCapital": "Kingstown",
+    "translatedCity1": "Kingstown",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar des Caraïbes orientales",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Samoa",
+    "translatedName": "Samoa",
+    "translatedCapital": "Apia",
+    "translatedCity1": "Apia",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Polynésie",
+    "translatedCurrency": "Tala",
+    "translatedLanguages": "Samoan, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "San Marino",
+    "translatedName": "Saint-Marin",
+    "translatedCapital": "Saint-Marin",
+    "translatedCity1": "Dogana",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Italien",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "São Tomé and Príncipe",
+    "translatedName": "Sao Tomé-et-Principe",
+    "translatedCapital": "São Tomé",
+    "translatedCity1": "São Tomé",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique centrale",
+    "translatedCurrency": "Dobra",
+    "translatedLanguages": "Portugais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Saudi Arabia",
+    "translatedName": "Arabie saoudite",
+    "translatedCapital": "Riyad",
+    "translatedCity1": "Riyad",
+    "translatedCity2": "Djeddah",
+    "translatedCity3": "Dammam",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Riyal saoudien",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Scotland",
+    "translatedName": "Écosse",
+    "translatedCapital": "Édimbourg",
+    "translatedCity1": "Glasgow",
+    "translatedCity2": "Édimbourg",
+    "translatedCity3": "Aberdeen",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Livre sterling",
+    "translatedLanguages": "Anglais, Scots, Gaélique écossais, Langue des signes britannique",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Senegal",
+    "translatedName": "Sénégal",
+    "translatedCapital": "Dakar",
+    "translatedCity1": "Dakar",
+    "translatedCity2": "Touba",
+    "translatedCity3": "Rufisque",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc CFA ouest-africain",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Serbia",
+    "translatedName": "Serbie",
+    "translatedCapital": "Belgrade",
+    "translatedCity1": "Belgrade",
+    "translatedCity2": "Novi Sad",
+    "translatedCity3": "Niš",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Dinar serbe",
+    "translatedLanguages": "Serbe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Seychelles",
+    "translatedName": "Seychelles",
+    "translatedCapital": "Victoria",
+    "translatedCity1": "Victoria",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Roupie seychelloise",
+    "translatedLanguages": "Créole seychellois, Anglais, Français",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Singapore",
     "translatedName": "Singapour",
     "translatedCapital": "Singapour",

@@ -2093,6 +2093,160 @@
   },
 
   {
+    "originalName": "Saint Kitts and Nevis",
+    "translatedName": "សាំងគីត និងណេវីស",
+    "translatedCapital": "បាស្ទែរ",
+    "translatedCity1": "បាស្ទែរ",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លារការ៉ាអ៊ីបខាងកើត",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Saint Lucia",
+    "translatedName": "សាំងលូស៊ី",
+    "translatedCapital": "ខាស្ត្រីស",
+    "translatedCity1": "ខាស្ត្រីស",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លារការ៉ាអ៊ីបខាងកើត",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Saint Vincent and the Grenadines",
+    "translatedName": "សាំងវ៉ាំងសង់ និងហ្គ្រេណាឌីន",
+    "translatedCapital": "ឃីងស្តៅន៍",
+    "translatedCity1": "ឃីងស្តៅន៍",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លារការ៉ាអ៊ីបខាងកើត",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Samoa",
+    "translatedName": "សាម័រ",
+    "translatedCapital": "អាពៀ",
+    "translatedCity1": "អាពៀ",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "ប៉ូលីណេស៊ី",
+    "translatedCurrency": "តាឡា",
+    "translatedLanguages": "សាម័រ, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "San Marino",
+    "translatedName": "សានម៉ារីណូ",
+    "translatedCapital": "សានម៉ារីណូ",
+    "translatedCity1": "ដូហ្គាណា",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ភាសាអ៊ីតាលី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "São Tomé and Príncipe",
+    "translatedName": "សៅតូម៉េ និងព្រីនស៊ីព៍",
+    "translatedCapital": "សៅតូម៉េ",
+    "translatedCity1": "សៅតូម៉េ",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកកណ្តាល",
+    "translatedCurrency": "ដូប្រា",
+    "translatedLanguages": "ព័រទុយហ្គាល់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Saudi Arabia",
+    "translatedName": "អារ៉ាប៊ីសាអូឌីត",
+    "translatedCapital": "រយ៉ាដ",
+    "translatedCity1": "រយ៉ាដ",
+    "translatedCity2": "ជេដាហ៍",
+    "translatedCity3": "ដាម៉ាម",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "រៀលអារ៉ាប៊ីសាអូឌីត",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Scotland",
+    "translatedName": "ស្កុតលែនដ៍",
+    "translatedCapital": "អេឌីនបឺរ៍",
+    "translatedCity1": "ហ្គ្លាស្គូ",
+    "translatedCity2": "អេឌីនបឺរ៍",
+    "translatedCity3": "អាប៊ែរឌីន",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "ផោនស្ទែរលីង",
+    "translatedLanguages": "អង់គ្លេស, ស្កុត, ហ្គែលិកស្កុតលែនដ៍, ភាសាសញ្ញាអង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Senegal",
+    "translatedName": "សេណេហ្គាល់",
+    "translatedCapital": "ដាការ",
+    "translatedCity1": "ដាការ",
+    "translatedCity2": "ទូបា",
+    "translatedCity3": "រូហ្វ៊ីស្ក",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកខាងលិច",
+    "translatedLanguages": "ភាសាបារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Serbia",
+    "translatedName": "ស៊ែប៊ី",
+    "translatedCapital": "បែលក្រាដ",
+    "translatedCity1": "បែលក្រាដ",
+    "translatedCity2": "ណូវីសាដ",
+    "translatedCity3": "នីស",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "ឌីណាស៊ែប៊ី",
+    "translatedLanguages": "ភាសាស៊ែប៊ី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Seychelles",
+    "translatedName": "សីសែល",
+    "translatedCapital": "វិកតូរីយ៉ា",
+    "translatedCity1": "វិកតូរីយ៉ា",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "រ៉ូពីសីសែល",
+    "translatedLanguages": "ភាសាក្រេអូសីសែល, ភាសាអង់គ្លេស, ភាសាបារាំង",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Singapore",
     "translatedName": "សិង្ហបុរី",
     "translatedCapital": "សិង្ហបុរី",
