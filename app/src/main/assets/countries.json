@@ -3057,6 +3057,25 @@
   },
 
   {
+    "name": "Sierra Leone",
+    "capital": "Freetown",
+    "bigCity": "Freetown",
+    "secondCity": "Bo",
+    "thirdCity": "Kenema",
+    "continent": "Africa",
+    "region": "West Africa",
+    "languages": ["English"],
+    "currency": "Leone",
+    "population": 8460512,
+    "area": 73252,
+    "category": "africa",
+    "countryCode": "sl",
+    "difficulty": 3,
+    "flagColors": ["Blue","White", "Green"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
     "name": "Singapore",
     "capital": "Singapore",
     "bigCity": "Singapore",

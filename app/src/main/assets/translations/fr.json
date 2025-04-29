@@ -2245,6 +2245,20 @@
   },
 
   {
+    "originalName": "Sierra Leone",
+    "translatedName": "Sierra Leone",
+    "translatedCapital": "Freetown",
+    "translatedCity1": "Freetown",
+    "translatedCity2": "Bo",
+    "translatedCity3": "Kenema",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Leone",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Singapore",
     "translatedName": "Singapour",
     "translatedCapital": "Singapour",

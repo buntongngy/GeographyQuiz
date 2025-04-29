@@ -2242,7 +2242,21 @@
     "translatedContinent": "អាហ្វ្រិក",
     "translatedRegion": "អាហ្វ្រិកខាងកើត",
     "translatedCurrency": "រ៉ូពីសីសែល",
-    "translatedLanguages": "ភាសាក្រេអូសីសែល, ភាសាអង់គ្លេស, ភាសាបារាំង",
+    "translatedLanguages": "ក្រេអូសីសែល, អង់គ្លេស, បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Sierra Leone",
+    "translatedName": "សៀរ៉ាឡេអូន",
+    "translatedCapital": "ហ្វ្រីថោន",
+    "translatedCity1": "ហ្វ្រីថោន",
+    "translatedCity2": "បូ",
+    "translatedCity3": "ខេណេម៉ា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "លេអូនេ",
+    "translatedLanguages": "ភាសាអង់គ្លេស",
     "landmarks": []
   },
 
