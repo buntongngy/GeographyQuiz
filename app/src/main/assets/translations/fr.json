@@ -2292,6 +2292,90 @@
   },
 
   {
+    "originalName": "Slovenia",
+    "translatedName": "Slovénie",
+    "translatedCapital": "Ljubljana",
+    "translatedCity1": "Ljubljana",
+    "translatedCity2": "Maribor",
+    "translatedCity3": "Kranj",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe centrale",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Slovène",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Solomon Islands",
+    "translatedName": "Îles Salomon",
+    "translatedCapital": "Honiara",
+    "translatedCity1": "Honiara",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Mélanésie",
+    "translatedCurrency": "Dollar des îles Salomon",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Somalia",
+    "translatedName": "Somalie",
+    "translatedCapital": "Mogadiscio",
+    "translatedCity1": "Mogadiscio",
+    "translatedCity2": "Hargeisa",
+    "translatedCity3": "Bosaso",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Shilling somalien",
+    "translatedLanguages": "Somali, Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "South Africa",
+    "translatedName": "Afrique du Sud",
+    "translatedCapital": "Le Cap",
+    "translatedCity1": "Johannesburg",
+    "translatedCity2": "Le Cap",
+    "translatedCity3": "Ethekwini",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique australe",
+    "translatedCurrency": "Rand sud-africain",
+    "translatedLanguages": "Anglais, Afrikaans, Ndebele, Pedi, Sepedi, Sesotho, Setswana, Langue des signes sud-africaine, Swazi, Tshivenda, Xhosa, Xitsonga, Zoulou",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "South Korea",
+    "translatedName": "Corée du Sud",
+    "translatedCapital": "Séoul",
+    "translatedCity1": "Séoul",
+    "translatedCity2": "Busan",
+    "translatedCity3": "Incheon",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie de l'Est",
+    "translatedCurrency": "Won sud-coréen",
+    "translatedLanguages": "Coréen, Langue des signes coréenne",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "South Sudan",
+    "translatedName": "Soudan du Sud",
+    "translatedCapital": "Djouba",
+    "translatedCity1": "Djouba",
+    "translatedCity2": "Malakal",
+    "translatedCity3": "Yei",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Livre sud-soudanaise",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Spain",
     "translatedName": "Espagne",
     "translatedCapital": "Madrid",
@@ -2309,6 +2393,91 @@
       }
     ]
   },
+
+  {
+    "originalName": "Sri Lanka",
+    "translatedName": "Sri Lanka",
+    "translatedCapital": "Sri Jayawardenapura Kotte",
+    "translatedCity1": "Colombo",
+    "translatedCity2": "Dehiwala-Mount Lavinia",
+    "translatedCity3": "Moratuwa",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud",
+    "translatedCurrency": "Roupie srilankaise",
+    "translatedLanguages": "Cinghalais, Tamoul",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Sudan",
+    "translatedName": "Soudan",
+    "translatedCapital": "Khartoum",
+    "translatedCity1": "Omdourman",
+    "translatedCity2": "Khartoum",
+    "translatedCity3": "Khartoum Nord",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Livre soudanaise",
+    "translatedLanguages": "Arabe, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Suriname",
+    "translatedName": "Suriname",
+    "translatedCapital": "Paramaribo",
+    "translatedCity1": "Paramaribo",
+    "translatedCity2": "Lelydorp",
+    "translatedCity3": "Brokopondo",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Amérique du Sud septentrionale",
+    "translatedCurrency": "Dollar surinamais",
+    "translatedLanguages": "Néerlandais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Sweden",
+    "translatedName": "Suède",
+    "translatedCapital": "Stockholm",
+    "translatedCity1": "Stockholm",
+    "translatedCity2": "Göteborg",
+    "translatedCity3": "Malmö",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Couronne suédoise",
+    "translatedLanguages": "Suédois",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Switzerland",
+    "translatedName": "Suisse",
+    "translatedCapital": "Berne",
+    "translatedCity1": "Zurich",
+    "translatedCity2": "Genève",
+    "translatedCity3": "Bâle",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Ouest",
+    "translatedCurrency": "Franc suisse",
+    "translatedLanguages": "Allemand, Français, Italien, Romanche",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Syria",
+    "translatedName": "Syrie",
+    "translatedCapital": "Damas",
+    "translatedCity1": "Damas",
+    "translatedCity2": "Alep",
+    "translatedCity3": "Homs",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Livre syrienne",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
   {
     "originalName": "Thailand",
     "translatedName": "Thaïlande",

@@ -2294,6 +2294,90 @@
   },
 
   {
+    "originalName": "Slovenia",
+    "translatedName": "ស្លូវេនី",
+    "translatedCapital": "ល្យូប្លយ៉ាណា",
+    "translatedCity1": "ល្យូប្លយ៉ាណា",
+    "translatedCity2": "ម៉ារីប័រ",
+    "translatedCity3": "គ្រាន",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបកណ្តាល",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "ស្លូវេន",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Solomon Islands",
+    "translatedName": "កោះសូឡូម៉ុន",
+    "translatedCapital": "ហូនយ៉ារ៉ា",
+    "translatedCity1": "ហូនយ៉ារ៉ា",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មេឡាណេស៊ី",
+    "translatedCurrency": "ដុល្លារកោះសូឡូម៉ុន",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Somalia",
+    "translatedName": "សូម៉ាលី",
+    "translatedCapital": "ម៉ូហ្គាឌីស្យូ",
+    "translatedCity1": "ម៉ូហ្គាឌីស្យូ",
+    "translatedCity2": "ហាហ្គេសា",
+    "translatedCity3": "បូសាសូ",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ស៊ីលីងសូម៉ាលី",
+    "translatedLanguages": "សូម៉ាលី, អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "South Africa",
+    "translatedName": "អាហ្វ្រិកខាងត្បូង",
+    "translatedCapital": "កោះខេប",
+    "translatedCity1": "ចូហាន់ស្ប៊័រ",
+    "translatedCity2": "កោះខេប",
+    "translatedCity3": "អេតេគ្វីនី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងត្បូង",
+    "translatedCurrency": "រ៉ង់អាហ្វ្រិកខាងត្បូង",
+    "translatedLanguages": "អង់គ្លេស, អាហ្វ្រីកាអាន, នដេបេលេ, ពេឌី, សេពេឌី, សេសូតូ, សេត្ស្វាណា, ភាសាសញ្ញាអាហ្វ្រិកខាងត្បូង, ស្វាហ្ស៊ី, ថ្សីវេនដា, សូសា, ស៊ីតសុងហ្គា, ហ្សូលូ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "South Korea",
+    "translatedName": "កូរ៉េខាងត្បូង",
+    "translatedCapital": "សេអ៊ូល",
+    "translatedCity1": "សេអ៊ូល",
+    "translatedCity2": "ប៊ុសាន់",
+    "translatedCity3": "អ៊ិនឈន",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងកើត",
+    "translatedCurrency": "វ៉ុនកូរ៉េខាងត្បូង",
+    "translatedLanguages": "កូរ៉េ, ភាសាសញ្ញាកូរ៉េ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "South Sudan",
+    "translatedName": "ស៊ូដង់ខាងត្បូង",
+    "translatedCapital": "ជូបា",
+    "translatedCity1": "ជូបា",
+    "translatedCity2": "ម៉ាឡាកាល់",
+    "translatedCity3": "យ៉េអ៊ី",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ផោនស៊ូដង់ខាងត្បូង",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Spain",
     "translatedName": "អេស្ប៉ាញ",
     "translatedCapital": "ម៉ាឌ្រីដ",
@@ -2311,6 +2395,91 @@
       }
     ]
   },
+
+  {
+    "originalName": "Sri Lanka",
+    "translatedName": "ស្រីលង្កា",
+    "translatedCapital": "ស្រីជយវឌ្ឍនៈកុត្តេ",
+    "translatedCity1": "កូឡុំបូ",
+    "translatedCity2": "ដេហ៊ីវ៉ាឡា-ម៉ោនឡាវីនៀ",
+    "translatedCity3": "ម៉ូរ៉ាទុយ៉ា",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងត្បូង",
+    "translatedCurrency": "រ៉ូពីស្រីលង្កា",
+    "translatedLanguages": "ស៊ីញហាឡា, តាមីល",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Sudan",
+    "translatedName": "ស៊ូដង់",
+    "translatedCapital": "ខាទូម",
+    "translatedCity1": "អូមឌឺម៉ាន់",
+    "translatedCity2": "ខាទូម",
+    "translatedCity3": "ខាទូមខាងជើង",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ផោនស៊ូដង់",
+    "translatedLanguages": "អារ៉ាប់, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Suriname",
+    "translatedName": "ស៊ូរីណាម",
+    "translatedCapital": "ប៉ារ៉ាម៉ារីប៉ូ",
+    "translatedCity1": "ប៉ារ៉ាម៉ារីប៉ូ",
+    "translatedCity2": "លេលីដ័រ",
+    "translatedCity3": "ប្រូកូព័ន្ធ",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "អាមេរិកខាងត្បូងភាគខាងជើង",
+    "translatedCurrency": "ដុល្លារស៊ូរីណាម",
+    "translatedLanguages": "ភាសាហុល្លង់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Sweden",
+    "translatedName": "ស៊ុយអែដ",
+    "translatedCapital": "ស្តុកខុម",
+    "translatedCity1": "ស្តុកខុម",
+    "translatedCity2": "ហ្គូតេប័រ",
+    "translatedCity3": "ម៉ាល់មឺ",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "ក្រូណាស៊ុយអែដ",
+    "translatedLanguages": "ស៊ុយអែដ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Switzerland",
+    "translatedName": "ស្វីស",
+    "translatedCapital": "ប៊ែន",
+    "translatedCity1": "ស៊ូរិច",
+    "translatedCity2": "ហ្សែណែវ",
+    "translatedCity3": "បាសែល",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងលិច",
+    "translatedCurrency": "ហ្រ្វង់ស្វីស",
+    "translatedLanguages": "អាល្លឺម៉ង់, បារាំង, អ៊ីតាលី, រ៉ូម៉ង់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Syria",
+    "translatedName": "ស៊ីរី",
+    "translatedCapital": "ដាម៉ាស្គូស",
+    "translatedCity1": "ដាម៉ាស្គូស",
+    "translatedCity2": "អាឡេប៉ូ",
+    "translatedCity3": "ហុមស៍",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ផោនស៊ីរី",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
   {
     "originalName": "Thailand",
     "translatedName": "ថៃឡង់ដ៍",
