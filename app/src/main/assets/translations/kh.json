@@ -2631,23 +2631,47 @@
   },
 
   {
-    "originalName": "Vietnam",
-    "translatedName": "វៀតណាម",
-    "translatedCapital": "ហាណូយ",
-    "translatedCity1": "ហូជីមិញ",
-    "translatedCity2": "ហាណូយ",
-    "translatedCity3": "ហៃហ្វុង",
-    "translatedContinent": "អាស៊ី",
-    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
-    "translatedCurrency": "ដុង",
-    "translatedLanguages": "វៀតណាម",
-    "landmarks": [
-      {
-        "originalName": "Ha Long Bay",
-        "translatedName": "ឆ្នេរសមុទ្រហាឡុង"
-      }
-    ]
+    "originalName": "Uganda",
+    "translatedName": "អ៊ូហ្គង់ដា",
+    "translatedCapital": "កំបលា",
+    "translatedCity1": "កំបលា",
+    "translatedCity2": "ណានសាណា",
+    "translatedCity3": "គីរ៉ាតោន",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ស៊ីលីងអ៊ូហ្គង់ដា",
+    "translatedLanguages": "អង់គ្លេស, ស្វាហ៊ីលី",
+    "landmarks": []
   },
+
+  {
+    "originalName": "Ukraine",
+    "translatedName": "អ៊ុយក្រែន",
+    "translatedCapital": "គីវ",
+    "translatedCity1": "គីវ",
+    "translatedCity2": "ខារគីវ",
+    "translatedCity3": "អូដែសា",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងកើត",
+    "translatedCurrency": "ហ្រីវញ៉ា",
+    "translatedLanguages": "អ៊ុយក្រែន",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "United Arab Emirates",
+    "translatedName": "អេមីរ៉ាតអារ៉ាប់រួម",
+    "translatedCapital": "អាប៊ូដាប៊ី",
+    "translatedCity1": "ឌូបៃ",
+    "translatedCity2": "អាប៊ូដាប៊ី",
+    "translatedCity3": "ស្ហារជា",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "ឌីរហាមអេមីរ៉ាត",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
   {
     "originalName": "United States",
     "translatedName": "សហរដ្ឋអាមេរិក",
@@ -2665,5 +2689,151 @@
         "translatedName": "ជ្រលងភ្នំយ៉ូសេម៉ាតី"
       }
     ]
+  },
+
+  {
+    "originalName": "Uruguay",
+    "translatedName": "អ៊ុយរូហ្គាយ",
+    "translatedCapital": "ម៉ុងតេវីដេអូ",
+    "translatedCity1": "ម៉ុងតេវីដេអូ",
+    "translatedCity2": "សាល់តូ",
+    "translatedCity3": "ស៊ីអ៊ុយដាដដេឡាកូសតា",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "កូនខាងត្បូង",
+    "translatedCurrency": "ពេសូអ៊ុយរូហ្គាយ",
+    "translatedLanguages": "អេស្ប៉ាញ, ភាសាសញ្ញាអ៊ុយរូហ្គាយ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Uzbekistan",
+    "translatedName": "អ៊ូសបេគីស្ថាន",
+    "translatedCapital": "តាស្កិន",
+    "translatedCity1": "តាស្កិន",
+    "translatedCity2": "ណាម៉ាហ្គាន់",
+    "translatedCity3": "សាម៉ាកាន់ដ៍",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីកណ្តាល",
+    "translatedCurrency": "សុំអ៊ូសបេគីស្ថាន",
+    "translatedLanguages": "អ៊ូសបេគ, ការ៉ាកាល់ប៉ាក់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Vanuatu",
+    "translatedName": "វ៉ានូអាទូ",
+    "translatedCapital": "ព័រវីឡា",
+    "translatedCity1": "ព័រវីឡា",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "មេឡាណេស៊ី",
+    "translatedCurrency": "វ៉ាទូ",
+    "translatedLanguages": "ប៊ីស្លាម៉ា, អង់គ្លេស, បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Vatican City",
+    "translatedName": "ទីក្រុងវ៉ាទីកង់",
+    "translatedCapital": "ទីក្រុងវ៉ាទីកង់",
+    "translatedCity1": "ទីក្រុងវ៉ាទីកង់",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងត្បូង",
+    "translatedCurrency": "អឺរ៉ូ",
+    "translatedLanguages": "អ៊ីតាលី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Venezuela",
+    "translatedName": "វេណេស៊ុយអេឡា",
+    "translatedCapital": "ការ៉ាកាស",
+    "translatedCity1": "ការ៉ាកាស",
+    "translatedCity2": "ម៉ារ៉ាកៃប៉ូ",
+    "translatedCity3": "បារគីស៊ីមេតូ",
+    "translatedContinent": "អាមេរិកខាងត្បូង",
+    "translatedRegion": "ភាគខាងជើងនៃអាមេរិកខាងត្បូង",
+    "translatedCurrency": "បូលីវ៉ាវេណេស៊ុយអេឡា",
+    "translatedLanguages": "អេស្ប៉ាញ",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Vietnam",
+    "translatedName": "វៀតណាម",
+    "translatedCapital": "ហាណូយ",
+    "translatedCity1": "ហូជីមិញ",
+    "translatedCity2": "ហាណូយ",
+    "translatedCity3": "ហៃហ្វុង",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីអាគ្នេយ៍",
+    "translatedCurrency": "ដុង",
+    "translatedLanguages": "វៀតណាម",
+    "landmarks": [
+      {
+        "originalName": "Ha Long Bay",
+        "translatedName": "ឆ្នេរសមុទ្រហាឡុង"
+      }
+    ]
+  },
+
+  {
+    "originalName": "Wales",
+    "translatedName": "វែល",
+    "translatedCapital": "កាឌីហ្វ",
+    "translatedCity1": "កាឌីហ្វ",
+    "translatedCity2": "ស្វនស៊ី",
+    "translatedCity3": "ញូវព័រត",
+    "translatedContinent": "អឺរ៉ុប",
+    "translatedRegion": "អឺរ៉ុបខាងជើង",
+    "translatedCurrency": "ផោនស្ទែរលីង",
+    "translatedLanguages": "អង់គ្លេស, វែល",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Yemen",
+    "translatedName": "យេមែន",
+    "translatedCapital": "សាណា",
+    "translatedCity1": "សាណា",
+    "translatedCity2": "តាអ៊ីហ្ស",
+    "translatedCity3": "អាល់ហ៊ុយដៃដា",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "មជ្ឈិមបូព៌ា",
+    "translatedCurrency": "រៀលយេមែន",
+    "translatedLanguages": "អារ៉ាប់",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Zambia",
+    "translatedName": "ហ្សាំប៊ី",
+    "translatedCapital": "លូសាកា",
+    "translatedCity1": "លូសាកា",
+    "translatedCity2": "គីតវេ",
+    "translatedCity3": "ណ្ឌូឡា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ខ្វាចាហ្សាំប៊ី",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Zimbabwe",
+    "translatedName": "ហ្ស៊ីមបាវ៉េ",
+    "translatedCapital": "ហារ៉ារ៉េ",
+    "translatedCity1": "ហារ៉ារ៉េ",
+    "translatedCity2": "ប៊ូឡាវ៉ាយ៉ូ",
+    "translatedCity3": "ឈីទុងវីហ្សា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ហ្ស៊ីហ្គេហ្ស៊ីមបាវ៉េ",
+    "translatedLanguages": "អង់គ្លេស, ជេវ៉ា, ឈីបាវេ, កាឡាងហ្គា, គយសាន, ណាំប៊ីយ៉ា, ណ្ឌៅ, ណ្ឌេបេលេ, ឝ៉ាងហ្គានី, ឝ៉ូណា, សូតូ, តុងហ្គា, ត្ស្វាណា, វ៉េនដា, សូសា, ភាសាសញ្ញាហ្ស៊ីមបាវ៉េ",
+    "landmarks": []
   }
+
 ]

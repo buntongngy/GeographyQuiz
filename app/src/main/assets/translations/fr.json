@@ -2629,23 +2629,47 @@
   },
 
   {
-    "originalName": "Vietnam",
-    "translatedName": "Vietnam",
-    "translatedCapital": "Hanoï",
-    "translatedCity1": "Hô-Chi-Minh-Ville",
-    "translatedCity2": "Hanoï",
-    "translatedCity3": "Haïphong",
-    "translatedContinent": "Asie",
-    "translatedRegion": "Asie du Sud-Est",
-    "translatedCurrency": "Dong",
-    "translatedLanguages": "Vietnamien",
-    "landmarks": [
-      {
-        "originalName": "Ha Long Bay",
-        "translatedName": "Baie d'Ha Long"
-      }
-    ]
+    "originalName": "Uganda",
+    "translatedName": "Ouganda",
+    "translatedCapital": "Kampala",
+    "translatedCity1": "Kampala",
+    "translatedCity2": "Nansana",
+    "translatedCity3": "Kira Town",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Shilling ougandais",
+    "translatedLanguages": "Anglais, Swahili",
+    "landmarks": []
   },
+
+  {
+    "originalName": "Ukraine",
+    "translatedName": "Ukraine",
+    "translatedCapital": "Kyïv",
+    "translatedCity1": "Kyïv",
+    "translatedCity2": "Kharkiv",
+    "translatedCity3": "Odessa",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe de l'Est",
+    "translatedCurrency": "Hryvnia",
+    "translatedLanguages": "Ukrainien",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "United Arab Emirates",
+    "translatedName": "Émirats arabes unis",
+    "translatedCapital": "Abou Dabi",
+    "translatedCity1": "Dubaï",
+    "translatedCity2": "Abou Dabi",
+    "translatedCity3": "Charjah",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Dirham des Émirats",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
   {
     "originalName": "United States",
     "translatedName": "États-Unis",
@@ -2663,5 +2687,151 @@
         "translatedName": "Vallée de Yosemite"
       }
     ]
+  },
+
+  {
+    "originalName": "Uruguay",
+    "translatedName": "Uruguay",
+    "translatedCapital": "Montevideo",
+    "translatedCity1": "Montevideo",
+    "translatedCity2": "Salto",
+    "translatedCity3": "Ciudad de la Costa",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Cône Sud",
+    "translatedCurrency": "Peso uruguayen",
+    "translatedLanguages": "Espagnol, Langue des signes uruguayenne",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Uzbekistan",
+    "translatedName": "Ouzbékistan",
+    "translatedCapital": "Tachkent",
+    "translatedCity1": "Tachkent",
+    "translatedCity2": "Namangan",
+    "translatedCity3": "Samarcande",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie centrale",
+    "translatedCurrency": "Sum ouzbek",
+    "translatedLanguages": "Ouzbek, Karakalpak",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Vanuatu",
+    "translatedName": "Vanuatu",
+    "translatedCapital": "Port-Vila",
+    "translatedCity1": "Port-Vila",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Mélanésie",
+    "translatedCurrency": "Vatu",
+    "translatedLanguages": "Bichelamar, Anglais, Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Vatican City",
+    "translatedName": "Cité du Vatican",
+    "translatedCapital": "Cité du Vatican",
+    "translatedCity1": "Cité du Vatican",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Sud",
+    "translatedCurrency": "Euro",
+    "translatedLanguages": "Italien",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Venezuela",
+    "translatedName": "Vénézuéla",
+    "translatedCapital": "Caracas",
+    "translatedCity1": "Caracas",
+    "translatedCity2": "Maracaibo",
+    "translatedCity3": "Barquisimeto",
+    "translatedContinent": "Amérique du Sud",
+    "translatedRegion": "Nord de l'Amérique du Sud",
+    "translatedCurrency": "Bolivar vénézuélien",
+    "translatedLanguages": "Espagnol",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Vietnam",
+    "translatedName": "Vietnam",
+    "translatedCapital": "Hanoï",
+    "translatedCity1": "Hô-Chi-Minh-Ville",
+    "translatedCity2": "Hanoï",
+    "translatedCity3": "Haïphong",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie du Sud-Est",
+    "translatedCurrency": "Dong",
+    "translatedLanguages": "Vietnamien",
+    "landmarks": [
+      {
+        "originalName": "Ha Long Bay",
+        "translatedName": "Baie d'Ha Long"
+      }
+    ]
+  },
+
+  {
+    "originalName": "Wales",
+    "translatedName": "Pays de Galles",
+    "translatedCapital": "Cardiff",
+    "translatedCity1": "Cardiff",
+    "translatedCity2": "Swansea",
+    "translatedCity3": "Newport",
+    "translatedContinent": "Europe",
+    "translatedRegion": "Europe du Nord",
+    "translatedCurrency": "Livre sterling",
+    "translatedLanguages": "Anglais, Gallois",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Yemen",
+    "translatedName": "Yémen",
+    "translatedCapital": "Sanaa",
+    "translatedCity1": "Sanaa",
+    "translatedCity2": "Taëzz",
+    "translatedCity3": "Al-Hodeïda",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Moyen-Orient",
+    "translatedCurrency": "Rial yéménite",
+    "translatedLanguages": "Arabe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Zambia",
+    "translatedName": "Zambie",
+    "translatedCapital": "Lusaka",
+    "translatedCity1": "Lusaka",
+    "translatedCity2": "Kitwe",
+    "translatedCity3": "Ndola",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Kwacha zambien",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Zimbabwe",
+    "translatedName": "Zimbabwe",
+    "translatedCapital": "Harare",
+    "translatedCity1": "Harare",
+    "translatedCity2": "Bulawayo",
+    "translatedCity3": "Chitungwiza",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "ZiG zimbabwéen",
+    "translatedLanguages": "Anglais, Chewa, Chibarwe, Kalanga, Koisan, Nambya, Ndau, Ndebele, Shangani, Shona, Sotho, Tonga, Tswana, Venda, Xhosa, Langue des signes zimbabwéenne",
+    "landmarks": []
   }
+
 ]
