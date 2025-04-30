@@ -2481,6 +2481,34 @@
   },
 
   {
+    "originalName": "Tajikistan",
+    "translatedName": "តាហ្ស៊ីគីស្ថាន",
+    "translatedCapital": "ឌូស្ហានប៊េ",
+    "translatedCity1": "ឌូស្ហានប៊េ",
+    "translatedCity2": "ខូចាន់",
+    "translatedCity3": "បុកតារ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីកណ្តាល",
+    "translatedCurrency": "សូម៉ូនី",
+    "translatedLanguages": "តាហ្ស៊ីគី, រុស្ស៊ី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Tanzania",
+    "translatedName": "តង់សានី",
+    "translatedCapital": "ដូដូម៉ា",
+    "translatedCity1": "ដាអេសសាឡាម",
+    "translatedCity2": "ម្វានហ្សា",
+    "translatedCity3": "អារូស្ហា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងកើត",
+    "translatedCurrency": "ស៊ីលីងតង់សានី",
+    "translatedLanguages": "ស្វាហ៊ីលី, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Thailand",
     "translatedName": "ថៃឡង់ដ៍",
     "translatedCapital": "បាងកក",
@@ -2498,6 +2526,49 @@
       }
     ]
   },
+
+  {
+    "originalName": "Togo",
+    "translatedName": "តូហ្គោ",
+    "translatedCapital": "ឡូម៉េ",
+    "translatedCity1": "ឡូម៉េ",
+    "translatedCity2": "សូគូដេ",
+    "translatedCity3": "ការ៉ា",
+    "translatedContinent": "អាហ្វ្រិក",
+    "translatedRegion": "អាហ្វ្រិកខាងលិច",
+    "translatedCurrency": "ហ្វ្រង់ស៊ីអេហ្វអេអាហ្វ្រិកខាងលិច",
+    "translatedLanguages": "បារាំង",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Tonga",
+    "translatedName": "តុងហ្គា",
+    "translatedCapital": "នូគូអាឡូហ្វា",
+    "translatedCity1": "នូគូអាឡូហ្វា",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "ប៉ូលីណេស៊ី",
+    "translatedCurrency": "ប៉ាអាង់ហ្គា",
+    "translatedLanguages": "តុងហ្គា, អង់គ្លេស",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Trinidad and Tobago",
+    "translatedName": "ទ្រីនីដាដ និងតូបាហ្គោ",
+    "translatedCapital": "ព័រតុអុហ្វស្ប៉េន",
+    "translatedCity1": "ឆាហ្គូអាណាស",
+    "translatedCity2": "សានហ្វែរណាន់ដូ",
+    "translatedCity3": "ព័រតុអុហ្វស្ប៉េន",
+    "translatedContinent": "អាមេរិកខាងជើង",
+    "translatedRegion": "ការ៉ាអ៊ីប",
+    "translatedCurrency": "ដុល្លារទ្រីនីដាដនិងតូបាហ្គោ",
+    "translatedLanguages": "អង់គ្លេស",
+    "landmarks": []
+  },
+
   {
     "originalName": "Tunisia",
     "translatedName": "ទុយនេស៊ី",
@@ -2516,6 +2587,49 @@
       }
     ]
   },
+
+  {
+    "originalName": "Turkey",
+    "translatedName": "ទួរគី",
+    "translatedCapital": "អង់ការ៉ា",
+    "translatedCity1": "អ៊ីស្តង់ប៊ុល",
+    "translatedCity2": "អង់ការ៉ា",
+    "translatedCity3": "អ៊ីហ្ស៊ីមៀរ",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីខាងលិច",
+    "translatedCurrency": "លីរ៉ាទួរគី",
+    "translatedLanguages": "ទួរគី",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Turkmenistan",
+    "translatedName": "ទួគមេនីស្ថាន",
+    "translatedCapital": "អាស្កាបាត",
+    "translatedCity1": "អាស្កាបាត",
+    "translatedCity2": "ទួគមេនាបាត",
+    "translatedCity3": "ដាសូហ្គូហ្ស",
+    "translatedContinent": "អាស៊ី",
+    "translatedRegion": "អាស៊ីកណ្តាល",
+    "translatedCurrency": "ម៉ាណាត",
+    "translatedLanguages": "ទួគមេន",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Tuvalu",
+    "translatedName": "ទុយវ៉ាលូ",
+    "translatedCapital": "ហ្វូណាហ្វ៊ូទី",
+    "translatedCity1": "ហ្វូណាហ្វ៊ូទី",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "អូសេអានី",
+    "translatedRegion": "ប៉ូលីណេស៊ី",
+    "translatedCurrency": "ដុល្លារទុយវ៉ាលូ",
+    "translatedLanguages": "ភាសាទុយវ៉ាលូ, អង់គ្លេស",
+    "landmarks": []
+  },
+
   {
     "originalName": "Vietnam",
     "translatedName": "វៀតណាម",

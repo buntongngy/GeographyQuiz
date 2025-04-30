@@ -3375,6 +3375,44 @@
     "flagEmblem": ["Stripe", "Star"]
   },
 
+  {
+    "name": "Tajikistan",
+    "capital": "Dushanbe",
+    "bigCity": "Dushanbe",
+    "secondCity": "Khujand",
+    "thirdCity": "Bokhtar",
+    "continent": "Asia",
+    "region": "Central Asia",
+    "languages": ["Tajik", "Russian"],
+    "currency": "Somoni",
+    "population": 10786734,
+    "area": 143100,
+    "category": "slavic",
+    "countryCode": "tj",
+    "difficulty": 2,
+    "flagColors": ["Red","White", "Green"],
+    "flagEmblem": ["Stripe", "Crest"]
+  },
+
+  {
+    "name": "Tanzania",
+    "capital": "Dodoma",
+    "bigCity": "Dar es Salaam",
+    "secondCity": "Mwanza",
+    "thirdCity": "Arusha",
+    "continent": "Africa",
+    "region": "East Africa",
+    "languages": ["Swahili", "English"],
+    "currency": "Tanzanian shilling",
+    "population": 67462121,
+    "area": 947303,
+    "category": "africa",
+    "countryCode": "tz",
+    "difficulty": 2,
+    "flagColors": ["Blue","Black", "Yellow","Green"],
+    "flagEmblem": ["Stripe"]
+  },
+
 
   {
     "name": "Thailand",
@@ -3403,6 +3441,63 @@
   },
 
   {
+    "name": "Togo",
+    "capital": "Lomé",
+    "bigCity": "Lomé",
+    "secondCity": "Sokodé",
+    "thirdCity": "Kara",
+    "continent": "Africa",
+    "region": "West Africa",
+    "languages": ["French"],
+    "currency": "West African CFA franc",
+    "population": 9583381,
+    "area": 56785,
+    "category": "africa",
+    "countryCode": "tg",
+    "difficulty": 3,
+    "flagColors": ["Red","White", "Yellow","Green"],
+    "flagEmblem": ["Stripe", "Star"]
+  },
+
+  {
+    "name": "Tonga",
+    "capital": "Nukuʻalofa",
+    "bigCity": "Nukuʻalofa",
+    "secondCity": "",
+    "thirdCity": "",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "languages": ["Tongan", "English"],
+    "currency": "Pa'anga",
+    "population": 100209,
+    "area": 748,
+    "category": "pacific",
+    "countryCode": "to",
+    "difficulty": 3,
+    "flagColors": ["Red","White"],
+    "flagEmblem": ["Cross"]
+  },
+
+  {
+    "name": "Trinidad and Tobago",
+    "capital": "Port of Spain",
+    "bigCity": "Chaguanas",
+    "secondCity": "San Fernando",
+    "thirdCity": "Port of Spain",
+    "continent": "North America",
+    "region": "Caribbean",
+    "languages": ["English"],
+    "currency": "Trinidad and Tobago dollar",
+    "population": 1508635,
+    "area": 5131,
+    "category": "caribbean",
+    "countryCode": "tt",
+    "difficulty": 2,
+    "flagColors": ["Red","Black", "White"],
+    "flagEmblem": ["Stripe"]
+  },
+
+  {
     "name": "Tunisia",
     "capital": "Tunis",
     "bigCity": "Tunis",
@@ -3426,6 +3521,63 @@
     "difficulty": 1,
     "flagColors": ["Red", "White"],
     "flagEmblem": ["Moon"]
+  },
+
+  {
+    "name": "Turkey",
+    "capital": "Ankara",
+    "bigCity": "Istanbul",
+    "secondCity": "Ankara",
+    "thirdCity": "İzmir",
+    "continent": "Asia",
+    "region": "Western Asia",
+    "languages": ["Turkish"],
+    "currency": "Turkish lira",
+    "population": 85664944,
+    "area": 783562,
+    "category": "western",
+    "countryCode": "tr",
+    "difficulty": 1,
+    "flagColors": ["Red", "White"],
+    "flagEmblem": ["Moon"]
+  },
+
+  {
+    "name": "Turkmenistan",
+    "capital": "Ashgabat",
+    "bigCity": "Ashgabat",
+    "secondCity": "Türkmenabat",
+    "thirdCity": "Daşoguz",
+    "continent": "Asia",
+    "region": "Central Asia",
+    "languages": ["Turkmen"],
+    "currency": "Manat",
+    "population": 7057841,
+    "area": 491210,
+    "category": "slavic",
+    "countryCode": "tm",
+    "difficulty": 2,
+    "flagColors": ["Green"],
+    "flagEmblem": ["Moon"]
+  },
+
+  {
+    "name": "Tuvalu",
+    "capital": "Funafuti",
+    "bigCity": "Funafuti",
+    "secondCity": "",
+    "thirdCity": "",
+    "continent": "Oceania",
+    "region": "Polynesia",
+    "languages": ["Tuvaluan", "English"],
+    "currency": "Tuvaluan dollar",
+    "population": 10643,
+    "area": 25,
+    "category": "pacific",
+    "countryCode": "tv",
+    "difficulty": 3,
+    "flagColors": ["Blue", "Yellow"],
+    "flagEmblem": ["British", "Star"]
   },
 
   {

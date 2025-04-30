@@ -2479,6 +2479,34 @@
   },
 
   {
+    "originalName": "Tajikistan",
+    "translatedName": "Tadjikistan",
+    "translatedCapital": "Douchanbé",
+    "translatedCity1": "Douchanbé",
+    "translatedCity2": "Khoudjand",
+    "translatedCity3": "Bokhtar",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie centrale",
+    "translatedCurrency": "Somoni",
+    "translatedLanguages": "Tadjik, Russe",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Tanzania",
+    "translatedName": "Tanzanie",
+    "translatedCapital": "Dodoma",
+    "translatedCity1": "Dar es Salam",
+    "translatedCity2": "Mwanza",
+    "translatedCity3": "Arusha",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Est",
+    "translatedCurrency": "Shilling tanzanien",
+    "translatedLanguages": "Swahili, Anglais",
+    "landmarks": []
+  },
+
+  {
     "originalName": "Thailand",
     "translatedName": "Thaïlande",
     "translatedCapital": "Bangkok",
@@ -2496,6 +2524,49 @@
       }
     ]
   },
+
+  {
+    "originalName": "Togo",
+    "translatedName": "Togo",
+    "translatedCapital": "Lomé",
+    "translatedCity1": "Lomé",
+    "translatedCity2": "Sokodé",
+    "translatedCity3": "Kara",
+    "translatedContinent": "Afrique",
+    "translatedRegion": "Afrique de l'Ouest",
+    "translatedCurrency": "Franc CFA ouest-africain",
+    "translatedLanguages": "Français",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Tonga",
+    "translatedName": "Tonga",
+    "translatedCapital": "Nukuʻalofa",
+    "translatedCity1": "Nukuʻalofa",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Polynésie",
+    "translatedCurrency": "Paʻanga",
+    "translatedLanguages": "Tongien, Anglais",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Trinidad and Tobago",
+    "translatedName": "Trinité-et-Tobago",
+    "translatedCapital": "Port-d'Espagne",
+    "translatedCity1": "Chaguanas",
+    "translatedCity2": "San Fernando",
+    "translatedCity3": "Port-d'Espagne",
+    "translatedContinent": "Amérique du Nord",
+    "translatedRegion": "Caraïbes",
+    "translatedCurrency": "Dollar de Trinité-et-Tobago",
+    "translatedLanguages": "Anglais",
+    "landmarks": []
+  },
+
   {
     "originalName": "Tunisia",
     "translatedName": "Tunisie",
@@ -2514,6 +2585,49 @@
       }
     ]
   },
+
+  {
+    "originalName": "Turkey",
+    "translatedName": "Turquie",
+    "translatedCapital": "Ankara",
+    "translatedCity1": "Istanbul",
+    "translatedCity2": "Ankara",
+    "translatedCity3": "Izmir",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie occidentale",
+    "translatedCurrency": "Lire turque",
+    "translatedLanguages": "Turc",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Turkmenistan",
+    "translatedName": "Turkménistan",
+    "translatedCapital": "Achgabat",
+    "translatedCity1": "Achgabat",
+    "translatedCity2": "Turkmenabat",
+    "translatedCity3": "Daşoguz",
+    "translatedContinent": "Asie",
+    "translatedRegion": "Asie centrale",
+    "translatedCurrency": "Manat",
+    "translatedLanguages": "Turkmène",
+    "landmarks": []
+  },
+
+  {
+    "originalName": "Tuvalu",
+    "translatedName": "Tuvalu",
+    "translatedCapital": "Funafuti",
+    "translatedCity1": "Funafuti",
+    "translatedCity2": "",
+    "translatedCity3": "",
+    "translatedContinent": "Océanie",
+    "translatedRegion": "Polynésie",
+    "translatedCurrency": "Dollar tuvaluan",
+    "translatedLanguages": "Tuvaluan, Anglais",
+    "landmarks": []
+  },
+
   {
     "originalName": "Vietnam",
     "translatedName": "Vietnam",
